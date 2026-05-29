@@ -205,8 +205,4 @@ ANTHROPIC_API_KEY = "sua_chave_aqui"
 - SOUZA, F. et al. **BERTimbau: pretrained BERT models for Brazilian Portuguese.** BRACIS, 2020.
 - RUSSELL, S.; NORVIG, P. **Inteligência Artificial: uma abordagem moderna.** 4. ed. LTC, 2021.
 
----
 
-## 📬 Contato
-
-**Email:** maonarodagente@gmail.com
