@@ -62,7 +62,7 @@ models/
 
 ## Onde baixar o checkpoint fine-tunado
 
-Baixe o conteúdo para `models/bertimbau_mao_na_roda/`, ou aponte outra pasta com a variável `MODEL_PATH`.
+O checkpoint fine-tunado não está publicado neste repositório. Para gerá-lo, rode `notebooks/mao_na_roda_finetuning_bertimbau.ipynb` (split 80/10/10) e salve o modelo e o tokenizer em `models/bertimbau_mao_na_roda/`, ou aponte outra pasta com a variável `MODEL_PATH`.
 
 Os checkpoints **base** da tabela acima não servem para a demo: eles não têm a cabeça de classificação treinada com o nosso dataset.
 
