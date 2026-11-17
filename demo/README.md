@@ -14,11 +14,11 @@ Esta pasta contém um **protótipo web** que a partir do relato de um motorista 
 |---|---|---|
 | Classificador BERTimbau (10 classes) | ✅ ativo | avaliado (F1 macro 0,8675 no teste) |
 | Claude Haiku 4.5 gerando o diagnóstico | ✅ ativo | avaliado por nota Likert |
-| Regras heurísticas de segurança | ❌ desativadas | testadas na ablação |
+| Regras heurísticas de segurança | ❌ desativadas | testadas na avaliação Likert |
 | Base canônica de respostas | ❌ não integrada | descrita no texto do TCC |
 | RAG com manuais (ChromaDB) | ❌ desativado, sem manuais indexados | — |
 
-As regras ficaram desativadas após a decisão de 19/10/2026, e a ablação do trabalho é coerente com isso: a configuração sem regras teve a melhor nota (ver abaixo).
+As regras ficaram desativadas na demo após a decisão de 19/10/2026. Na avaliação Likert, elas não alteraram a nota de forma significativa (ver abaixo).
 
 ### Fluxo da demo
 
@@ -74,20 +74,30 @@ Acurácia: 0,8684. Das confusões, 9 relatos de Superaquecimento foram previstos
 
 <!-- TODO: F1 do baseline nos splits da v15 (o notebook de baseline do repositório roda no dataset piloto) -->
 
-### Ablação do pipeline (avaliação qualitativa, nota média Likert)
+### Avaliação do pipeline (Likert)
 
-| Configuração | Nota |
-|---|---|
-| A | 1,67 |
-| **B (sem regras)** | **2,78** |
-| C | 1,67 |
-| D | 2,56 |
+Avaliação qualitativa de 4 configurações do pipeline sobre **30 relatos** do conjunto de teste (80/10/10), 3 por classe (seed 42), com o classificador BERTimbau final. Dois avaliadores notaram cada resposta, sem ver a nota um do outro, com a escala: **3** resposta adequada, **1** resposta parcial, **−1** resposta inadequada. LLM: Claude Haiku 4.5 (`claude-haiku-4-5-20251001`), temperatura 1,0, `max_tokens` 700, top-k do RAG = 3.
 
-A configuração B, sem regras heurísticas, foi a melhor avaliada.
+| Config | Regras | RAG + LLM | Nota média (−1 a 3) | IC 95% | Latência mediana | Acerto de classe |
+|---|---|---|---|---|---|---|
+| A | não | não | 1,17 | 0,77 a 1,53 | 10 ms | 86,7% |
+| B | não | sim | 1,77 | 1,37 a 2,13 | 6.645 ms | 86,7% |
+| C | sim | não | 1,13 | 0,73 a 1,50 | 11 ms | 83,3% |
+| D | sim | sim | **1,83** | 1,40 a 2,23 | 6.964 ms | 83,3% |
 
-> A ablação foi executada sobre 17 relatos de teste da fase piloto do dataset (com o classificador daquela fase, acurácia 58,8% em todas as configurações). Por isso a nota Likert compara o efeito de regras e RAG+LLM, e não o desempenho do classificador final.
+Cada configuração tem 60 notas (30 relatos × 2 avaliadores). Nas configurações B e D, a resposta vem do RAG + LLM quando a confiança do classificador é menor que 0,85 (73% dos casos) e da resposta canônica nos demais.
 
-<!-- TODO: descrever em uma linha o que são as configs A, C e D e a escala Likert usada -->
+| Comparação | Diferença | IC 95% | p (Wilcoxon) |
+|---|---|---|---|
+| B − A (efeito do RAG + LLM, sem regras) | +0,60 | 0,27 a 0,97 | 0,003 |
+| D − C (efeito do RAG + LLM, com regras) | +0,70 | 0,40 a 1,03 | 0,0003 |
+| C − A (efeito das regras, sem RAG) | −0,03 | −0,10 a 0,00 | 0,32 |
+| D − B (efeito das regras, com RAG) | +0,07 | −0,10 a 0,23 | 0,41 |
+| D − A (pipeline completo contra o básico) | +0,67 | 0,33 a 1,03 | 0,0007 |
+
+O RAG + LLM elevou a nota de forma estatisticamente significativa. As regras não mudaram a nota de forma significativa.
+
+A concordância entre os dois avaliadores foi baixa: 45,8% de notas idênticas e kappa linear ponderado de aproximadamente 0,21 (calculado a partir de `../results/likert/likert_notas_por_resposta.csv`). Os dados completos estão em [`results/likert/`](../results/likert/).
 
 ### Dataset
 
@@ -125,7 +135,7 @@ O servidor escuta apenas em `127.0.0.1` e rejeita textos fora de 10–500 caract
 
 ## Custo
 
-Cada consulta chama a API da Anthropic e o custo depende dos tokens gerados (a demo usa `max_tokens=3000`). Consulte a página de preços da Anthropic antes de usar. Não há crédito gratuito garantido.
+Cada consulta chama a API da Anthropic e o custo depende dos tokens gerados. No experimento Likert (`max_tokens` 700), uma resposta RAG + LLM custou em média cerca de US$ 0,004 (aprox. 1.600 tokens), segundo o registro do experimento. A demo usa `max_tokens=3000`, então respostas longas podem custar mais. Consulte a página de preços da Anthropic antes de usar. Não há crédito gratuito garantido.
 
 ## Limitações
 
