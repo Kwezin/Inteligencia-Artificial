@@ -62,9 +62,6 @@ models/
 
 ## Onde baixar o checkpoint fine-tunado
 
-Hugging Face: *(link a ser adicionado)*.
-<!-- TODO: colar a URL do repositório do modelo no Hugging Face -->
-
 Baixe o conteúdo para `models/bertimbau_mao_na_roda/`, ou aponte outra pasta com a variável `MODEL_PATH`.
 
 Os checkpoints **base** da tabela acima não servem para a demo: eles não têm a cabeça de classificação treinada com o nosso dataset.
