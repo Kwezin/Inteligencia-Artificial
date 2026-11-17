@@ -1,0 +1,2265 @@
+relato_id,config,etapa,classe_real,classe_predita,acertou_classe,confianca,regra,latencia_ms,tokens_llm,custo_usd,resposta_visivel,hash_resposta
+2818,A,canonica,0,0,1,0.8807332515716553,,18.724918365478516,0,0.0,"**Sistema:** Bateria e Sistema Elétrico
+**Urgência:** média
+
+Os sintomas indicam provavelmente um problema no sistema elétrico, mais comumente bateria descarregada, fim de vida útil da bateria ou falha no alternador. Se for só o ""clique"" característico, tente dar partida com cabos auxiliares. Se a luz de bateria ficar acesa com o motor em funcionamento, o alternador está falhando e você deve procurar um eletricista automotivo imediatamente — o carro pode parar a qualquer momento.",675f16b1fc
+2818,B,rag_llm,0,0,1,0.8807332515716553,,7525.049448013306,1604,0.004356,"**Sistema:** Bateria e Sistema Elétrico
+**Urgência:** média
+
+# Diagnóstico Preliminar – Dificuldade de Partida Após Lavagem
+
+## 1. Provável Diagnóstico
+O atraso na partida após lavagem completa **sugere contato inadequado nos terminais da bateria** (possível umidade ou oxidação agravada pela água) ou **bateria descarregada**. A lavagem pode ter infiltrado água perto dos componentes elétricos, prejudicando o contato.
+
+## 2. Urgência
+**MÉDIA** — O veículo ainda consegue dar partida, mas o problema pode piorar se não for resolvido logo. Não há risco imediato de segurança neste momento.
+
+## 3. O que Fazer AGORA
+
+1. **Verifique os terminais da bateria** (com motor desligado):
+   - Abra o capô e localize a bateria
+   - Os dois cabos (preto e vermelho) estão firmes e bem presos?
+   - Há oxidação verde/azulada nos terminais?
+
+2. **Limpe os terminais** se houver sujeira:
+   - Use um pano seco
+   - Se tiver oxidação, limpe com escova de aço ou bicarbonato + água
+
+3. **Tente partida com cabos auxiliares** (bateria de outro carro):
+   - Conecte o cabo vermelho no (+) da sua bateria, depois no (+) do outro carro
+   - Conecte o cabo preto no (−) do outro carro, depois em metal nu do motor (não na bateria)
+   - Aguarde 2-3 minutos e tente dar partida
+
+4. **Após conseguir partir, rode pelo menos 20 minutos** para recarregar a bateria
+
+5. **Deixe o veículo secar** antes de próxima lavagem; evite jatos de água diretamente sobre a bateria e bornes
+
+## 4. O que NÃO Fazer
+
+- ❌ Não ligue os cabos auxiliares com **polos trocados** (pode danificar a bateria)
+- ❌ Não tente empurrar o carro para dar partida
+- ❌ Não desconecte a bateria com o motor ligado
+
+## 5. Quando Procurar Mecânico
+
+Procure **em breve** se:
+- O problema persistir após limpeza dos terminais
+- A luz de bateria (símbolo de pilha) acender no painel durante a marcha
+- O carro desligar enquanto dirige
+- A bateria tiver mais de 3-4 anos (substituição preventiva)
+
+---
+
+**Este diagnóstico é preliminar e não substitui avaliação profissional. Em dúvida, procure um mecânico.**",ad2850b9d2
+2818,C,canonica,0,0,1,0.8807332515716553,,34.32583808898926,0,0.0,"**Sistema:** Bateria e Sistema Elétrico
+**Urgência:** média
+
+Os sintomas indicam provavelmente um problema no sistema elétrico, mais comumente bateria descarregada, fim de vida útil da bateria ou falha no alternador. Se for só o ""clique"" característico, tente dar partida com cabos auxiliares. Se a luz de bateria ficar acesa com o motor em funcionamento, o alternador está falhando e você deve procurar um eletricista automotivo imediatamente — o carro pode parar a qualquer momento.",675f16b1fc
+2818,D,rag_llm,0,0,1,0.8807332515716553,,6621.9322681427,1542,0.004046,"**Sistema:** Bateria e Sistema Elétrico
+**Urgência:** média
+
+# 🔧 Diagnóstico Preliminar - Dificuldade de Partida Após Lavagem
+
+## 1. Provável Diagnóstico
+O sistema elétrico (bateria ou conexões) provavelmente foi afetado pela lavagem. A umidade pode ter causado mau contato nos terminais da bateria ou oxidação, dificultando a passagem de corrente elétrica necessária para dar partida.
+
+## 2. Urgência
+**MÉDIA** — Não é crítico neste momento, pois o veículo consegue dar partida. Mas precisa ser resolvido logo para evitar que piore (o carro pode não pegar na próxima vez).
+
+## 3. O que Fazer AGORA
+
+1. **Inspecione os terminais da bateria** (com motor desligado):
+   - Abra o capô e procure os cabos vermelho e preto conectados à bateria
+   - Verifique se estão firmes e sem oxidação (depósitos verdes/brancos)
+   - Se frouxos, aperte com uma chave apropriada
+
+2. **Limpe os terminais** se tiverem resíduo de umidade:
+   - Use um pano seco ou escova de cerdas macias
+   - Limpe também os conectores metálicos
+
+3. **Tente dar partida** novamente após limpeza
+
+4. **Se funcionar**, rode o carro por **pelo menos 20 minutos** para recarregar a bateria
+
+5. **Se não funcionar**, tente partida com **cabos auxiliares** (bateria de outro carro) — mas **certifique-se que os polos estão corretos** (vermelho no +, preto no −)
+
+## 4. O que NÃO fazer
+- ❌ Não conecte os cabos auxiliares com os polos trocados (risco de explosão)
+- ❌ Não tente empurrar o carro para dar partida
+- ❌ Não desconecte a bateria com o motor ligado
+
+## 5. Quando Procurar Mecânico
+- Se depois da limpeza o problema persistir
+- Se vir a luz de bateria (símbolo de pilha) acesa no painel enquanto dirige
+- Se outros componentes elétricos (vidros, travas, faróis) estiverem lentos
+
+---
+
+**Este diagnóstico é preliminar e não substitui avaliação profissional. Em dúvida, procure um mecânico.**",70517323db
+1192,A,canonica,0,0,1,0.9943893551826477,,18.719196319580078,0,0.0,"**Sistema:** Bateria e Sistema Elétrico
+**Urgência:** média
+
+Os sintomas indicam provavelmente um problema no sistema elétrico, mais comumente bateria descarregada, fim de vida útil da bateria ou falha no alternador. Se for só o ""clique"" característico, tente dar partida com cabos auxiliares. Se a luz de bateria ficar acesa com o motor em funcionamento, o alternador está falhando e você deve procurar um eletricista automotivo imediatamente — o carro pode parar a qualquer momento.",6fbed921db
+1192,B,rag_llm,0,0,1,0.9943893551826477,,5811.900854110718,1451,0.003551,"**Sistema:** Bateria e Sistema Elétrico
+**Urgência:** média
+
+# 🚗 Diagnóstico Preliminar - Mão na Roda
+
+## 1. Provável Diagnóstico
+O sintoma de ""luzes piscando no painel quando chove"" **provavelmente indica mau contato ou infiltração de umidade no sistema elétrico**. A chuva pode estar causando oxidação nos terminais da bateria ou conectores soltos, interrompendo o funcionamento elétrico temporariamente.
+
+## 2. Urgência
+**MÉDIA** — Não é emergência imediata, mas requer atenção. Se o carro desligar enquanto você dirige, pode ser perigoso. O problema tende a piorar com o tempo.
+
+## 3. O que Fazer AGORA
+1. **Estacione em local seguro** na próxima oportunidade (mesmo com carro funcionando)
+2. **Com motor desligado**, abra o capô e verifique:
+   - Os terminais da bateria estão firmes e limpos?
+   - Há corrosão (pó branco/azulado) nos polos?
+3. **Se houver sujeira**: limpe com uma escova seca ou pano
+4. **Se os terminais estiverem soltos**: aperte-os com cuidado
+5. **Evite dirigir na chuva** até resolver o problema
+
+## 4. O que NÃO Fazer
+- ❌ Não desconecte a bateria com motor ligado
+- ❌ Não tente reparar fiação você mesmo sem conhecimento
+- ❌ Não ignore o problema — pode deixar você na mão
+
+## 5. Quando Procurar Mecânico
+**Em até 3-5 dias**, mesmo que o problema tenha desaparecido. Um profissional precisa:
+- Inspecionar conexões da bateria e fiação
+- Testar o alternador
+- Verificar se há infiltração de água no painel elétrico
+
+---
+
+**Este diagnóstico é preliminar e não substitui avaliação profissional. Em dúvida, procure um mecânico.**",9a728e0b9e
+1192,C,canonica,0,0,1,0.9943893551826477,,10.676860809326172,0,0.0,"**Sistema:** Bateria e Sistema Elétrico
+**Urgência:** média
+
+Os sintomas indicam provavelmente um problema no sistema elétrico, mais comumente bateria descarregada, fim de vida útil da bateria ou falha no alternador. Se for só o ""clique"" característico, tente dar partida com cabos auxiliares. Se a luz de bateria ficar acesa com o motor em funcionamento, o alternador está falhando e você deve procurar um eletricista automotivo imediatamente — o carro pode parar a qualquer momento.",6fbed921db
+1192,D,rag_llm,0,0,1,0.9943893551826477,,6829.517126083374,1542,0.004006,"**Sistema:** Bateria e Sistema Elétrico
+**Urgência:** média
+
+# 🚗 DIAGNÓSTICO PRELIMINAR — Mão na Roda
+
+## 1. Provável diagnóstico
+O sintoma relata ""flashes de luz no painel quando chove"", o que **sugere um mau contato elétrico** — provavelmente **oxidação ou umidade nos terminais da bateria** ou em conectores próximos. Isso é típico de problemas no sistema elétrico que pioram com chuva.
+
+## 2. Urgência: **MÉDIA**
+Não é crítico agora, mas pode evoluir. Se as luzes começarem a piscar **durante a marcha** e o painel começar a **apagar**, o alternador pode estar falhando — aí vira urgência alta.
+
+## 3. O que fazer AGORA
+
+1. **Com o motor desligado**, abra o capô e verifique os **terminais da bateria** (cabinhos preto e vermelho conectados). Procure por pó branco/azulado (oxidação) ou verde (corrosão).
+
+2. Se estiverem sujos, **limpe delicadamente** com uma escovinha ou pano seco. Se muito corrompidos, use uma solução de bicarbonato + água morna.
+
+3. **Aperte bem** as conexões — devem estar firmes e imóveis.
+
+4. Se tiver cabos auxiliares, teste dar partida com a bateria de outro carro (para descartar bateria fraca).
+
+5. Após conseguir ligar, **dirija 20+ minutos** para deixar o alternador recarregar.
+
+## 4. O que NÃO fazer
+- ❌ Não conecte cabos auxiliares com os polos invertidos (risco de explosão)
+- ❌ Não desconecte a bateria com o motor ligado (danifica a eletrônica do carro)
+- ❌ Não ignore se as luzes começarem a piscar **durante a marcha** — isso é mais grave
+
+## 5. Quando procurar mecânico
+- ✅ **Após 3-5 dias** se o problema persistir (pode ser alternador ou bateria no fim da vida)
+- ✅ **IMEDIATAMENTE** se as luzes piscarem com o motor ligado + painel começar a apagar (risco de desligamento)
+
+---
+
+**Este diagnóstico é preliminar e não substitui avaliação profissional. Em dúvida, procure um mecânico.**",28b8f90257
+2029,A,canonica,0,2,0,0.9865502119064331,,9.980440139770508,0,0.0,"**Sistema:** Superaquecimento do Motor
+**Urgência:** média
+** Este caso recomenda REBOQUE. Não dirija até a oficina.**
+
+Superaquecimento é URGENTE. Pare o carro imediatamente, desligue o motor e aguarde pelo menos 30 minutos antes de qualquer coisa. Nunca abra a tampa do radiador quente — a água superaquecida pressurizada pode causar queimaduras graves. Continuar dirigindo pode fundir o motor (prejuízo entre R$5.000 e R$15.000). Chame guincho e leve à oficina.",27142b6459
+2029,B,rag_llm,0,2,0,0.9865502119064331,,7431.509494781494,1777,0.004577,"**Sistema:** Superaquecimento do Motor
+**Urgência:** alta
+** Este caso recomenda REBOQUE. Não dirija até a oficina.**
+
+# 🚗 DIAGNÓSTICO PRELIMINAR - MÃO NA RODA
+
+## 1. PROVÁVEL DIAGNÓSTICO
+O **cheiro de queimado + fio de fumaça** no painel indica **provável superaquecimento do motor**. Embora você não tenha mencionado o ponteiro de temperatura no vermelho, esse sintoma é clássico de sistema de arrefecimento com problema — pode ser vazamento de líquido, ventoinha parada ou radiador entupido.
+
+---
+
+## 2. URGÊNCIA: **ALTA** ⚠️
+**Por quê?** Fumaça + cheiro de queimado = motor em risco de superaquecimento grave. Continuar dirigindo pode danificar o motor permanentemente (custo de R$ 5.000 a R$ 15.000). Não é imediato como freio falhando, mas exige ação rápida.
+
+---
+
+## 3. O QUE FAZER AGORA
+
+1. **ESTACIONE em local seguro IMEDIATAMENTE** — não continue dirigindo
+2. **Desligue o motor** e aguarde **30 minutos** para esfriar completamente
+3. **Desligue o ar-condicionado** (reduz carga térmica do motor)
+4. Após esfriar, **abra o capô com cuidado** e verifique:
+   - Se há vazamento visível embaixo do motor
+   - O nível do líquido de arrefecimento no reservatório (NOT no radiador ainda)
+5. **Se vir fumaça saindo ainda ou cheiro muito forte**, chame um guincho — não tente ligar de novo
+
+---
+
+## 4. O QUE NÃO FAZER
+
+❌ **NUNCA** abra a tampa do radiador com o motor quente (vapor pressurizado → queimadura grave)  
+❌ **NUNCA** jogue água fria no motor quente (pode trincar o bloco)  
+❌ **NUNCA** continue dirigindo ""só até chegar em casa""  
+❌ Não complete o líquido com água de torneira (use aditivo apropriado no futuro)
+
+---
+
+## 5. QUANDO PROCURAR MECÂNICO
+
+**PROCURE HOJE OU CHAME GUINCHO SE:**
+- Continuar vendo fumaça depois de esfriar
+- O nível de líquido estiver muito baixo ou vazio
+- Ligar o motor e o cheiro/fumaça voltarem
+- Notar óleo com aspecto ""café com leite"" (sinal de problema grave)
+
+**Leve ao mecânico na primeira oportunidade** mesmo que o problema ""passe"" — há algo errado no sistema de arrefecimento.
+
+---
+
+**Este diagnóstico é preliminar e não substitui avaliação prof",4de6660653
+2029,C,canonica,0,2,0,0.9865502119064331,,11.957168579101562,0,0.0,"**Sistema:** Superaquecimento do Motor
+**Urgência:** média
+** Este caso recomenda REBOQUE. Não dirija até a oficina.**
+
+Superaquecimento é URGENTE. Pare o carro imediatamente, desligue o motor e aguarde pelo menos 30 minutos antes de qualquer coisa. Nunca abra a tampa do radiador quente — a água superaquecida pressurizada pode causar queimaduras graves. Continuar dirigindo pode fundir o motor (prejuízo entre R$5.000 e R$15.000). Chame guincho e leve à oficina.",27142b6459
+2029,D,rag_llm,0,2,0,0.9865502119064331,,6437.840938568115,1692,0.004152,"**Sistema:** Superaquecimento do Motor
+**Urgência:** alta
+** Este caso recomenda REBOQUE. Não dirija até a oficina.**
+
+# 🚗 DIAGNÓSTICO PRELIMINAR - MÃO NA RODA
+
+## 1. PROVÁVEL DIAGNÓSTICO
+O cheiro de queimado acompanhado de fumaça sugere **superaquecimento do motor**. Embora você não tenha mencionado o ponteiro de temperatura ou luz no painel, a fumaça é um sinal importante de que algo está gerando calor excessivo — possivelmente no sistema de arrefecimento (radiador, ventoinha, vazamento de líquido, etc.).
+
+---
+
+## 2. URGÊNCIA: **ALTA ⚠️**
+
+**Por quê?** Fumaça significa que o motor está operando em temperatura perigosa. Continuar dirigindo pode resultar em dano irreversível ao motor (fusão de peças internas), com custo de reparo entre R$ 5.000 a R$ 15.000. Isso é diferente de um problema ""para depois"" — precisa de atenção HOJE.
+
+---
+
+## 3. O QUE FAZER AGORA
+
+1. **ESTACIONE em local seguro o mais rápido possível** — longe do trânsito
+2. **Desligue o motor** (não deixe rodando)
+3. **Desligue o ar-condicionado** — reduz a carga térmica
+4. **Aguarde 30-40 minutos** antes de abrir o capô (deixe esfriar)
+5. **Após esfriar**, verifique o nível de líquido de arrefecimento no reservatório (não abra a tampa do radiador) — se estiver muito baixo, há vazamento
+
+---
+
+## 4. O QUE NÃO FAZER
+
+❌ Abrir a tampa do radiador com o motor quente (risco de queimadura)  
+❌ Jogar água fria no motor superaquecido (pode trincar o bloco)  
+❌ Continuar dirigindo ""só até chegar em casa""  
+❌ Completar com água de torneira (causa corrosão — use aditivo apropriado)
+
+---
+
+## 5. QUANDO PROCURAR MECÂNICO
+
+**AGORA.** Chame um mecânico ou guincho ainda hoje. Não dirija o veículo até a revisão — o risco é muito alto.
+
+---
+
+**Este diagnóstico é preliminar e não substitui avaliação profissional. Em dúvida, procure um mecânico.**",78516b2c0d
+2357,A,canonica,1,1,1,0.9966526627540588,,11.150121688842773,0,0.0,"**Sistema:** Sistema de Freios
+**Urgência:** média
+** Este caso recomenda REBOQUE. Não dirija até a oficina.**
+
+Freio é o sistema mais crítico para sua segurança. Os sintomas descritos podem indicar desde pastilhas gastas (mais comum) até perda hidráulica. Se o pedal está afundando, duro demais ou a luz de freio acesa, não dirija. Chame guincho ou vá pelo caminho mais curto à oficina. Qualquer sintoma de freio merece inspeção imediata.",8246e998d7
+2357,B,rag_llm,1,1,1,0.9966526627540588,,5096.900701522827,1489,0.003521,"**Sistema:** Sistema de Freios
+**Urgência:** alta
+** Este caso recomenda REBOQUE. Não dirija até a oficina.**
+
+# 🚗 DIAGNÓSTICO PRELIMINAR - MÃO NA RODA
+
+## 1. Provável diagnóstico
+O vazamento de lubrificante do retentor do rolamento está contaminando as pastilhas de freio traseiras. Isso reduz a capacidade de frenagem, pois o óleo cria uma camada escorregadia entre a pastilha e o disco. O sistema de freios está comprometido.
+
+## 2. Urgência: **ALTA**
+Pastilhas contaminadas com óleo perdem eficiência de frenagem significativamente. Você está direto na estrada sem plena capacidade de parar o veículo — isso é um risco sério de colisão.
+
+## 3. O que fazer AGORA
+1. **Reduza velocidade imediatamente** e aumente a distância do carro da frente
+2. **Dirija-se ao mecânico mais próximo** — não continue circulando normalmente
+3. **Evite frenagens bruscas** — use frenagens suaves e graduais
+4. **Verifique o nível do fluido de freio** sob o capô (deve estar na marca)
+5. Se sentir o pedal ficando mole ou afundando, **acione o freio de mão gradualmente e pare em local seguro**
+
+## 4. O que NÃO fazer
+- ❌ Não continue dirigindo normalmente até a próxima revisão
+- ❌ Não bombear o pedal de freio repetidamente
+- ❌ Não ignore sinais de enfraquecimento da frenagem
+
+## 5. Quando procurar mecânico
+**Imediatamente.** Procure um mecânico hoje ou leve o carro a um guincho. O retentor do rolamento precisa ser substituído, e as pastilhas traseiras precisam ser limpas ou trocadas.
+
+---
+
+**Este diagnóstico é preliminar e não substitui avaliação profissional. Em dúvida, procure um mecânico.**",26dc741548
+2357,C,canonica,1,1,1,0.9966526627540588,,11.78431510925293,0,0.0,"**Sistema:** Sistema de Freios
+**Urgência:** média
+** Este caso recomenda REBOQUE. Não dirija até a oficina.**
+
+Freio é o sistema mais crítico para sua segurança. Os sintomas descritos podem indicar desde pastilhas gastas (mais comum) até perda hidráulica. Se o pedal está afundando, duro demais ou a luz de freio acesa, não dirija. Chame guincho ou vá pelo caminho mais curto à oficina. Qualquer sintoma de freio merece inspeção imediata.",8246e998d7
+2357,D,rag_llm,1,1,1,0.9966526627540588,,7288.51056098938,1660,0.004376,"**Sistema:** Sistema de Freios
+**Urgência:** alta
+** Este caso recomenda REBOQUE. Não dirija até a oficina.**
+
+# 🚗 Diagnóstico Preliminar - Mão na Roda
+
+## 1. Provável diagnóstico
+Um vazamento do retentor do rolamento está contaminando as pastilhas de freio traseiras com lubrificante. Isso reduz a capacidade de frenagem na região afetada e indica um problema **duplo**: vazamento de óleo + degradação do sistema de freios.
+
+---
+
+## 2. Urgência: **ALTA**
+**Por quê:** Pastilhas contaminadas com óleo têm aderência muito reduzida, comprometendo a frenagem. Dirigir com essa condição aumenta significativamente o risco de não conseguir frear adequadamente em emergências, especialmente em alta velocidade ou chuva.
+
+---
+
+## 3. O que fazer AGORA
+
+1. **Reduza a velocidade** e aumente a distância de segurança do veículo à sua frente
+2. **Verifique o pedal de freio** — se estiver esponjoso, muito duro ou afundando demais, **PARE IMEDIATAMENTE** em local seguro
+3. **Estacione em local seguro** e **não continue dirigindo** até inspeção
+4. **Procure um mecânico hoje** — não é seguro rodar assim por muito tempo
+5. Evite frenagens bruscas e descidas íngremes até a reparação
+
+---
+
+## 4. O que NÃO fazer
+
+- ❌ Não continuar dirigindo normalmente até solucionar (risco de falha total de freios)
+- ❌ Não bombear o pedal repetidamente (pode danificar mais o sistema)
+- ❌ Não ignorar sinais de pedal esponjoso ou duro
+- ❌ Não tentar limpar as pastilhas sem reparar o retentor (óleo continuará contaminando)
+
+---
+
+## 5. Quando procurar mecânico
+
+**HOJE ou URGENTEMENTE.** Este problema requer:
+- Substituição do retentor do rolamento (fonte do vazamento)
+- Inspeção e possível substituição das pastilhas traseiras
+- Verificação geral do sistema de freios traseiro
+
+---
+
+⚠️ **Sinais de EMERGÊNCIA CRÍTICA** (pare imediatamente e chame guincho):
+- Pedal vai até o fundo sem frear
+- Luz vermelha de freio acesa no painel
+- Vazamento visível de líquido/óleo embaixo do carro
+- Qualquer perda significativa de frenagem
+
+---
+
+**Este diagnóstico é preliminar e não substitui avaliação profissional. Em dúvida, procure um mecânico.**",5bf9df3584
+2412,A,canonica,1,1,1,0.9966945648193359,,11.0321044921875,0,0.0,"**Sistema:** Sistema de Freios
+**Urgência:** média
+** Este caso recomenda REBOQUE. Não dirija até a oficina.**
+
+Freio é o sistema mais crítico para sua segurança. Os sintomas descritos podem indicar desde pastilhas gastas (mais comum) até perda hidráulica. Se o pedal está afundando, duro demais ou a luz de freio acesa, não dirija. Chame guincho ou vá pelo caminho mais curto à oficina. Qualquer sintoma de freio merece inspeção imediata.",1707bf21b3
+2412,B,rag_llm,1,1,1,0.9966945648193359,,6602.686166763306,1596,0.004044,"**Sistema:** Sistema de Freios
+**Urgência:** média
+** Este caso recomenda REBOQUE. Não dirija até a oficina.**
+
+# Diagnóstico Preliminar — Mão na Roda
+
+## 1. Provável diagnóstico
+Você relata contaminação das pastilhas de freio traseiras por lubrificante vindo de um retentor de rolamento danificado. Isso indica que o óleo está vazando para o interior do tambor/disco traseiro, comprometendo a eficiência de frenagem nesse eixo e causando desgaste acelerado das pastilhas.
+
+## 2. Urgência: **MÉDIA a ALTA**
+Pastilhas contaminadas com óleo perdem aderência gradualmente, reduzindo a capacidade de freio traseiro. Embora o freio dianteiro ainda funcione, você está dirigindo com segurança comprometida. Isso pode evoluir para **urgência crítica** se o vazamento aumentar ou afetar o sistema hidráulico.
+
+## 3. O que fazer AGORA
+1. **Reduza velocidade** e aumente a distância do carro à frente — freie com suavidade para testar a resposta
+2. **Verifique o nível do fluido de freio** sob o capô (reservatório, normalmente cilíndrico perto do motor)
+3. **Observe o pedal**: ele afunda muito? Fica esponjoso? Se sim, **PARE em local seguro imediatamente**
+4. **Procure um mecânico nos próximos 1-2 dias** — não dirija longas distâncias
+5. Se vir vazamento de líquido visível debaixo do carro, **não dirija mais**
+
+## 4. O que NÃO fazer
+- ❌ Não continuar dirigindo normalmente enquanto o vazamento existe
+- ❌ Não completar fluido de freio com tipo diferente do especificado
+- ❌ Não bombear o pedal repetidamente tentando ""recuperar"" a frenagem
+- ❌ Não ignorar sinais de pedal esponjoso ou que afunda
+
+## 5. Quando procurar mecânico
+**Nos próximos 1-2 dias** (média urgência). Se o pedal afundar, ficou esponjoso, ou a luz de freio acendeu no painel → **procure hoje ou chame guincho** (urgência alta).
+
+---
+
+**Este diagnóstico é preliminar e não substitui avaliação profissional. Em dúvida, procure um mecânico.**",97f2caf45d
+2412,C,canonica,1,1,1,0.9966945648193359,,11.937379837036133,0,0.0,"**Sistema:** Sistema de Freios
+**Urgência:** média
+** Este caso recomenda REBOQUE. Não dirija até a oficina.**
+
+Freio é o sistema mais crítico para sua segurança. Os sintomas descritos podem indicar desde pastilhas gastas (mais comum) até perda hidráulica. Se o pedal está afundando, duro demais ou a luz de freio acesa, não dirija. Chame guincho ou vá pelo caminho mais curto à oficina. Qualquer sintoma de freio merece inspeção imediata.",1707bf21b3
+2412,D,rag_llm,1,1,1,0.9966945648193359,,7298.064947128296,1663,0.004379,"**Sistema:** Sistema de Freios
+**Urgência:** média
+** Este caso recomenda REBOQUE. Não dirija até a oficina.**
+
+# 🚗 Diagnóstico Preliminar - Mão na Roda
+
+## 1. Provável Diagnóstico
+Você relata vazamento no retentor do rolamento traseiro contaminando as pastilhas de freio com lubrificante. Isso indica um problema **mecânico no rolamento traseiro** que está afetando a eficiência do freio traseiro. A contaminação das pastilhas reduz a capacidade de frenagem nesse eixo.
+
+---
+
+## 2. Urgência: **MÉDIA/ALTA**
+**Por quê:** Vazamento de lubrificante nas pastilhas compromete a segurança da frenagem, especialmente em frenagens de emergência. Embora não seja crítico como perda total de freio, reduz significativamente a eficácia do sistema. Recomenda-se não dirigir longamente nessa condição.
+
+---
+
+## 3. O Que Fazer AGORA
+
+1. **Reduza a velocidade** e aumente a distância do carro da frente — dirija defensivamente até uma oficina
+2. **Verifique o nível do fluido de freio** sob o capô — se estiver baixo, isso complica mais a situação
+3. **Observe o comportamento do freio**: o carro puxa para um lado? O pedal ficou esponjoso? Isso piora o caso
+4. **Agende uma visita ao mecânico nos próximos dias** — não deixe para depois
+5. **Evite frenagens bruscas** enquanto se desloca até a oficina
+
+---
+
+## 4. O Que NÃO Fazer
+
+- ❌ Não continue dirigindo normalmente como se nada estivesse acontecendo
+- ❌ Não ignore sinais de alerta (pedal estranho, puxar para um lado, luz acesa)
+- ❌ Não tente ""resolver"" o vazamento do rolamento sozinho — é trabalho de oficina
+- ❌ Não dirija longas distâncias nesta condição
+
+---
+
+## 5. Quando Procurar Mecânico
+
+**Imediatamente (hoje/amanhã)** se:
+- O pedal de freio ficou esponjoso ou afunda
+- O carro puxa para um lado ao frear
+- A luz vermelha de freio está acesa no painel
+- Você vê vazamento de líquido embaixo do carro
+
+**Nos próximos dias** se tudo acima está OK — apenas o vazamento do retentor foi identificado visualmente.
+
+---
+
+**⚠️ Este diagnóstico é preliminar e não substitui avaliação profissional. Em dúvida, procure um mecânico.**",a49e23d20d
+2349,A,canonica,1,1,1,0.9964746832847595,,10.571956634521484,0,0.0,"**Sistema:** Sistema de Freios
+**Urgência:** média
+** Este caso recomenda REBOQUE. Não dirija até a oficina.**
+
+Freio é o sistema mais crítico para sua segurança. Os sintomas descritos podem indicar desde pastilhas gastas (mais comum) até perda hidráulica. Se o pedal está afundando, duro demais ou a luz de freio acesa, não dirija. Chame guincho ou vá pelo caminho mais curto à oficina. Qualquer sintoma de freio merece inspeção imediata.",be21a8286a
+2349,B,rag_llm,1,1,1,0.9964746832847595,,6283.792018890381,1563,0.003907,"**Sistema:** Sistema de Freios
+**Urgência:** alta
+** Este caso recomenda REBOQUE. Não dirija até a oficina.**
+
+# 🚗 DIAGNÓSTICO PRELIMINAR - MÃO NA RODA
+
+## 1. **Provável diagnóstico**
+O relato sugere um **travamento da pinça de freio ou problema no sistema de frenagem** que causou perda de capacidade de frenagem normal. O fato de precisar acionar o freio de mão para destravar indica uma falha séria no sistema hidráulico de freios.
+
+---
+
+## 2. **Urgência: 🔴 ALTA**
+**Por quê:** Freio travando sozinho é um sintoma crítico de segurança. Indica que o sistema de frenagem pode estar comprometido e falhar novamente a qualquer momento, colocando você e outras pessoas em risco.
+
+---
+
+## 3. **O que fazer AGORA**
+
+1. **Reduza velocidade imediatamente** e aumente a distância do veículo à sua frente
+2. **Verifique o nível de fluido de freio** sob o capô (reservatório) — se estiver baixo é sinal de vazamento
+3. **Procure um local seguro** para estacionar (acostamento, oficina próxima)
+4. **Evite frenagens bruscas** até conseguir ajuda profissional
+5. **Não continue dirigindo normalmente** — dirija apenas até um mecânico
+
+---
+
+## 4. **O que NÃO fazer**
+
+- ❌ Não continue a viagem longa como se nada houvesse acontecido
+- ❌ Não ignore se vir líquido debaixo do carro (vazamento)
+- ❌ Não tente ""consertar"" bombeando o pedal repetidamente
+- ❌ Não misture tipos diferentes de fluido de freio ao completar
+
+---
+
+## 5. **Quando procurar mecânico**
+
+⚠️ **PROCURE IMEDIATAMENTE** — Ainda hoje, preferencialmente em oficina. Este não é um problema que pode esperar.
+
+Se o freio **afundar totalmente**, **luz vermelha acender no painel**, ou **vazar líquido visível**: **Parar imediatamente e chamar guincho.**
+
+---
+
+**Este diagnóstico é preliminar e não substitui avaliação profissional. Em dúvida, procure um mecânico.**",81dbed643f
+2349,C,canonica,1,1,1,0.9964746832847595,,10.512113571166992,0,0.0,"**Sistema:** Sistema de Freios
+**Urgência:** média
+** Este caso recomenda REBOQUE. Não dirija até a oficina.**
+
+Freio é o sistema mais crítico para sua segurança. Os sintomas descritos podem indicar desde pastilhas gastas (mais comum) até perda hidráulica. Se o pedal está afundando, duro demais ou a luz de freio acesa, não dirija. Chame guincho ou vá pelo caminho mais curto à oficina. Qualquer sintoma de freio merece inspeção imediata.",be21a8286a
+2349,D,rag_llm,1,1,1,0.9964746832847595,,5668.770790100098,1498,0.003582,"**Sistema:** Sistema de Freios
+**Urgência:** alta
+** Este caso recomenda REBOQUE. Não dirija até a oficina.**
+
+# 🚗 Diagnóstico Preliminar - Mão na Roda
+
+## 1. Provável Diagnóstico
+O relato sugere um **travamento do sistema de freios** (provavelmente uma pinça ou cilindro travado), em vez de falha total. O fato de você ter conseguido destravar puxando o freio de mão indica que o sistema ainda tem pressão, mas uma parte está presa.
+
+## 2. Urgência: **ALTA**
+Freio travando sozinho na estrada é situação perigosa porque:
+- Pode repetir a qualquer momento
+- Reduz sua capacidade de frear em emergência
+- Oferece risco a você e aos demais motoristas
+
+## 3. O que Fazer AGORA
+
+✅ **Dirija com cuidado até um mecânico de confiança** (não dirija longas distâncias):
+1. Reduza velocidade e aumente distância do carro à frente
+2. Evite frenagens abruptas — use frenagens suaves e progressivas
+3. Procure um mecânico **hoje** — não deixe para depois
+4. Verifique se há vazamento ou líquido estranho embaixo do carro
+5. Fique atento: se o problema piorar ou o freio afundar totalmente, **pare imediatamente** em local seguro e chame guincho
+
+## 4. O que NÃO Fazer
+
+❌ Não continue dirigindo normalmente como se nada tivesse acontecido  
+❌ Não ignore o problema esperando ""passar sozinho""  
+❌ Não faça viagens longas antes de levar ao mecânico  
+❌ Não tente ""corrigir"" bombeando o pedal repetidamente
+
+## 5. Quando Procurar Mecânico
+
+**HOJE.** Este é um problema de segurança ativa. Procure o mais breve possível.
+
+---
+
+**Este diagnóstico é preliminar e não substitui avaliação profissional. Em dúvida, procure um mecânico.**",fe1c48b5cc
+2940,A,canonica,2,2,1,0.9933153986930847,,10.430335998535156,0,0.0,"**Sistema:** Superaquecimento do Motor
+**Urgência:** média
+** Este caso recomenda REBOQUE. Não dirija até a oficina.**
+
+Superaquecimento é URGENTE. Pare o carro imediatamente, desligue o motor e aguarde pelo menos 30 minutos antes de qualquer coisa. Nunca abra a tampa do radiador quente — a água superaquecida pressurizada pode causar queimaduras graves. Continuar dirigindo pode fundir o motor (prejuízo entre R$5.000 e R$15.000). Chame guincho e leve à oficina.",5ac321b494
+2940,B,rag_llm,2,2,1,0.9933153986930847,,7077.731370925903,1768,0.004568,"**Sistema:** Superaquecimento do Motor
+**Urgência:** média
+** Este caso recomenda REBOQUE. Não dirija até a oficina.**
+
+# 🚗 DIAGNÓSTICO PRELIMINAR — MÃO NA RODA
+
+## 1. PROVÁVEL DIAGNÓSTICO
+Seu motor está **engasgando quando esquenta**, o que sugere **superaquecimento do motor**. Isso indica que o sistema de arrefecimento não está funcionando adequadamente quando a temperatura sobe, causando perda de desempenho.
+
+---
+
+## 2. URGÊNCIA: **MÉDIA → ALTA** ⚠️
+**Por quê?** Engasgamento com calor é sinal de que o motor está operando acima do normal. Se não for resolvido, pode evoluir para danos graves (como fundir o motor), gerando custos entre R$5.000 e R$15.000.
+
+---
+
+## 3. O QUE FAZER AGORA
+
+1. **Observe o ponteiro de temperatura** — está no vermelho ou acima do normal? Tem uma luz de termômetro acesa?
+2. **Se sim:** Pare em local seguro, desliga o ar-condicionado e deixe o motor em marcha lenta por 1-2 minutos antes de desligar.
+3. **Aguarde 30 minutos** com o capô fechado antes de fazer qualquer verificação.
+4. **Após esfriar totalmente,** abra o capô e verifique o nível de líquido de arrefecimento no reservatório (cilindro translúcido).
+5. **Se o nível está baixo,** complete com aditivo apropriado (nunca apenas água de torneira).
+
+---
+
+## 4. O QUE NÃO FAZER
+
+❌ **Não abra a tampa do radiador com motor quente** — risco de queimadura por vapor pressurizado  
+❌ **Não jogue água fria no motor quente** — pode trincar o bloco  
+❌ **Não continue dirigindo ""só até chegar em casa""** se o ponteiro estiver no vermelho  
+❌ **Não complete com água de torneira** a longo prazo — causa corrosão
+
+---
+
+## 5. QUANDO PROCURAR MECÂNICO
+
+**Procure um mecânico em até 24-48 horas se:**
+- O nível do líquido estiver baixo ou vazio
+- O engasgamento persistir após completar o líquido
+- Você notar vapor/fumaça saindo do capô
+- O ponteiro ficar constantemente na zona vermelha
+
+**Procure IMEDIATAMENTE (guincho) se:**
+- Há vapor saindo do capô AGORA
+- O ponteiro está na zona vermelha E há perda de potência súbita
+- Você notar óleo ""café com leite"" na vareta (sinal de junta de cabeçote queimada)
+
+---
+
+**Este",b36a5afb22
+2940,C,canonica,2,2,1,0.9933153986930847,,10.363101959228516,0,0.0,"**Sistema:** Superaquecimento do Motor
+**Urgência:** média
+** Este caso recomenda REBOQUE. Não dirija até a oficina.**
+
+Superaquecimento é URGENTE. Pare o carro imediatamente, desligue o motor e aguarde pelo menos 30 minutos antes de qualquer coisa. Nunca abra a tampa do radiador quente — a água superaquecida pressurizada pode causar queimaduras graves. Continuar dirigindo pode fundir o motor (prejuízo entre R$5.000 e R$15.000). Chame guincho e leve à oficina.",5ac321b494
+2940,D,rag_llm,2,2,1,0.9933153986930847,,6890.877246856689,1734,0.004398,"**Sistema:** Superaquecimento do Motor
+**Urgência:** alta
+** Este caso recomenda REBOQUE. Não dirija até a oficina.**
+
+# 🚗 Diagnóstico Preliminar – Mão na Roda
+
+## 1. **Provável Diagnóstico**
+Seu motor está provavelmente **superaquecendo**. O engasgamento quando a temperatura sobe indica que o motor está perdendo potência por estar muito quente — um sinal de que o sistema de arrefecimento não está conseguindo manter a temperatura adequada.
+
+---
+
+## 2. **Urgência: 🔴 ALTA**
+**Por quê?** Continuar dirigindo com o motor superaquecido pode danificar seriamente o motor (custos de R$5.000 a R$15.000). O risco aumenta a cada kilomentro rodado nessa condição.
+
+---
+
+## 3. **O que Fazer AGORA**
+
+1. ⛔ **DIRIJA-SE A UM LOCAL SEGURO E ESTACIONE** — não ignore o problema;
+2. 🌡️ **Desligue o ar-condicionado** (reduz pressão térmica no motor);
+3. 💨 **Deixe o motor em marcha lenta por 1-2 minutos** antes de desligar (se não estiver fervendo com vapor);
+4. ⏱️ **Aguarde 30 minutos** com o motor desligado para esfriar completamente;
+5. 🔍 **Após esfriar**, abra o capô e verifique o nível de líquido no **reservatório de arrefecimento** (nunca abra a tampa do radiador).
+
+---
+
+## 4. **O que NÃO Fazer**
+
+- ❌ Abrir a tampa do radiador com motor quente (risco de queimadura por vapor);
+- ❌ Jogar água fria no motor (pode trincar o bloco);
+- ❌ Continuar dirigindo ""só até chegar em casa"";
+- ❌ Completar com água de torneira comum (cause corrosão) — use aditivo próprio para radiador.
+
+---
+
+## 5. **Quando Procurar Mecânico**
+
+**Procure um mecânico HOJE ou chame guincho se:**
+- O ponteiro de temperatura estiver no vermelho;
+- Vir vapor/fumaça branca saindo do capô;
+- O óleo estiver ""café com leite"" (óleo + água misturados);
+- O nível de líquido estiver muito baixo ou não subir após completar.
+
+**Não dirija até resolver.**
+
+---
+
+**Este diagnóstico é preliminar e não substitui avaliação profissional. Em dúvida, procure um mecânico.**",e355ebf100
+1423,A,canonica,2,2,1,0.9953110814094543,,9.887218475341797,0,0.0,"**Sistema:** Superaquecimento do Motor
+**Urgência:** média
+** Este caso recomenda REBOQUE. Não dirija até a oficina.**
+
+Superaquecimento é URGENTE. Pare o carro imediatamente, desligue o motor e aguarde pelo menos 30 minutos antes de qualquer coisa. Nunca abra a tampa do radiador quente — a água superaquecida pressurizada pode causar queimaduras graves. Continuar dirigindo pode fundir o motor (prejuízo entre R$5.000 e R$15.000). Chame guincho e leve à oficina.",bb4931efc5
+1423,B,rag_llm,2,2,1,0.9953110814094543,,6519.118070602417,1746,0.004486,"**Sistema:** Superaquecimento do Motor
+**Urgência:** média
+** Este caso recomenda REBOQUE. Não dirija até a oficina.**
+
+# 🚗 Diagnóstico Preliminar — Mão na Roda
+
+## 1. Provável Diagnóstico
+Seu relato indica **superaquecimento do motor**. O ponteiro subindo rapidamente em trânsito parado sugere que o sistema de arrefecimento não está conseguindo dissipar o calor adequadamente quando o veículo está parado (sem circulação de ar natural).
+
+---
+
+## 2. Urgência: **MÉDIA A ALTA** ⚠️
+**Por quê?** Superaquecimento pode evoluir rapidamente. Embora você ainda tenha controle da situação, continuar dirigindo sem investigar a causa corre o risco de danificar o motor permanentemente (prejuízo de R$5.000 a R$15.000).
+
+---
+
+## 3. O Que Fazer AGORA
+
+1. **Procure um local seguro** e estacione assim que notar o ponteiro subindo muito
+2. **Desligue o ar-condicionado** (reduz a carga térmica do motor)
+3. **Deixe o motor em marcha lenta** por 1-2 minutos antes de desligar
+4. **Aguarde no mínimo 30 minutos** antes de abrir o capô
+5. **Depois de esfriar**, verifique o nível de líquido de arrefecimento no reservatório (nunca abra a tampa do radiador)
+
+---
+
+## 4. O Que NÃO Fazer
+
+- ❌ **Nunca abra a tampa do radiador com motor quente** (risco de queimadura por vapor pressurizado)
+- ❌ **Não jogue água fria no motor quente** (pode trincar o bloco)
+- ❌ **Não continue dirigindo** ""só até chegar em casa""
+- ❌ **Não complete com água de torneira** a longo prazo (use aditivo apropriado)
+
+---
+
+## 5. Quando Procurar Mecânico
+
+**Procure HOJE MESMO um mecânico de confiança** para verificar:
+- Nível e condição do líquido de arrefecimento
+- Funcionamento da ventoinha do radiador
+- Estado do radiador (entupimento ou vazamento)
+- Válvula termostática
+
+**Procure urgentemente (ou chame guincho) se notar:**
+- Vapor/fumaça saindo do capô
+- Ponteiro na zona vermelha
+- Perda de potência do motor
+- Óleo ""café com leite"" na vareta (sinal grave)
+
+---
+
+**Este diagnóstico é preliminar e não substitui avaliação profissional. Em dúvida, procure um mecânico.**",49e1bf25c4
+1423,C,canonica,2,2,1,0.9953110814094543,,10.558843612670898,0,0.0,"**Sistema:** Superaquecimento do Motor
+**Urgência:** média
+** Este caso recomenda REBOQUE. Não dirija até a oficina.**
+
+Superaquecimento é URGENTE. Pare o carro imediatamente, desligue o motor e aguarde pelo menos 30 minutos antes de qualquer coisa. Nunca abra a tampa do radiador quente — a água superaquecida pressurizada pode causar queimaduras graves. Continuar dirigindo pode fundir o motor (prejuízo entre R$5.000 e R$15.000). Chame guincho e leve à oficina.",bb4931efc5
+1423,D,rag_llm,2,2,1,0.9953110814094543,,7489.936113357544,1761,0.004561,"**Sistema:** Superaquecimento do Motor
+**Urgência:** média
+** Este caso recomenda REBOQUE. Não dirija até a oficina.**
+
+# 🚗 Diagnóstico Preliminar - Mão na Roda
+
+## 1. Provável Diagnóstico
+O seu veículo **provavelmente está superaquecendo**, especialmente em trânsito parado. Isso indica que o sistema de arrefecimento não está conseguindo dissipar o calor do motor adequadamente. As causas mais comuns são: falta de líquido de arrefecimento, ventoinha travada, radiador entupido ou válvula termostática com defeito.
+
+---
+
+## 2. Urgência: **MÉDIA**
+
+**Por quê?** O ponteiro subindo rápido em trânsito parado é um aviso importante, mas você ainda tem tempo para agir antes de danificar o motor. Porém, se o ponteiro atingir a zona vermelha ou sair vapor do capô, a urgência sobe para **CRÍTICA** — continuar dirigindo pode fundir o motor (prejuízo de R$ 5.000 a R$ 15.000).
+
+---
+
+## 3. O que Fazer AGORA
+
+1. **Monitore o ponteiro** nos próximos dias durante trânsito parado — confirme se sobe mesmo ou foi um episódio isolado.
+
+2. **Desligue o ar-condicionado** quando trancado no trânsito (reduz a carga térmica do motor).
+
+3. **Deixe o motor em marcha lenta** por 1-2 minutos antes de desligar.
+
+4. **Após o motor esfriar completamente** (30-40 minutos), abra o capô com cuidado e **verifique o nível de líquido de arrefecimento** no reservatório — deve estar entre as marcas MIN e MAX.
+
+5. **Procure um mecânico em até 7 dias** para diagnóstico completo, mesmo que o problema pareça ter parado.
+
+---
+
+## 4. O que NÃO Fazer
+
+❌ **Abrir a tampa do radiador com o motor quente** (risco de queimadura por vapor pressurizado)  
+❌ **Jogar água fria no motor quente** (pode trincar o bloco)  
+❌ **Continuar dirigindo ""só até chegar em casa""** se o ponteiro ficar no vermelho  
+❌ **Completar com água de torneira** (use aditivo de arrefecimento apropriado)
+
+---
+
+## 5. Quando Procurar Mecânico
+
+- **Hoje (crítico):** Se o ponteiro atingir a zona vermelha, vapor sair do capô, houver cheiro doce estranho ou perda de potência
+- **Esta semana (urgente):** Se o problema se repetir
+- **Assim que possível (preventivo):** Mesmo se ""normalizou"" —",93292a62bd
+495,A,canonica,2,6,0,0.9910542368888855,,10.207414627075195,0,0.0,"**Sistema:** Sistema de Arrefecimento
+**Urgência:** média
+
+Problemas de arrefecimento, se ignorados, viram superaquecimento — que pode fundir o motor. Verifique o nível no reservatório com motor frio e inspecione mangueiras visualmente. Se o nível baixa com frequência, há vazamento em algum ponto que precisa de diagnóstico. Nunca abra o radiador quente.",d7158cb563
+495,B,canonica,2,6,0,0.9910542368888855,,9.745359420776367,0,0.0,"**Sistema:** Sistema de Arrefecimento
+**Urgência:** média
+
+Problemas de arrefecimento, se ignorados, viram superaquecimento — que pode fundir o motor. Verifique o nível no reservatório com motor frio e inspecione mangueiras visualmente. Se o nível baixa com frequência, há vazamento em algum ponto que precisa de diagnóstico. Nunca abra o radiador quente.",d7158cb563
+495,C,canonica,2,6,0,0.9910542368888855,,10.03718376159668,0,0.0,"**Sistema:** Sistema de Arrefecimento
+**Urgência:** média
+
+Problemas de arrefecimento, se ignorados, viram superaquecimento — que pode fundir o motor. Verifique o nível no reservatório com motor frio e inspecione mangueiras visualmente. Se o nível baixa com frequência, há vazamento em algum ponto que precisa de diagnóstico. Nunca abra o radiador quente.",d7158cb563
+495,D,canonica,2,6,0,0.9910542368888855,,9.40847396850586,0,0.0,"**Sistema:** Sistema de Arrefecimento
+**Urgência:** média
+
+Problemas de arrefecimento, se ignorados, viram superaquecimento — que pode fundir o motor. Verifique o nível no reservatório com motor frio e inspecione mangueiras visualmente. Se o nível baixa com frequência, há vazamento em algum ponto que precisa de diagnóstico. Nunca abra o radiador quente.",d7158cb563
+1756,A,canonica,3,3,1,0.9959509372711182,,8.630990982055664,0,0.0,"**Sistema:** Suspensão e Amortecedores
+**Urgência:** média
+
+Problemas de suspensão geralmente não são emergência, mas comprometem segurança e conforto. Os sintomas descritos são típicos de amortecedores gastos ou buchas deterioradas. Evite velocidades altas e cargas pesadas até resolver. Amortecedores devem sempre ser trocados aos pares (os dois dianteiros ou os dois traseiros juntos).",4dec7c3b38
+1756,B,canonica,3,3,1,0.9959509372711182,,9.30023193359375,0,0.0,"**Sistema:** Suspensão e Amortecedores
+**Urgência:** média
+
+Problemas de suspensão geralmente não são emergência, mas comprometem segurança e conforto. Os sintomas descritos são típicos de amortecedores gastos ou buchas deterioradas. Evite velocidades altas e cargas pesadas até resolver. Amortecedores devem sempre ser trocados aos pares (os dois dianteiros ou os dois traseiros juntos).",4dec7c3b38
+1756,C,canonica,3,3,1,0.9959509372711182,,9.594440460205078,0,0.0,"**Sistema:** Suspensão e Amortecedores
+**Urgência:** média
+
+Problemas de suspensão geralmente não são emergência, mas comprometem segurança e conforto. Os sintomas descritos são típicos de amortecedores gastos ou buchas deterioradas. Evite velocidades altas e cargas pesadas até resolver. Amortecedores devem sempre ser trocados aos pares (os dois dianteiros ou os dois traseiros juntos).",4dec7c3b38
+1756,D,canonica,3,3,1,0.9959509372711182,,9.918689727783203,0,0.0,"**Sistema:** Suspensão e Amortecedores
+**Urgência:** média
+
+Problemas de suspensão geralmente não são emergência, mas comprometem segurança e conforto. Os sintomas descritos são típicos de amortecedores gastos ou buchas deterioradas. Evite velocidades altas e cargas pesadas até resolver. Amortecedores devem sempre ser trocados aos pares (os dois dianteiros ou os dois traseiros juntos).",4dec7c3b38
+227,A,canonica,3,3,1,0.9654940366744995,,8.86988639831543,0,0.0,"**Sistema:** Suspensão e Amortecedores
+**Urgência:** média
+
+Problemas de suspensão geralmente não são emergência, mas comprometem segurança e conforto. Os sintomas descritos são típicos de amortecedores gastos ou buchas deterioradas. Evite velocidades altas e cargas pesadas até resolver. Amortecedores devem sempre ser trocados aos pares (os dois dianteiros ou os dois traseiros juntos).",562168f28b
+227,B,rag_llm,3,3,1,0.9654940366744995,,6233.732461929321,1479,0.003815,"**Sistema:** Suspensão e Amortecedores
+**Urgência:** média
+
+# 🚗 DIAGNÓSTICO PRELIMINAR - MÃO NA RODA
+
+## 1. **Provável Diagnóstico**
+O desnivelamento do carro (lado do motorista mais baixo) indica **problema na suspensão/amortecedores**, provavelmente um amortecedor, mola ou coxins gastos do lado afetado. A altura desigual é sinal típico de desgaste neste sistema.
+
+---
+
+## 2. **Urgência: MÉDIA**
+**Por quê:** Embora não seja emergência imediata, suspensão comprometida prejudica a dirigibilidade, a segurança em curvas e aumenta o risco de perder controle em velocidade. Requer atenção em curto prazo.
+
+---
+
+## 3. **O que Fazer AGORA**
+
+✅ **Reduza a velocidade** nas vias, especialmente em curvas e desníveis  
+✅ **Evite carga excessiva** no carro até resolver o problema  
+✅ **Faça o teste prático:** com o carro parado, apoie-se nele e solte — se balançar **mais de 2 vezes**, confirma amortecedor gasto  
+✅ **Dirija com cuidado** até a oficina (não é seguro em velocidade alta)  
+✅ **Agende mecânico** para esta semana — não deixe para depois
+
+---
+
+## 4. **O que NÃO Fazer**
+
+❌ Não dirija em alta velocidade  
+❌ Não ignore o problema — tende a piorar  
+❌ Não troque apenas um amortecedor — sempre trocar **aos pares** (lado esquerdo e direito)  
+❌ Não carregue peso desnecessário no carro
+
+---
+
+## 5. **Quando Procurar Mecânico**
+
+🔧 **Esta semana** — é situação de segurança relevante  
+
+Se durante a direção notar **batida metálica forte, altura ainda mais desigual ou dificuldade de controlar o carro**, procure mecânico **imediatamente** (pode ser amortecedor quebrado).
+
+---
+
+**Este diagnóstico é preliminar e não substitui avaliação profissional. Em dúvida, procure um mecânico.**",52f65f87d1
+227,C,canonica,3,3,1,0.9654940366744995,,52.17337608337402,0,0.0,"**Sistema:** Suspensão e Amortecedores
+**Urgência:** média
+
+Problemas de suspensão geralmente não são emergência, mas comprometem segurança e conforto. Os sintomas descritos são típicos de amortecedores gastos ou buchas deterioradas. Evite velocidades altas e cargas pesadas até resolver. Amortecedores devem sempre ser trocados aos pares (os dois dianteiros ou os dois traseiros juntos).",562168f28b
+227,D,rag_llm,3,3,1,0.9654940366744995,,7291.029214859009,1580,0.00432,"**Sistema:** Suspensão e Amortecedores
+**Urgência:** média
+
+# 🚗 Diagnóstico Preliminar — Mão na Roda
+
+## 1. Provável Diagnóstico
+O carro estar desnivelado (lado do motorista mais baixo) **indica um problema na suspensão/amortecedores**, provavelmente no lado esquerdo. Isso sugere que um ou mais componentes perderam capacidade de suporte, como amortecedores gastos, molas cansadas ou buchas deterioradas.
+
+---
+
+## 2. Urgência: **MÉDIA**
+**Por quê:** Embora não seja crítico para parar imediatamente, a suspensão afetada compromete:
+- Estabilidade em curvas (maior risco de capotagem)
+- Capacidade de frenagem
+- Conforto e segurança dos passageiros
+
+Se o desnível for muito acentuado ou o carro ""bata"" metal ao passar em buracos, suba para **ALTA**.
+
+---
+
+## 3. O Que Fazer AGORA
+✅ **Reduzir velocidade**, especialmente em vias esburacadas ou com curvas  
+✅ **Evitar cargas pesadas** até a revisão (bagageiro, banco traseiro cheio, etc.)  
+✅ **Fazer teste prático:** Com o carro parado, apoie-se fortemente no lado do motorista e solte. Se balançar mais de 2 vezes, o amortecedor está gasto  
+✅ **Verificar pneus:** Observe se há desgaste irregular (mais gasto na borda ou no centro)  
+✅ **Agendar inspeção visual** de suspensão antes que piore
+
+---
+
+## 4. O Que NÃO fazer
+❌ Não dirigir em alta velocidade — risco de perder controle em curvas  
+❌ Não carregar peso excessivo no veículo  
+❌ Não ignorar se surgirem barulhos de metal batendo ou o desnível piorar  
+❌ Não trocar apenas um amortecedor — sempre devem ser substituídos aos pares (lado esquerdo e direito)
+
+---
+
+## 5. Quando Procurar Mecânico
+🔧 **Nos próximos 7-10 dias** para diagnóstico completo  
+🔴 **Imediatamente** se aparecerem:
+- Batida metálica forte ao passar em buracos
+- Altura do carro mudando rapidamente
+- Dificuldade em controlar o veículo em curvas
+- Pneus com desgaste muito irregular
+
+---
+
+**Este diagnóstico é preliminar e não substitui avaliação profissional. Em dúvida, procure um mecânico.**",68117fe7fa
+631,A,canonica,3,5,0,0.972183883190155,,9.341716766357422,0,0.0,"**Sistema:** Vazamento de Óleo
+**Urgência:** média
+
+Vazamentos pequenos de óleo geralmente não são urgência imediata, mas precisam ser investigados antes de piorar. Verifique o nível no vareta (motor frio, superfície plana). Se a luz de pressão de óleo acender, pare imediatamente — é o único aviso que você terá antes do motor fundir. Identifique a cor e o local da mancha para ajudar o mecânico.",54ee23da7f
+631,B,rag_llm,3,5,0,0.972183883190155,,8030.453205108643,1661,0.004461,"**Sistema:** Vazamento de Óleo
+**Urgência:** média
+
+# 🔧 Diagnóstico Preliminar — Mão na Roda
+
+## 1. **Provável Diagnóstico**
+O relato sugere um **vazamento no sistema de direção hidráulica**, não no motor. O fluido da direção está caindo de nível e vazando, causando o chiado nas manobras. Isso é diferente do cenário de ""Vazamento de Óleo"" sugerido pela classificação automática.
+
+⚠️ *Obs:* A classificação automática pode ter se equivocado — seus sintomas apontam mais para a **direção hidráulica** do que para óleo do motor.
+
+---
+
+## 2. **Urgência: MÉDIA**
+Não é crítico no curto prazo, mas **não pode ser ignorado**:
+- Direção hidráulica sem fluido suficiente perde pressão → direção fica pesada/difícil de girar
+- Vazamento contínuo pode deixá-lo sem fluido de repente → perda parcial ou total da assistência de direção
+- Risco de dano aos componentes internos da bomba
+
+---
+
+## 3. **O Que Fazer AGORA**
+
+1. **Localize o vazamento**: Estacione em local limpo, veja onde as gotas caem (sob a roda frontal? perto da bomba?). A cor ajuda: **fluido de direção é vermelho/rosado claro** (diferente do óleo marrom).
+
+2. **Verifique o nível do fluido de direção**: Procure o reservatório (geralmente cilindro translúcido próximo ao motor). Anote se está baixo.
+
+3. **Complete o nível** com fluido especificado no manual do seu veículo (tipo: ATF, Dexron, PSF — consulte o manual).
+
+4. **Monitore diariamente** se o nível cai rapidamente (indica vazamento ativo).
+
+5. **Dirija com cuidado** até ir ao mecânico — a direção pode ficar pesada.
+
+---
+
+## 4. **O Que NÃO Fazer**
+
+- ❌ Não misture tipos diferentes de fluido de direção
+- ❌ Não ignore o chiado — ele indica falta de pressão
+- ❌ Não dirija muito tempo com nível baixo (pode danificar a bomba)
+- ❌ Não use aditivos ""tapa-vazamento"" — são paliativo temporário
+
+---
+
+## 5. **Quando Procurar Mecânico**
+
+**Procure em até 1-2 semanas:**
+- Se o nível cai rapidamente (sinal de vazamento significativo)
+- Se a direção fica notavelmente pesada ou esquisita
+- Para identificar o local exato do vaz",7c3830a8c2
+631,C,canonica,3,5,0,0.972183883190155,,10.707616806030273,0,0.0,"**Sistema:** Vazamento de Óleo
+**Urgência:** média
+
+Vazamentos pequenos de óleo geralmente não são urgência imediata, mas precisam ser investigados antes de piorar. Verifique o nível no vareta (motor frio, superfície plana). Se a luz de pressão de óleo acender, pare imediatamente — é o único aviso que você terá antes do motor fundir. Identifique a cor e o local da mancha para ajudar o mecânico.",54ee23da7f
+631,D,rag_llm,3,5,0,0.972183883190155,,7725.099802017212,1661,0.004461,"**Sistema:** Vazamento de Óleo
+**Urgência:** média
+
+# 🚗 Diagnóstico Preliminar – Mão na Roda
+
+## 1. Provável diagnóstico
+Há **discrepância entre o relato e a classificação automática**. Você relata problema na **direção hidráulica** (chiado, queda de fluido), mas o sistema foi classificado como ""Vazamento de Óleo"" do motor. São sistemas **completamente diferentes**. 
+
+**Diagnóstico correto provavelmente:** Vazamento no **sistema de direção hidráulica** (não óleo do motor).
+
+---
+
+## 2. Urgência
+**🟡 MÉDIA a ALTA**
+
+**Por quê:** 
+- Direção hidráulica com vazamento pode perder eficácia progressivamente, dificultando manobras
+- Fluido baixo prejudica a bomba de direção e piora o chiado
+- Não é emergência imediata como vazamento de óleo do motor, mas requer atenção em dias
+
+---
+
+## 3. O que fazer AGORA
+
+1. **Localize o vazamento:**
+   - Procure por manchas avermelhadas ou transparentes **embaixo do carro** (direção fica dianteira/central)
+   - Nota: fluido de direção é avermelhado/rosado (diferente do óleo motor que é marrom/preto)
+
+2. **Verifique o nível** do fluido de direção conforme manual do seu veículo
+
+3. **Dirija com cuidado** até descobrir a causa — manobras podem ficar duras progressivamente
+
+4. **Monitore semanalmente** a queda do nível para entender a gravidade
+
+5. **Anote localização exata da mancha** — essencial para o mecânico diagnosticar
+
+---
+
+## 4. O que NÃO fazer
+
+- ❌ **Não confundir com óleo do motor** — são fluidos e sistemas distintos
+- ❌ Não rodar por longas distâncias com nível baixo de fluido de direção
+- ❌ Não usar aditivos ""tapa-vazamento"" — são paliativo temporário
+
+---
+
+## 5. Quando procurar mecânico
+
+**Procure o quanto antes** (esta semana):
+- Sistema de direção é crítico para segurança
+- Vazamento só piora com o tempo
+- Causa pode ser simples (mangueira solta, retentor) ou mais complexa
+
+---
+
+⚠️ **Limitação importante:** As informações canônicas disponíveis referem-se a **vazamento de óleo do motor**, não de **direção hidráulica**. Não tenho dados técnicos sobre direção hidráulica para análise mais profunda.
+
+**Este diagnóstico é preliminar e não substitui avaliação profissional. Em d",b3b62fc30b
+1084,A,canonica,4,4,1,0.9961460828781128,,10.133743286132812,0,0.0,"**Sistema:** Transmissão e Câmbio
+**Urgência:** média
+
+Os sintomas descritos sugerem problema na transmissão. Em câmbios manuais, o mais comum é embreagem gasta. Em automáticos, frequentemente é fluido vencido ou sujo — e, se ignorado, pode evoluir para troca completa do câmbio (muito cara). Marque diagnóstico o quanto antes e evite subidas íngremes até lá.",f1d0d55eab
+1084,B,rag_llm,4,4,1,0.9961460828781128,,6770.0254917144775,1602,0.004086,"**Sistema:** Transmissão e Câmbio
+**Urgência:** média
+
+# 🔧 DIAGNÓSTICO PRELIMINAR - MÃO NA RODA
+
+## 1. PROVÁVEL DIAGNÓSTICO
+O cheiro de queimado na embreagem subindo ladeira **indica desgaste ou superaquecimento do disco de embreagem**. Isso ocorre quando a embreagem não consegue transmitir toda a força do motor para as rodas, causando atrito excessivo e queimação do material.
+
+## 2. URGÊNCIA: **MÉDIA → ALTA**
+**Por quê:** 
+- Embreagem gasta em subidas é sintoma clássico de desgaste avançado
+- O cheiro de queimado indica que o sistema já está sobrecarregado
+- Continuar nesse padrão pode danificar permanentemente o disco e o platô
+- Risco de perder tração em momento crítico (ex: ladeira em trânsito intenso)
+
+## 3. O QUE FAZER AGORA
+
+✅ **Ações seguras imediatas:**
+1. **Evite subidas íngremes** nos próximos dias — use trajetos alternativos se possível
+2. **Evite arrancadas bruscas** ao sair do repouso
+3. **Não apoie o pé na embreagem** enquanto dirige (acelera desgaste)
+4. **Use o freio de mão** em subidas longas em vez de forçar a embreagem
+5. **Dirija com suavidade** — acelerações graduais e calmas
+
+## 4. O QUE NÃO FAZER
+
+❌ Subir ladeiras íngremes ou prolongadas  
+❌ Fazer arrancadas ou acelerações agressivas  
+❌ Manter o pé apoiado no pedal da embreagem enquanto dirige  
+❌ Ignorar o sintoma — o problema só piora com o tempo
+
+## 5. QUANDO PROCURAR MECÂNICO
+
+**PROCURE UM MECÂNICO NOS PRÓXIMOS 3-5 DIAS** para inspeção da embreagem. Este é um reparo que não deve ser adiado, pois:
+- O disco pode ficar irrecuperável se continuar desgastando
+- Risco de falha súbita durante a condução
+- Quanto mais desgastado, mais caro o reparo
+
+---
+
+**Este diagnóstico é preliminar e não substitui avaliação profissional. Em dúvida, procure um mecânico.**",565405e876
+1084,C,canonica,4,4,1,0.9961460828781128,,10.439634323120117,0,0.0,"**Sistema:** Transmissão e Câmbio
+**Urgência:** média
+
+Os sintomas descritos sugerem problema na transmissão. Em câmbios manuais, o mais comum é embreagem gasta. Em automáticos, frequentemente é fluido vencido ou sujo — e, se ignorado, pode evoluir para troca completa do câmbio (muito cara). Marque diagnóstico o quanto antes e evite subidas íngremes até lá.",f1d0d55eab
+1084,D,rag_llm,4,4,1,0.9961460828781128,,7446.991682052612,1681,0.004481,"**Sistema:** Transmissão e Câmbio
+**Urgência:** média
+
+# 🚗 DIAGNÓSTICO PRELIMINAR — Mão na Roda
+
+## 1. **Provável Diagnóstico**
+O cheiro de queimado na embreagem ao subir ladeira indica **desgaste da embreagem** (câmbio manual) ou **superaquecimento do sistema de transmissão** (automático). O padrão sugere que o disco de embreagem está patinando — girando sem transmitir potência totalmente para as rodas.
+
+---
+
+## 2. **Urgência: MÉDIA → ALTA**
+**Por quê:**
+- Cheiro de queimado é sintoma de atrito excessivo e superaquecimento
+- Patinagem em subidas piora rapidamente com o tempo
+- Risco de danificar permanentemente a embreagem ou câmbio (custo elevado)
+- Não representa perigo imediato de segurança, **mas pode piorar durante a condução**
+
+---
+
+## 3. **O que Fazer AGORA**
+
+✅ **1) Evite subidas íngremes** até resolver — use ruas planas para deslocamentos necessários  
+✅ **2) Ao subir ladeira, use o freio de mão** em vez de forçar a embreagem  
+✅ **3) Verifique o nível do fluido de transmissão** conforme manual do seu veículo (pode estar baixo)  
+✅ **4) Não force arrancadas bruscas** nem mantenha o pé apoiado no pedal da embreagem  
+✅ **5) Dirija com calma** — acelere suavemente e evite revoluções altas do motor
+
+---
+
+## 4. **O que NÃO Fazer**
+
+❌ Não insista em subidas ou acelerações bruscas — piora o desgaste  
+❌ Não use fluido de transmissão de marca/tipo diferente do recomendado  
+❌ Não mantenha o pé apoiado na embreagem (acelera o desgaste)  
+❌ Não ignore o cheiro — continuar assim danificará o câmbio
+
+---
+
+## 5. **Quando Procurar Mecânico**
+
+🔧 **PROCURE NOS PRÓXIMOS 2-3 DIAS** (não dirija longas distâncias antes)
+
+Se após essa procura ocorrer:
+- Cheiro mais intenso ou fumaça
+- Carro começar a patinar muito (não sobe ladeira nenhuma)
+- Fluido de transmissão **muito escuro ou preto**
+
+→ **PROCURE MECÂNICO COM URGÊNCIA** (ainda hoje)
+
+---
+
+**Este diagnóstico é preliminar e não substitui avaliação profissional. Em dúvida, procure um mecânico.**",9929536a03
+1764,A,canonica,4,4,1,0.996290922164917,,9.833335876464844,0,0.0,"**Sistema:** Transmissão e Câmbio
+**Urgência:** média
+
+Os sintomas descritos sugerem problema na transmissão. Em câmbios manuais, o mais comum é embreagem gasta. Em automáticos, frequentemente é fluido vencido ou sujo — e, se ignorado, pode evoluir para troca completa do câmbio (muito cara). Marque diagnóstico o quanto antes e evite subidas íngremes até lá.",72cb1f8a8d
+1764,B,rag_llm,4,4,1,0.996290922164917,,7664.644479751587,1684,0.004484,"**Sistema:** Transmissão e Câmbio
+**Urgência:** média
+
+# 🚗 Diagnóstico Preliminar — Mão na Roda
+
+## 1. **Provável Diagnóstico**
+Seu relato sugere problema na **embreagem ou na transmissão**. A demora em ""pegar embalo"" após trocar marcha, especialmente em subida, indica que a embreagem pode estar **gastando** (patinando) ou o fluido de transmissão pode estar em mau estado. O câmbio não consegue transferir potência eficientemente do motor às rodas.
+
+---
+
+## 2. **Urgência: MÉDIA**
+**Por quê:** Não é crítico no momento, mas pode piorar rapidamente. Continuar forçando subidas com essa condição acelera o desgaste. Se a embreagem estiver muito gasta, pode travar de repente ou o câmbio pode sofrer danos maiores (custo superior a R$ 8.000 em transmissões automáticas).
+
+---
+
+## 3. **O Que Fazer AGORA**
+
+✅ **1) Evite arrancadas bruscas e subidas íngremes** enquanto não resolver — dirija com suavidade  
+✅ **2) Verifique o nível e a cor do fluido de transmissão** (consulte seu manual do veículo para localização)  
+   - Fluido normal: translúcido, cor vermelha clara  
+   - ⚠️ Se estiver preto, avermelhado escuro ou com cheiro de queimado → **urgência aumenta**  
+✅ **3) Em subidas, use o freio de mão** para não sobrecarregar a embreagem  
+✅ **4) Anote frequência do problema** (toda subida? só em rampas muito íngremes? após longas viagens?)  
+
+---
+
+## 4. **O Que NÃO Fazer**
+
+❌ Não apoie o pé na embreagem enquanto dirige (isso a desgasta mais rápido)  
+❌ Não ""queime"" embreagem em rampas — sempre use freio de mão  
+❌ Não use fluido de transmissão de tipo incorreto ao repor (siga especificação do manual)  
+
+---
+
+## 5. **Quando Procurar Mecânico**
+
+🔧 **Procure em até 2-3 dias** se:
+- O problema persistir ou piorar
+- Notar fluido muito escuro ou com cheiro queimado
+- Aparecer trepidação ao arrancar
+- Ouvir ruídos estranhos da transmissão
+
+🚨 **Procure HOJE/URGENTE** se:
+- Sentir patinação severa (rotação alta, carro não sai do lugar)
+- Câmbio fizer bar",80a040b735
+1764,C,canonica,4,4,1,0.996290922164917,,10.264873504638672,0,0.0,"**Sistema:** Transmissão e Câmbio
+**Urgência:** média
+
+Os sintomas descritos sugerem problema na transmissão. Em câmbios manuais, o mais comum é embreagem gasta. Em automáticos, frequentemente é fluido vencido ou sujo — e, se ignorado, pode evoluir para troca completa do câmbio (muito cara). Marque diagnóstico o quanto antes e evite subidas íngremes até lá.",72cb1f8a8d
+1764,D,rag_llm,4,4,1,0.996290922164917,,7313.915967941284,1684,0.004484,"**Sistema:** Transmissão e Câmbio
+**Urgência:** média
+
+# 🚗 Diagnóstico Preliminar – Mão na Roda
+
+## 1. **Provável Diagnóstico**
+O relato sugere um problema na **transmissão/câmbio**, provavelmente relacionado à embreagem ou ao sistema de transmissão. A dificuldade em ""pegar embalo"" após troca de marcha, especialmente em subidas, indica que o motor e as rodas não estão se acoplando bem — pode ser **embreagem gasta** (se câmbio manual) ou **fluido de transmissão com problema** (se automático).
+
+---
+
+## 2. **Urgência: MÉDIA**
+**Por quê:** Embora não seja crítico no momento, o problema pode evoluir para danos severos. Se for embreagem ou conversor de torque, continuar forçando em subidas pode resultar em prejuízos superiores a R$8.000. Recomenda-se ação dentro de **alguns dias**.
+
+---
+
+## 3. **O que Fazer AGORA**
+
+1. **Verifique o fluido de transmissão** (conforme manual do veículo):
+   - Cor normal: vermelho claro ou amarelado
+   - ⚠️ Se estiver preto, marrom-escuro ou com cheiro de queimado → **urgência ALTA**
+
+2. **Evite situações de stress**:
+   - Não force subidas íngremes
+   - Evite arrancadas bruscas
+   - Em rampas, use o freio de mão em vez de ""queimar"" embreagem
+
+3. **Tome nota de outros sintomas**:
+   - Pedal da embreagem duro ou afundando?
+   - A marcha engata com estalo?
+   - Ouve barulhos estranhos?
+
+4. **Se o veículo for automático e começar a patinar**, reduza o uso imediatamente e procure mecânico com urgência.
+
+---
+
+## 4. **O que NÃO Fazer**
+- ❌ Não ""dê ré"" com o carro em movimento
+- ❌ Não mantenha o pé apoiado no pedal da embreagem (desgasta o disco)
+- ❌ Não continue dirigindo normalmente se o fluido estiver escuro/queimado
+- ❌ Não abastece com fluido de câmbio de tipo incorreto
+
+---
+
+## 5. **Quando Procurar Mecânico**
+- **HOJE/URGENTE:** Se fluido está escuro/queimado, há barulhos metálicos fortes ou patinagem severa
+- **PRÓXIMOS DIAS:** Para diagnóstico profissional completo (é o seu caso)
+- **MÁXIMO UMA SEMANA:** Se os sintomas piorarem
+
+---",5f7c01daad
+2570,A,canonica,4,4,1,0.9962433576583862,,11.469125747680664,0,0.0,"**Sistema:** Transmissão e Câmbio
+**Urgência:** média
+
+Os sintomas descritos sugerem problema na transmissão. Em câmbios manuais, o mais comum é embreagem gasta. Em automáticos, frequentemente é fluido vencido ou sujo — e, se ignorado, pode evoluir para troca completa do câmbio (muito cara). Marque diagnóstico o quanto antes e evite subidas íngremes até lá.",f1e539eb19
+2570,B,rag_llm,4,4,1,0.9962433576583862,,7180.23681640625,1703,0.004503,"**Sistema:** Transmissão e Câmbio
+**Urgência:** alta
+
+# 🔧 Diagnóstico Preliminar – Mão na Roda
+
+## 1. **Provável Diagnóstico**
+Você relata falha no **solenoide de pressão principal** do atuador eletro-hidráulico do câmbio automatizado. Isso indica que o sistema eletrônico/hidráulico que controla as trocas de marcha está com mau funcionamento, provavelmente afetando a capacidade do câmbio de engatar ou manter as marchas corretamente.
+
+---
+
+## 2. **Urgência: 🔴 ALTA**
+**Por quê:** Um solenoide defeituoso em câmbio automático compromete o funcionamento básico da transmissão. Dependendo de quão grave está a falha, o veículo pode perder a capacidade de trocar marchas ou começar a patinar (roda deslizando sem ganhar velocidade). Continuar dirigindo nessa condição pode danificar componentes internos do câmbio, resultado em custos acima de **R$ 8.000**.
+
+---
+
+## 3. **O que Fazer AGORA**
+
+1. **Verifique o nível e cor do fluido de transmissão** (conforme manual do seu veículo) — fluido muito escuro ou com cheiro queimado é sinal de alerta extra
+2. **Evite arrancadas bruscas e subidas íngremes** até resolver o problema
+3. **Se o câmbio começar a patinar** (rotação sobe mas carro não acelera), **reduza o uso imediatamente** e dirija com cuidado até a oficina
+4. **Não force o engate de marchas** — se o câmbio não engatar, desligue o motor e religue
+5. **Dirija com cuidado até um mecânico especializado em câmbios automáticos** — não adie
+
+---
+
+## 4. **O que NÃO Fazer**
+
+- ❌ Não dê ré com o carro em movimento
+- ❌ Não continue dirigindo normalmente se o câmbio começar a patinar (risco de destruição total)
+- ❌ Não use fluido de transmissão de tipo diferente do especificado no manual
+- ❌ Não ignore sinais de fluido muito escuro ou cheiro queimado
+
+---
+
+## 5. **Quando Procurar Mecânico**
+
+⏰ **IMEDIATAMENTE** — ainda hoje. Uma falha no solenoide é crítica e não deve ser adiada.
+
+Procure um **mecânico especializado em câmbios automáticos** ou a concessionária da marca do seu veículo, pois esse é um reparo que exige diagnóstico eletrônico específico.
+
+---
+
+**Este diagnóstico é preliminar e não substit",b9b327a289
+2570,C,canonica,4,4,1,0.9962433576583862,,10.737419128417969,0,0.0,"**Sistema:** Transmissão e Câmbio
+**Urgência:** média
+
+Os sintomas descritos sugerem problema na transmissão. Em câmbios manuais, o mais comum é embreagem gasta. Em automáticos, frequentemente é fluido vencido ou sujo — e, se ignorado, pode evoluir para troca completa do câmbio (muito cara). Marque diagnóstico o quanto antes e evite subidas íngremes até lá.",f1e539eb19
+2570,D,rag_llm,4,4,1,0.9962433576583862,,7502.724409103394,1693,0.004453,"**Sistema:** Transmissão e Câmbio
+**Urgência:** alta
+
+# 🚗 Diagnóstico Preliminar - Mão na Roda
+
+## 1. **Provável Diagnóstico**
+Você relata **falha no solenoide de pressão principal do câmbio automatizado**. Isso indica que a válvula eletromagnética responsável por controlar a pressão do fluido de transmissão está com mau funcionamento, afetando como o câmbio engata e mantém as marchas.
+
+---
+
+## 2. **Urgência: 🔴 ALTA**
+**Por quê:** Falhas no solenoide de câmbio automático podem evoluir rapidamente para patinação severa da transmissão, o que causaria danos muito graves (reparos acima de R$ 8.000). Quanto mais tempo dirigir com esse problema, maior o risco de danificar componentes internos irreversivelmente.
+
+---
+
+## 3. **O que Fazer AGORA**
+
+✅ **1. Verifique o fluido de transmissão:**
+   - Cor: deve ser avermelhado claro (nunca preto ou marrom escuro)
+   - Nível: confira com o motor desligado em piso plano (use a vareta/indicador do manual)
+
+✅ **2. Evite dirigir desnecessariamente** — limite a uso essencial até a avaliação profissional
+
+✅ **3. Observe os sintomas:**
+   - Marcha não engata?
+   - Câmbio ""pula"" de marcha sozinho?
+   - Motor sobe rotação mas carro não acelera (patina)?
+
+✅ **4. Não force arrancadas bruscas nem suba rampas íngremes** com o veículo nessas condições
+
+✅ **5. Anote tudo:** descrição dos sintomas, quando começou, se há sons estranhos — isso ajuda o mecânico
+
+---
+
+## 4. **O que NÃO Fazer**
+
+❌ Não use fluido de transmissão diferente do especificado pelo fabricante  
+❌ Não continue dirigindo se o câmbio começar a patinar severamente  
+❌ Não ignore sinais de fluido muito escuro ou cheiro de queimado  
+
+---
+
+## 5. **Quando Procurar Mecânico**
+
+⏰ **HOJE ou AMANHÃ, no máximo** — Isso é urgente. Procure um mecânico especializado em câmbios automáticos ou a concessionária da marca. Quanto mais rápido, menor o risco de dano secundário à transmissão.
+
+---
+
+**⚠️ Este diagnóstico é preliminar e não substitui avaliação profissional. Em dúvida, procure um mecânico.**",b8baea1217
+2795,A,canonica,5,5,1,0.995248019695282,,9.820938110351562,0,0.0,"**Sistema:** Vazamento de Óleo
+**Urgência:** média
+
+Vazamentos pequenos de óleo geralmente não são urgência imediata, mas precisam ser investigados antes de piorar. Verifique o nível no vareta (motor frio, superfície plana). Se a luz de pressão de óleo acender, pare imediatamente — é o único aviso que você terá antes do motor fundir. Identifique a cor e o local da mancha para ajudar o mecânico.",2ff4aaebdb
+2795,B,rag_llm,5,5,1,0.995248019695282,,7682.889938354492,1654,0.004454,"**Sistema:** Vazamento de Óleo
+**Urgência:** média
+
+# Diagnóstico Preliminar — Mão na Roda
+
+## 1. Provável Diagnóstico
+Seu veículo provavelmente apresenta um **vazamento de óleo** que piora com chuva. A água da chuva pode pressurizar a câmara do motor ou expor fissuras, intensificando o vazamento. O nível baixo associado à luz acesa confirma perda de óleo no sistema.
+
+## 2. Urgência: **MÉDIA A ALTA**
+- ⚠️ A luz de óleo acesa é um sinal importante — não deve ser ignorada.
+- Dirigir com nível baixo danifica o motor rapidamente (em minutos, em caso crítico).
+- Enquanto o nível estiver dentro do mínimo aceitável, você pode circular com cuidado, mas isso não é solução permanente.
+
+## 3. O Que Fazer Agora
+
+1. **Verifique o nível de óleo** com o motor frio, em superfície plana, usando a vareta.
+2. **Localize a mancha**: Estacione sobre papelão branco por algumas horas e procure vazamento. Óleo de motor é **marrom/preto escuro**.
+3. **Complete o óleo** com o tipo especificado no manual do seu veículo (geralmente SAE 5W30 ou similar). Confira a tampa do motor ou manual.
+4. **Monitore semanalmente**: Se o nível cair novamente em poucos dias, confirma vazamento ativo.
+5. **Dirija com cuidado**: Evite viagens longas até resolver.
+
+## 4. O Que NÃO Fazer
+- ❌ Não use produtos ""tapa-vazamento"" — são paliativo que piora o problema.
+- ❌ Não misture tipos diferentes de óleo (ex: SAE 5W30 com 10W40).
+- ❌ Não deixe o nível crítico e continue rodando normalmente.
+- ❌ Não ignore a luz vermelha de pressão: **se acender durante a condução, PARE IMEDIATAMENTE**.
+
+## 5. Quando Procurar Mecânico
+**Procure um mecânico em até 1-2 semanas** se:
+- O nível cair novamente após completar
+- A mancha aparecer embaixo do motor
+- A luz continuar acesa mesmo com óleo no nível correto
+
+**Procure URGENTEMENTE** (hoje ou amanhã) se:
+- A luz ficar vermelha durante a condução
+- Houver fumaça azulada no escapamento
+- Cheirar a óleo queimado constantemente
+
+---
+
+**Este diagnóstico é preliminar e não substitui avaliação profissional. Em dúvida, procure um mecânico",da76b1f125
+2795,C,canonica,5,5,1,0.995248019695282,,10.55145263671875,0,0.0,"**Sistema:** Vazamento de Óleo
+**Urgência:** média
+
+Vazamentos pequenos de óleo geralmente não são urgência imediata, mas precisam ser investigados antes de piorar. Verifique o nível no vareta (motor frio, superfície plana). Se a luz de pressão de óleo acender, pare imediatamente — é o único aviso que você terá antes do motor fundir. Identifique a cor e o local da mancha para ajudar o mecânico.",2ff4aaebdb
+2795,D,rag_llm,5,5,1,0.995248019695282,,7278.99169921875,1624,0.004304,"**Sistema:** Vazamento de Óleo
+**Urgência:** média
+
+# 🔧 Diagnóstico Preliminar - Mão na Roda
+
+## 1. Provável Diagnóstico
+O seu veículo **provavelmente tem vazamento de óleo**. A combinação de luz de óleo acesa + nível sempre baixo + problema que piora com chuva sugere que o óleo está saindo do motor, possivelmente por uma junta ou retentor danificado que se agrava com a umidade e pressão da chuva.
+
+---
+
+## 2. Urgência: **MÉDIA** ⚠️
+**Por quê:** Embora o vazamento pareça lento (já que você só roda com chuva), um motor sem óleo suficiente pode danificar-se rapidamente. Se a luz vermelha de pressão acender **durante a condução**, isso seria crítico e exigiria parar imediatamente.
+
+---
+
+## 3. O Que Fazer AGORA
+
+1. **Estacione em local plano** com motor frio e verifique o nível de óleo na vareta
+2. **Procure manchas** embaixo do carro após estacioná-lo por algumas horas — anote a cor (marrom/preta = óleo do motor) e localização
+3. **Complete o óleo** com o tipo exato indicado no manual do seu veículo (ex: SAE 5W30) — verifique a tampa do motor
+4. **Monitore o nível semanalmente** até conseguir levar ao mecânico
+5. **Evite dirigir longas distâncias** até resolver o problema
+
+---
+
+## 4. O Que NÃO Fazer
+
+- ❌ Não misture óleos de tipos diferentes (SAE diferente, mineral com sintético)
+- ❌ Não rode por muito tempo com nível baixo — risco de fundir o motor
+- ❌ Não use aditivos ""tapa-vazamento"" — são paliativos que podem piorar o problema
+- ❌ Não ignore a luz de óleo — continue monitorando
+
+---
+
+## 5. Quando Procurar Mecânico
+
+**Procure em até 1 semana** se:
+- O nível desce rapidamente (mais de 1 cm na vareta em poucos dias)
+- Você localizar uma mancha clara sob o carro
+- A luz de óleo piscar ou acender durante a condução
+
+**PROCURE IMEDIATAMENTE** se:
+- A luz vermelha de pressão acender enquanto dirige — **PARE o veículo**
+
+---
+
+**Este diagnóstico é preliminar e não substitui avaliação profissional. Em dúvida, procure um mecânico.**",af7edd6ef4
+531,A,canonica,5,5,1,0.9952813982963562,,9.831905364990234,0,0.0,"**Sistema:** Vazamento de Óleo
+**Urgência:** média
+
+Vazamentos pequenos de óleo geralmente não são urgência imediata, mas precisam ser investigados antes de piorar. Verifique o nível no vareta (motor frio, superfície plana). Se a luz de pressão de óleo acender, pare imediatamente — é o único aviso que você terá antes do motor fundir. Identifique a cor e o local da mancha para ajudar o mecânico.",702d22d720
+531,B,rag_llm,5,5,1,0.9952813982963562,,6701.637506484985,1598,0.004146,"**Sistema:** Vazamento de Óleo
+**Urgência:** média
+
+# 🔧 Diagnóstico Preliminar – Vazamento de Óleo
+
+## 1. **Provável Diagnóstico**
+Seu motor está vazando óleo pelo **retentor dianteiro da árvore de cames** (comando de válvulas). Este componente é uma vedação que ressecou ou danificou com o tempo, deixando o óleo vazar. O relato se encaixa perfeitamente neste cenário.
+
+---
+
+## 2. **Urgência: MÉDIA**
+**Por quê:** Embora seja um vazamento localizado e não represente risco imediato, a perda de óleo pode comprometer a pressão do sistema se não for acompanhada. Óleo é vital para o motor — sem ele, o motor funde rapidamente.
+
+---
+
+## 3. **O Que Fazer AGORA**
+
+1. **Verifique o nível de óleo** com o motor desligado, em superfície plana, usando a vareta. Faça isso semanalmente daqui em diante.
+
+2. **Complete o óleo** se estiver abaixo do mínimo. Use **apenas o tipo especificado no seu manual do veículo** (exemplo: SAE 5W30). Não misture marcas ou tipos diferentes.
+
+3. **Monitore a luz vermelha de pressão** — se acender durante a condução, **PARE IMEDIATAMENTE** e não dirija mais.
+
+4. **Estacione em local plano** e observe se há mancha escura embaixo do motor nos próximos dias. Isso confirma o vazamento.
+
+5. **Evite viagens longas** até resolver o problema.
+
+---
+
+## 4. **O Que NÃO Fazer**
+- ❌ Não misture óleos de tipos (SAE) ou marcas diferentes
+- ❌ Não dirija longamente com nível de óleo baixo
+- ❌ Não use produtos ""tapa-vazamento"" — são paliativos que podem piorar a situação
+- ❌ Não ignore se a luz vermelha de óleo acender
+
+---
+
+## 5. **Quando Procurar Mecânico**
+**Procure em até 1–2 semanas** um mecânico de confiança para trocar o retentor. Este é um serviço comum que não oferece risco imediato, mas precisa ser resolvido para evitar danos maiores.
+
+---
+
+**Este diagnóstico é preliminar e não substitui avaliação profissional. Em dúvida, procure um mecânico.**",9186eead4e
+531,C,canonica,5,5,1,0.9952813982963562,,10.286808013916016,0,0.0,"**Sistema:** Vazamento de Óleo
+**Urgência:** média
+
+Vazamentos pequenos de óleo geralmente não são urgência imediata, mas precisam ser investigados antes de piorar. Verifique o nível no vareta (motor frio, superfície plana). Se a luz de pressão de óleo acender, pare imediatamente — é o único aviso que você terá antes do motor fundir. Identifique a cor e o local da mancha para ajudar o mecânico.",702d22d720
+531,D,rag_llm,5,5,1,0.9952813982963562,,7580.581903457642,1650,0.004406,"**Sistema:** Vazamento de Óleo
+**Urgência:** média
+
+# 🔧 Diagnóstico Preliminar – Mão na Roda
+
+## 1. **Provável diagnóstico**
+Você provavelmente está com **retentor dianteiro da árvore de cames ressecado ou desgastado**. Este componente é responsável por evitar que o óleo vaze naquela região. O vazamento está causando o acúmulo de óleo visível no topo do motor.
+
+---
+
+## 2. **Urgência: MÉDIA a ALTA**
+**Por quê:** Vazamento nessa localização tende a ser progressivo. Se o nível de óleo descer muito, você corre risco de dano ao motor. Além disso, óleo no motor pode queimar e gerar fumaça, afetando a visibilidade e causando cheiro desagradável.
+
+---
+
+## 3. **O que fazer AGORA**
+
+1. **Estacione em local plano e seguro**, deixe o motor esfriar por 5-10 minutos
+2. **Verifique o nível de óleo com a vareta** — coloque-a totalmente, retire e leia o nível (deve estar entre as marcas mínima e máxima)
+3. **Se o nível está baixo**, complete com óleo do tipo correto (confira o manual do seu veículo; tipos comuns: SAE 5W30, 5W40)
+4. **Monitore o nível semanalmente** — se cair novamente rapidamente, confirma vazamento contínuo
+5. **Observe se há fumaça azulada no escapamento ou cheiro de óleo queimado** ao dirigir — isso indicaria óleo entrando na combustão
+
+---
+
+## 4. **O que NÃO fazer**
+
+- ❌ **Não use aditivos ""tapa-vazamento""** — são paliativos que podem piorar o problema
+- ❌ **Não misture óleos de tipos diferentes** (não misture SAE 5W30 com 5W40, ou mineral com sintético)
+- ❌ **Não rode com o motor visualmente banhado de óleo sem verificar o nível** — pode estar perigosamente baixo
+
+---
+
+## 5. **Quando procurar mecânico**
+
+- ✅ **Nos próximos 3-7 dias** (média urgência) — se o nível cai rapidamente ou você confirma vazamento contínuo
+- 🚨 **HOJE/IMEDIATAMENTE** — se a **luz vermelha de pressão de óleo** acender durante a condução (PARE o carro no ato)
+
+---
+
+**Este diagnóstico é preliminar e não substitui avaliação profissional. Em dúvida, procure um mecânico.**",1526439d0c
+2758,A,canonica,5,7,0,0.6558597683906555,,11.21973991394043,0,0.0,"**Sistema:** Pneu e Roda
+**Urgência:** média
+
+Problemas de pneu geralmente têm solução simples mas são importantes para segurança. Verifique pressão semanalmente. Se estiver furado, use o estepe (procedimento no manual). Vibrações no volante costumam ser balanceamento; puxar para o lado é alinhamento. Pneus devem ser trocados sempre aos pares no mesmo eixo.",b58feaa545
+2758,B,rag_llm,5,7,0,0.6558597683906555,,7872.082710266113,1661,0.004349,"**Sistema:** Pneu e Roda
+**Urgência:** média
+
+# Diagnóstico Preliminar — Mão na Roda
+
+## 1. Provável Diagnóstico
+
+O relato descreve um problema no **sistema de vedação do cárter (óleo do motor)**, não no sistema de pneus/rodas. A classificação automática apresenta baixa confiabilidade (65,6%) e **não corresponde ao seu problema**. 
+
+A deformação da tampa e perda de vedação indicam que o aperto excessivo durante a última revisão danificou a tampa ou a vedação, permitindo vazamento de óleo.
+
+---
+
+## 2. Urgência: **MÉDIA**
+
+**Por quê:** Vazamento de óleo compromete a lubrificação do motor. Se o nível de óleo cair muito, pode causar dano irreversível ao motor (travamento, desgaste acelerado). Não é uma emergência imediata, mas exige atenção rápida.
+
+---
+
+## 3. O que Fazer AGORA
+
+1. **Estacione em local seguro e plano** — inspecione visualmente sob o carro para confirmar vazamento (mancha/gotejamento de óleo).
+
+2. **Verifique o nível de óleo** usando a vareta (consulte o manual do seu veículo para localização exata) — deve estar entre MIN e MAX.
+
+3. **Se o nível estiver baixo**, complete com óleo do mesmo tipo/viscosidade recomendado no manual do seu veículo (não misture marcas diferentes).
+
+4. **Fotografe a deformação da tampa** para mostrar ao mecânico — isso documenta que o problema começou após a revisão.
+
+5. **Dirija com cuidado até um mecânico** — evite longas distâncias. Monitore o painel de instrumentos (não ignore luz de óleo acesa).
+
+---
+
+## 4. O que NÃO Fazer
+
+- Não ignore vazamento — óleo perdido não volta sozinho.
+- Não aguarde ""para ver se melhora"" — o dano ao motor avança rapidamente.
+- Não trafegue em rodovia se a luz de óleo acender.
+
+---
+
+## 5. Quando Procurar Mecânico
+
+**Procure HOJE ou AMANHÃ** — este é um problema da última revisão. 
+
+**Recomendação especial:** Contacte o local que fez a revisão e relate que o problema começou após o atendimento. Pode haver direito a reparo sob responsabilidade deles (a deformação por aperto excessivo é erro de procedimento).
+
+---
+
+**Este diagnóstico é preliminar e não substitui avaliação profissional. Em dúvida, procure um mecânico.**",f394dee221
+2758,C,canonica,5,7,0,0.6558597683906555,,12.114286422729492,0,0.0,"**Sistema:** Pneu e Roda
+**Urgência:** média
+
+Problemas de pneu geralmente têm solução simples mas são importantes para segurança. Verifique pressão semanalmente. Se estiver furado, use o estepe (procedimento no manual). Vibrações no volante costumam ser balanceamento; puxar para o lado é alinhamento. Pneus devem ser trocados sempre aos pares no mesmo eixo.",b58feaa545
+2758,D,rag_llm,5,7,0,0.6558597683906555,,8085.467100143433,1676,0.004424,"**Sistema:** Pneu e Roda
+**Urgência:** média
+
+# Diagnóstico Preliminar – Mão na Roda
+
+## ⚠️ AVISO IMPORTANTE
+Seu relato descreve um **problema no carter (óleo do motor)**, não no pneu/roda. A classificação automática está **incorreta**. Vou analisar o que você realmente reportou.
+
+---
+
+## 1. Provável Diagnóstico
+A tampa do carter foi apertada em excesso durante a última revisão, causando deformação. Isso comprometeu a vedação linear (junta) em aproximadamente 40% do perímetro. **Isso indica vazamento de óleo do motor**, não um problema de pneus.
+
+---
+
+## 2. Urgência: **MÉDIA-ALTA**
+**Por quê:** Vazamento de óleo do motor não é uma falha imediata crítica, mas o óleo é essencial para lubrificar o motor. Se o vazamento for progressivo, o nível de óleo pode cair perigosamente, causando dano grave ao motor (superaquecimento, travamento, trinca do bloco).
+
+---
+
+## 3. O Que Fazer AGORA
+
+1. **Verifique o nível de óleo** (com o motor frio, no dipstick ou indicador digital). Se estiver baixo ou mínimo, **não dirija longas distâncias**.
+2. **Observe se há manchas de óleo embaixo do carro** após estacionar por 1-2 horas — confirma vazamento ativo.
+3. **Procure o mecânico que fez a revisão** — o erro foi dele; ele deve corrigir sem custo adicional.
+4. **Enquanto isso, verifique o óleo semanalmente** para detectar queda rápida.
+5. **Evite dirigir em estradas longas** até resolver.
+
+---
+
+## 4. O Que NÃO Fazer
+- ❌ Não ignore o vazamento esperando ""passar sozinho""
+- ❌ Não continue dirigindo se o indicador de pressão de óleo acender (luz vermelha no painel)
+- ❌ Não aperte ainda mais a tampa tentando consertar sozinho (vai piorar a deformação)
+
+---
+
+## 5. Quando Procurar Mecânico
+**Procure imediatamente** (dentro de 1-2 dias). Esta é uma consequência direta da revisão anterior — o mecânico deve reparar gratuitamente.
+
+Se a luz de pressão de óleo acender durante a condução, **pare o veículo imediatamente** e não dirija mais até o conserto.
+
+---
+
+**Este diagnóstico é preliminar e não substitui avaliação profissional. Em dúvida, procure um mecânico.**",d72a10bc19
+2158,A,canonica,6,6,1,0.9949925541877747,,10.522127151489258,0,0.0,"**Sistema:** Sistema de Arrefecimento
+**Urgência:** média
+
+Problemas de arrefecimento, se ignorados, viram superaquecimento — que pode fundir o motor. Verifique o nível no reservatório com motor frio e inspecione mangueiras visualmente. Se o nível baixa com frequência, há vazamento em algum ponto que precisa de diagnóstico. Nunca abra o radiador quente.",716722c2ed
+2158,B,canonica,6,6,1,0.9949925541877747,,11.121749877929688,0,0.0,"**Sistema:** Sistema de Arrefecimento
+**Urgência:** média
+
+Problemas de arrefecimento, se ignorados, viram superaquecimento — que pode fundir o motor. Verifique o nível no reservatório com motor frio e inspecione mangueiras visualmente. Se o nível baixa com frequência, há vazamento em algum ponto que precisa de diagnóstico. Nunca abra o radiador quente.",716722c2ed
+2158,C,canonica,6,6,1,0.9949925541877747,,12.11404800415039,0,0.0,"**Sistema:** Sistema de Arrefecimento
+**Urgência:** média
+
+Problemas de arrefecimento, se ignorados, viram superaquecimento — que pode fundir o motor. Verifique o nível no reservatório com motor frio e inspecione mangueiras visualmente. Se o nível baixa com frequência, há vazamento em algum ponto que precisa de diagnóstico. Nunca abra o radiador quente.",716722c2ed
+2158,D,canonica,6,6,1,0.9949925541877747,,11.534929275512695,0,0.0,"**Sistema:** Sistema de Arrefecimento
+**Urgência:** média
+
+Problemas de arrefecimento, se ignorados, viram superaquecimento — que pode fundir o motor. Verifique o nível no reservatório com motor frio e inspecione mangueiras visualmente. Se o nível baixa com frequência, há vazamento em algum ponto que precisa de diagnóstico. Nunca abra o radiador quente.",716722c2ed
+1550,A,canonica,6,6,1,0.9949045181274414,,10.820388793945312,0,0.0,"**Sistema:** Sistema de Arrefecimento
+**Urgência:** média
+
+Problemas de arrefecimento, se ignorados, viram superaquecimento — que pode fundir o motor. Verifique o nível no reservatório com motor frio e inspecione mangueiras visualmente. Se o nível baixa com frequência, há vazamento em algum ponto que precisa de diagnóstico. Nunca abra o radiador quente.",b880bc1836
+1550,B,rag_llm,6,6,1,0.9949045181274414,,6043.723106384277,1498,0.003834,"**Sistema:** Sistema de Arrefecimento
+**Urgência:** média
+
+# 🚗 Diagnóstico Preliminar - Mão na Roda
+
+## 1. Provável diagnóstico
+Seu veículo provavelmente tem um **vazamento no sistema de arrefecimento**. O motor esquenta porque está perdendo líquido de arrefecimento, que é essencial para manter a temperatura controlada. As causas mais comuns são: mangueira rachada, reservatório trincado, radiador furado ou bomba d'água com vazamento.
+
+## 2. Urgência
+🟠 **MÉDIA a ALTA** — Embora não seja crítico no momento, existe risco de evoluir para **superaquecimento** (situação crítica) se o líquido acabar completamente. Isso pode danificar o motor permanentemente.
+
+## 3. O que fazer AGORA
+
+1. **Aguarde o motor esfriar completamente** (mínimo 30 minutos com o carro parado);
+2. **Verifique o nível** do reservatório de expansão (o recipiente plástico, não o radiador);
+3. **Complete com a mistura correta**: água potável + aditivo apropriado para seu veículo (proporção 35-50% de aditivo conforme recomendação do fabricante);
+4. **Inspecione visualmente**: procure por vazamentos embaixo do carro, mangueiras rachadas, ressecadas ou inchadas;
+5. **Dirija com cuidado** até um mecânico — fique atento ao ponteiro de temperatura no painel.
+
+## 4. O que NÃO fazer
+
+❌ Não abra a tampa do radiador ou do reservatório com motor quente — risco de queimadura grave  
+❌ Não complete só com água pura — causa corrosão interna  
+❌ Não misture aditivos de cores/marcas diferentes — podem danificar o sistema  
+
+## 5. Quando procurar mecânico
+
+🔧 **Nos próximos 2-3 dias**, antes que o problema piore. Se durante o trajeto o ponteiro de temperatura entrar na zona vermelha, **parar o motor imediatamente** em local seguro e procurar socorro.
+
+---
+
+**Este diagnóstico é preliminar e não substitui avaliação profissional. Em dúvida, procure um mecânico.**",48b98538c3
+1550,C,canonica,6,6,1,0.9949045181274414,,11.716127395629883,0,0.0,"**Sistema:** Sistema de Arrefecimento
+**Urgência:** média
+
+Problemas de arrefecimento, se ignorados, viram superaquecimento — que pode fundir o motor. Verifique o nível no reservatório com motor frio e inspecione mangueiras visualmente. Se o nível baixa com frequência, há vazamento em algum ponto que precisa de diagnóstico. Nunca abra o radiador quente.",b880bc1836
+1550,D,rag_llm,6,6,1,0.9949045181274414,,7630.206346511841,1614,0.004414,"**Sistema:** Sistema de Arrefecimento
+**Urgência:** alta
+
+# 🚗 DIAGNÓSTICO PRELIMINAR — Mão na Roda
+
+## 1. **Provável diagnóstico**
+O seu veículo provavelmente tem um **vazamento no sistema de arrefecimento**. O motor esquentando associado ao sumiço rápido do líquido de arrefecimento indica que a água está escapando — seja por uma mangueira rachada, radiador furado, reservatório trincado ou até uma bomba d'água com defeito.
+
+---
+
+## 2. **Urgência: ALTA**
+**Por quê:** Se o vazamento continuar, o sistema pode falhar completamente e levar o motor ao **superaquecimento crítico**, causando danos graves e caros. Isso é questão de dias, não semanas.
+
+---
+
+## 3. **O que fazer AGORA**
+
+1. ✅ **Com o motor FRIO**, abra o reservatório de expansão (não o radiador!) e verifique o nível do líquido de arrefecimento.
+
+2. ✅ **Complete se necessário** com a mistura correta: água potável + aditivo apropriado (proporção 35-50% de aditivo — consulte o manual do seu carro para a cor/marca correta).
+
+3. ✅ **Inspecione visualmente**: procure por mangueiras rachadas, ressecadas, inchadas ou com vazamentos visíveis no chão (manchas verde, laranja ou rosa).
+
+4. ✅ **Teste a ventoinha**: enquanto o motor aquece, observe se a ventoinha do radiador liga sozinha (deve fazer barulho quando o motor está quente).
+
+5. ✅ **Fique atento** ao ponteiro de temperatura — se oscilar ou subir demais, desligue o motor imediatamente.
+
+---
+
+## 4. **O que NÃO fazer**
+
+- ❌ Não abra a tampa do radiador ou reservatório com o motor quente (risco de queimadura).
+- ❌ Não complete com **apenas água pura** — causa corrosão e ferrugem interna.
+- ❌ Não misture aditivos de cores ou marcas diferentes (podem reagir quimicamente).
+- ❌ Não continue dirigindo se o ponteiro de temperatura subir muito.
+
+---
+
+## 5. **Quando procurar mecânico**
+
+🔴 **PROCURE IMEDIATAMENTE** (hoje ou amanhã):
+- Se encontrar vazamento visível ou mangueiras danificadas
+- Se a ventoinha não ligar quando o motor aquece
+- Se o nível cair novamente em poucas horas após completar
+
+⚠️ **Agenda para esta semana:**
+- Se o motor continua esquentando mesmo após completar o líquido
+
+---
+
+**Este diagnós",936ac66036
+1281,A,canonica,6,6,1,0.9929921627044678,,9.548425674438477,0,0.0,"**Sistema:** Sistema de Arrefecimento
+**Urgência:** média
+
+Problemas de arrefecimento, se ignorados, viram superaquecimento — que pode fundir o motor. Verifique o nível no reservatório com motor frio e inspecione mangueiras visualmente. Se o nível baixa com frequência, há vazamento em algum ponto que precisa de diagnóstico. Nunca abra o radiador quente.",4a01fcfce1
+1281,B,canonica,6,6,1,0.9929921627044678,,12.890338897705078,0,0.0,"**Sistema:** Sistema de Arrefecimento
+**Urgência:** média
+
+Problemas de arrefecimento, se ignorados, viram superaquecimento — que pode fundir o motor. Verifique o nível no reservatório com motor frio e inspecione mangueiras visualmente. Se o nível baixa com frequência, há vazamento em algum ponto que precisa de diagnóstico. Nunca abra o radiador quente.",4a01fcfce1
+1281,C,canonica,6,6,1,0.9929921627044678,,18.02682876586914,0,0.0,"**Sistema:** Sistema de Arrefecimento
+**Urgência:** média
+
+Problemas de arrefecimento, se ignorados, viram superaquecimento — que pode fundir o motor. Verifique o nível no reservatório com motor frio e inspecione mangueiras visualmente. Se o nível baixa com frequência, há vazamento em algum ponto que precisa de diagnóstico. Nunca abra o radiador quente.",4a01fcfce1
+1281,D,canonica,6,6,1,0.9929921627044678,,17.092466354370117,0,0.0,"**Sistema:** Sistema de Arrefecimento
+**Urgência:** média
+
+Problemas de arrefecimento, se ignorados, viram superaquecimento — que pode fundir o motor. Verifique o nível no reservatório com motor frio e inspecione mangueiras visualmente. Se o nível baixa com frequência, há vazamento em algum ponto que precisa de diagnóstico. Nunca abra o radiador quente.",4a01fcfce1
+2069,A,canonica,7,7,1,0.9944012761116028,,15.611886978149414,0,0.0,"**Sistema:** Pneu e Roda
+**Urgência:** média
+
+Problemas de pneu geralmente têm solução simples mas são importantes para segurança. Verifique pressão semanalmente. Se estiver furado, use o estepe (procedimento no manual). Vibrações no volante costumam ser balanceamento; puxar para o lado é alinhamento. Pneus devem ser trocados sempre aos pares no mesmo eixo.",8a267358aa
+2069,B,rag_llm,7,7,1,0.9944012761116028,,7716.587543487549,1679,0.004479,"**Sistema:** Pneu e Roda
+**Urgência:** média
+
+# 🔧 DIAGNÓSTICO PRELIMINAR — Mão na Roda
+
+## 1. Provável Diagnóstico
+O veículo **provavelmente tem um problema nos pneus ou rodas**. O sintoma de ""puxar para a direita em linha reta"" indica mais frequentemente **pressão incorreta em um dos pneus dianteiros** ou **alinhamento desregulado**. Também é possível (menos comum) **balanceamento ou roda empenada**.
+
+---
+
+## 2. Urgência: **MÉDIA**
+Não é crítico no momento, mas **deve ser resolvido em breve**. Um veículo que puxa para o lado compromete a segurança e o consumo de combustível. Se o pneu estiver murcho ou furado, a situação piora e o risco aumenta — por isso não deve esperar muito.
+
+---
+
+## 3. O que Fazer AGORA (em ordem)
+
+1. **Estacione em local seguro** (não na beira da estrada) e faça uma inspeção visual:
+   - Os 4 pneus parecem cheios e com o mesmo aspecto?
+   - Há algum pneu visivelmente murcho, furado, ou com bolha lateral?
+
+2. **Verifique a pressão dos pneus** com um medidor (disponível em postos):
+   - O valor correto está **na etiqueta colada na coluna da porta do motorista**
+   - Se algum está baixo, calibre imediatamente num posto de combustível
+
+3. **Se encontrou pneu furado ou muito murcho:**
+   - Não dirija longas distâncias — pode danificar a estrutura interna
+   - Troque pelo estepe seguindo o manual do veículo
+   - Dirija com cuidado até um mecânico
+
+4. **Se os pneus parecem ok:**
+   - Mesmo assim, agende uma **verificação de alinhamento** nos próximos dias
+   - Um alinhamento desregulado causa exatamente esse ""puxar para o lado""
+
+5. **Fique atento** a outros sintomas enquanto dirige:
+   - Vibração no volante em velocidades específicas (60–100 km/h)?
+   - Ruído estranho do pneu?
+   - Luz de pressão de pneu acesa no painel (TPMS)?
+
+---
+
+## 4. O que NÃO Fazer
+
+- ❌ Não dirija longas distâncias com um pneu murcho ou furado
+- ❌ Não ignore o problema esperando ""passar""
+- ❌ Não use o esteipe temporário acima de 80 km/h ou por mais de 100 km
+- ❌ Não calibre apenas um pneu — sempre verif",9ddf5899f4
+2069,C,canonica,7,7,1,0.9944012761116028,,11.40141487121582,0,0.0,"**Sistema:** Pneu e Roda
+**Urgência:** média
+
+Problemas de pneu geralmente têm solução simples mas são importantes para segurança. Verifique pressão semanalmente. Se estiver furado, use o estepe (procedimento no manual). Vibrações no volante costumam ser balanceamento; puxar para o lado é alinhamento. Pneus devem ser trocados sempre aos pares no mesmo eixo.",8a267358aa
+2069,D,rag_llm,7,7,1,0.9944012761116028,,7354.450702667236,1679,0.004479,"**Sistema:** Pneu e Roda
+**Urgência:** média
+
+# 🚗 Diagnóstico Preliminar — Mão na Roda
+
+## 1. **Provável Diagnóstico**
+O veículo está **puxando para a direita**, o que provavelmente indica um problema nos pneus/rodas. As causas mais comuns são: **pressão desigual entre os pneus**, **alinhamento desregulado** ou **desgaste irregular dos pneus**.
+
+---
+
+## 2. **Urgência**
+🟡 **MÉDIA** — O problema afeta a segurança e o controle do veículo, mas não é crítico neste momento. Se o pneu estiver furado ou muito murcho, a urgência sobe para **ALTA**.
+
+---
+
+## 3. **O que Fazer AGORA**
+
+1. **Estacione em local seguro** e inspecione visualmente os 4 pneus:
+   - Procure por furos, objetos cravados (prego, parafuso) ou murcho visível
+   - Compare a altura dos pneus entre si
+
+2. **Verifique a pressão** de todos os pneus com um manômetro (valor correto está na etiqueta colada na coluna da porta do condutor)
+   - Se algum estiver baixo, calibre imediatamente em um posto
+
+3. **Se encontrar um pneu furado ou muito murcho**, troque pelo estepe (veja o procedimento no manual do seu veículo)
+
+4. **Teste o veículo** em linha reta após os ajustes — o puxar deve diminuir ou desaparecer
+
+5. **Monitore** o comportamento nos próximos dias
+
+---
+
+## 4. **O que NÃO fazer**
+- ❌ Não dirija em autoestrada com um pneu muito murcho
+- ❌ Não continue rodando com pneu furado, mesmo que ""pouco"" — isso destrói a estrutura interna
+- ❌ Não use estepe temporário acima de 80 km/h ou por mais de 100 km
+- ❌ Não troque apenas um pneu (em tração dianteira, sempre aos pares por eixo)
+
+---
+
+## 5. **Quando Procurar Mecânico**
+- Se o puxar **persistir após calibrar** os pneus → suspeita de **alinhamento desregulado**
+- Se encontrar **desgaste irregular** (mais gasto de um lado que do outro)
+- Se os pneus estiverem perto do fim da vida útil (procure o indicador TWI)
+- Se suspeitar de **roda empenada** (após bater em buraco forte)
+
+---
+
+**Este diagnóstico é preliminar e não substitui avaliação profissional. Em dúvida, proc",cd07c830ea
+1148,A,canonica,7,7,1,0.9916336536407471,,11.245250701904297,0,0.0,"**Sistema:** Pneu e Roda
+**Urgência:** média
+
+Problemas de pneu geralmente têm solução simples mas são importantes para segurança. Verifique pressão semanalmente. Se estiver furado, use o estepe (procedimento no manual). Vibrações no volante costumam ser balanceamento; puxar para o lado é alinhamento. Pneus devem ser trocados sempre aos pares no mesmo eixo.",da1a84eeb8
+1148,B,rag_llm,7,7,1,0.9916336536407471,,7548.187971115112,1668,0.004468,"**Sistema:** Pneu e Roda
+**Urgência:** média
+
+# Diagnóstico Preliminar — Mão na Roda
+
+## 1. Provável diagnóstico
+O som de atrito ao girar o volante parado **indica problema na roda ou pneu**, provavelmente relacionado a **pressão incorreta**, **desgaste irregular** ou **alinhamento desregulado**. Como não há movimento do carro, a vibração típica de balanceamento é menos provável neste cenário.
+
+## 2. Urgência
+**Média** — O problema não oferece risco imediato parado, mas pode indicar desgaste acelerado ou perda de segurança em movimento. Merece atenção dentro de poucos dias.
+
+## 3. O que fazer AGORA
+
+1. **Estacione em local seguro** e inspecione visualmente os 4 pneus:
+   - Procure por deformações, bolhas laterais, afiação irregular ou objetos espetados
+   - Verifique se algum pneu está visivelmente mais murcho que os outros
+
+2. **Verifique a pressão** de todos os pneus:
+   - Consulte a etiqueta na coluna da porta do seu carro para o valor correto
+   - Use calibrador em posto de gasolina se tiver pressão baixa
+
+3. **Gire o volante lentamente** (parado) enquanto ouve atentamente:
+   - Identifique em qual roda o som é mais forte
+   - Note se é um atrito contínuo ou espaçado
+
+4. **Dirija alguns quilômetros** em velocidade baixa e segura:
+   - Observe se o carro puxa para um lado (sinal de alinhamento)
+   - Fique atento a vibrações adicionais
+
+5. **Não dirija em rodovia** até esclarecer a causa
+
+## 4. O que NÃO fazer
+- ❌ Ignorar o sintoma e seguir normalmente — pode haver desgaste acelerado
+- ❌ Rodar em alta velocidade até resolver
+- ❌ Andar com pneu furado, mesmo que aparentemente pequeno — danifica a estrutura interna
+- ❌ Trocar apenas um pneu se for dianteiro — sempre aos pares por eixo
+
+## 5. Quando procurar mecânico
+**Procure com urgência se:**
+- Encontrar bolha lateral (estufamento) no pneu
+- Identificar um pneu muito mais murcho que os outros
+- Ver um prego ou parafuso espetado no pneu
+- A pressão cair novamente dias depois de calibrar
+- O som de atrito persistir mesmo com pressão corrigida
+
+**Procure em até 1 semana se:**
+- A pressão estava baixa mas agora está corrigida e o som",fe1fafc7db
+1148,C,canonica,7,7,1,0.9916336536407471,,10.739326477050781,0,0.0,"**Sistema:** Pneu e Roda
+**Urgência:** média
+
+Problemas de pneu geralmente têm solução simples mas são importantes para segurança. Verifique pressão semanalmente. Se estiver furado, use o estepe (procedimento no manual). Vibrações no volante costumam ser balanceamento; puxar para o lado é alinhamento. Pneus devem ser trocados sempre aos pares no mesmo eixo.",da1a84eeb8
+1148,D,rag_llm,7,7,1,0.9916336536407471,,7037.394762039185,1605,0.004153,"**Sistema:** Pneu e Roda
+**Urgência:** média
+
+# Diagnóstico Preliminar — Som de Atrito ao Girar o Volante Parado
+
+## 1. Provável Diagnóstico
+O som de atrito ao girar o volante parado **provavelmente está relacionado aos pneus ou rodas**, mas não se encaixa nos sintomas típicos mais comuns (murcho, furado, chiado em curva). Isso sugere possível **pneu com desgaste muito irregular, roda empenada, ou até sistema de suspensão/direção**, que está além da base de informações disponível aqui.
+
+## 2. Urgência
+**Média** — O som não indica perigo imediato (como estouro iminente), mas requer investigação rápida para descartar problemas de segurança estrutural na roda ou pneu.
+
+## 3. O Que Fazer AGORA
+1. ✅ Estacione em local seguro e **inspecione visualmente os 4 pneus** — procure desgaste irregular, bolhas, rasgos ou objetos cravados
+2. ✅ **Verifique a pressão** de todos os pneus (valor correto está na etiqueta da coluna da porta) e calibre se necessário
+3. ✅ Com o carro parado, gire o volante de um lado para o outro e observe qual roda emite o som — anote
+4. ✅ Procure **rachaduras, empenamentos ou deformações na roda** (jante)
+5. ✅ Se tudo parecer visualmente OK, faça um teste em baixa velocidade para confirmar o som
+
+## 4. O Que NÃO Fazer
+- ❌ Não ignore o som — pode indicar desgaste grave ou problema estrutural
+- ❌ Não dirija em autoestrada até esclarecer a origem
+- ❌ Não andar com pneu furado, mesmo que ""pouco""
+
+## 5. Quando Procurar Mecânico
+**Procure em até 2-3 dias** se:
+- O som persistir após calibragem dos pneus
+- Encontrar desgaste irregular, bolhas ou rasgos
+- A roda estiver empenada ou trincada
+- Não conseguir identificar a origem do som
+
+**Procure no mesmo dia** se encontrar pneu com bolha lateral (risco de estouro).
+
+---
+
+**Este diagnóstico é preliminar e não substitui avaliação profissional. Em dúvida, procure um mecânico.**",07e193cb86
+107,A,canonica,7,7,1,0.9951180219650269,,10.368585586547852,0,0.0,"**Sistema:** Pneu e Roda
+**Urgência:** média
+
+Problemas de pneu geralmente têm solução simples mas são importantes para segurança. Verifique pressão semanalmente. Se estiver furado, use o estepe (procedimento no manual). Vibrações no volante costumam ser balanceamento; puxar para o lado é alinhamento. Pneus devem ser trocados sempre aos pares no mesmo eixo.",ac9d03306a
+107,B,canonica,7,7,1,0.9951180219650269,,9.9945068359375,0,0.0,"**Sistema:** Pneu e Roda
+**Urgência:** média
+
+Problemas de pneu geralmente têm solução simples mas são importantes para segurança. Verifique pressão semanalmente. Se estiver furado, use o estepe (procedimento no manual). Vibrações no volante costumam ser balanceamento; puxar para o lado é alinhamento. Pneus devem ser trocados sempre aos pares no mesmo eixo.",ac9d03306a
+107,C,canonica,7,7,1,0.9951180219650269,,10.489225387573242,0,0.0,"**Sistema:** Pneu e Roda
+**Urgência:** média
+
+Problemas de pneu geralmente têm solução simples mas são importantes para segurança. Verifique pressão semanalmente. Se estiver furado, use o estepe (procedimento no manual). Vibrações no volante costumam ser balanceamento; puxar para o lado é alinhamento. Pneus devem ser trocados sempre aos pares no mesmo eixo.",ac9d03306a
+107,D,canonica,7,7,1,0.9951180219650269,,10.319709777832031,0,0.0,"**Sistema:** Pneu e Roda
+**Urgência:** média
+
+Problemas de pneu geralmente têm solução simples mas são importantes para segurança. Verifique pressão semanalmente. Se estiver furado, use o estepe (procedimento no manual). Vibrações no volante costumam ser balanceamento; puxar para o lado é alinhamento. Pneus devem ser trocados sempre aos pares no mesmo eixo.",ac9d03306a
+291,A,canonica,8,8,1,0.8957996964454651,,9.130716323852539,0,0.0,"**Sistema:** Injeção e Combustível
+**Urgência:** média
+
+O sistema de injeção eletrônica detectou uma anomalia. Os sintomas variam de vela de ignição gasta (mais comum e barato) até sensores mais caros. Faça a leitura do código de falha em uma oficina com scanner (é rápido e barato). Se a luz de injeção estiver PISCANDO, reduza velocidade — pode danificar o catalisador.",440b04a7d7
+291,B,canonica,8,8,1,0.8957996964454651,,9.049415588378906,0,0.0,"**Sistema:** Injeção e Combustível
+**Urgência:** média
+
+O sistema de injeção eletrônica detectou uma anomalia. Os sintomas variam de vela de ignição gasta (mais comum e barato) até sensores mais caros. Faça a leitura do código de falha em uma oficina com scanner (é rápido e barato). Se a luz de injeção estiver PISCANDO, reduza velocidade — pode danificar o catalisador.",440b04a7d7
+291,C,redirect,8,5,0,,PRESSAO_OLEO_01,0.4220008850097656,0,0.0,"**Sistema:** Vazamento de Óleo
+**Urgência:** crítica
+** Este caso recomenda REBOQUE. Não dirija até a oficina.**
+
+PARE IMEDIATAMENTE e desligue o motor. Luz de pressão de óleo acesa com motor ligado significa que o sistema de lubrificação parou ou falhou. Continuar dirigindo FUNDE O MOTOR em poucos minutos (prejuízo R$ 8.000-15.000). Verifique o nível do óleo na vareta. Se o nível estiver OK e a luz continuar acesa, não ligue o motor — chame guincho.",ed3eb931e3
+291,D,redirect,8,5,0,,PRESSAO_OLEO_01,0.3829002380371094,0,0.0,"**Sistema:** Vazamento de Óleo
+**Urgência:** crítica
+** Este caso recomenda REBOQUE. Não dirija até a oficina.**
+
+PARE IMEDIATAMENTE e desligue o motor. Luz de pressão de óleo acesa com motor ligado significa que o sistema de lubrificação parou ou falhou. Continuar dirigindo FUNDE O MOTOR em poucos minutos (prejuízo R$ 8.000-15.000). Verifique o nível do óleo na vareta. Se o nível estiver OK e a luz continuar acesa, não ligue o motor — chame guincho.",ed3eb931e3
+2459,A,canonica,8,8,1,0.9964242577552795,,9.302139282226562,0,0.0,"**Sistema:** Injeção e Combustível
+**Urgência:** média
+
+O sistema de injeção eletrônica detectou uma anomalia. Os sintomas variam de vela de ignição gasta (mais comum e barato) até sensores mais caros. Faça a leitura do código de falha em uma oficina com scanner (é rápido e barato). Se a luz de injeção estiver PISCANDO, reduza velocidade — pode danificar o catalisador.",546bcffebd
+2459,B,canonica,8,8,1,0.9964242577552795,,9.840965270996094,0,0.0,"**Sistema:** Injeção e Combustível
+**Urgência:** média
+
+O sistema de injeção eletrônica detectou uma anomalia. Os sintomas variam de vela de ignição gasta (mais comum e barato) até sensores mais caros. Faça a leitura do código de falha em uma oficina com scanner (é rápido e barato). Se a luz de injeção estiver PISCANDO, reduza velocidade — pode danificar o catalisador.",546bcffebd
+2459,C,canonica,8,8,1,0.9964242577552795,,9.819507598876953,0,0.0,"**Sistema:** Injeção e Combustível
+**Urgência:** média
+
+O sistema de injeção eletrônica detectou uma anomalia. Os sintomas variam de vela de ignição gasta (mais comum e barato) até sensores mais caros. Faça a leitura do código de falha em uma oficina com scanner (é rápido e barato). Se a luz de injeção estiver PISCANDO, reduza velocidade — pode danificar o catalisador.",546bcffebd
+2459,D,canonica,8,8,1,0.9964242577552795,,9.760379791259766,0,0.0,"**Sistema:** Injeção e Combustível
+**Urgência:** média
+
+O sistema de injeção eletrônica detectou uma anomalia. Os sintomas variam de vela de ignição gasta (mais comum e barato) até sensores mais caros. Faça a leitura do código de falha em uma oficina com scanner (é rápido e barato). Se a luz de injeção estiver PISCANDO, reduza velocidade — pode danificar o catalisador.",546bcffebd
+2496,A,canonica,8,8,1,0.9947649240493774,,9.111404418945312,0,0.0,"**Sistema:** Injeção e Combustível
+**Urgência:** média
+
+O sistema de injeção eletrônica detectou uma anomalia. Os sintomas variam de vela de ignição gasta (mais comum e barato) até sensores mais caros. Faça a leitura do código de falha em uma oficina com scanner (é rápido e barato). Se a luz de injeção estiver PISCANDO, reduza velocidade — pode danificar o catalisador.",1655b03cfc
+2496,B,rag_llm,8,8,1,0.9947649240493774,,6687.0081424713135,1565,0.003901,"**Sistema:** Injeção e Combustível
+**Urgência:** média
+
+# 🚗 DIAGNÓSTICO PRELIMINAR — Mão na Roda
+
+## 1. Provável Diagnóstico
+Seu motor provavelmente tem problema no **sistema de injeção/combustível**. O engasgo em dias frios, que passa após alguns segundos, sugere dificuldade na partida a frio — típico de velas gastas, sensor sujo ou combustível de baixa qualidade.
+
+---
+
+## 2. Urgência
+**MÉDIA** — O carro está funcionando, mas o sintoma indica desgaste. Não é emergência, mas merece atenção em até 1-2 semanas para evitar que piore.
+
+---
+
+## 3. O Que Fazer AGORA
+
+✅ **Verifique a luz de injeção (check engine):**
+- Está acesa constantemente? → Agende diagnóstico em até 1 semana
+- Está piscando? → Reduzir velocidade imediatamente e procurar mecânico em 24-48h
+
+✅ **Revise o combustível:** Abasteceu em um posto novo ou desconhecido recentemente?
+
+✅ **Observe o padrão:** O engasgo acontece *toda* vez que liga em dia frio? Isso reforça suspeita de velas ou sensor.
+
+✅ **Não force partidas:** Se engasgar, espere alguns segundos e tente novamente com calma.
+
+---
+
+## 4. O Que NÃO Fazer
+
+❌ Ignorar uma eventual luz de injeção — mesmo que o carro ""esteja rodando bem""
+
+❌ Abastecer em postos desconhecidos se suspeitar de combustível adulterado
+
+❌ Usar produtos ""limpa bicos"" concentrado por conta própria — pode piorar
+
+---
+
+## 5. Quando Procurar Mecânico
+
+- **Até 1 semana:** Se nenhuma luz acender e o engasgo for leve
+- **Dentro de 24-48h:** Se luz de injeção estiver **piscando**
+- **Imediatamente:** Se o engasgo piorar, motor morrer ou perder potência
+
+---
+
+**⚠️ Este diagnóstico é preliminar e não substitui avaliação profissional. Em dúvida, procure um mecânico.**",4f357231b7
+2496,C,canonica,8,8,1,0.9947649240493774,,10.350942611694336,0,0.0,"**Sistema:** Injeção e Combustível
+**Urgência:** média
+
+O sistema de injeção eletrônica detectou uma anomalia. Os sintomas variam de vela de ignição gasta (mais comum e barato) até sensores mais caros. Faça a leitura do código de falha em uma oficina com scanner (é rápido e barato). Se a luz de injeção estiver PISCANDO, reduza velocidade — pode danificar o catalisador.",1655b03cfc
+2496,D,rag_llm,8,8,1,0.9947649240493774,,6142.741441726685,1540,0.003776,"**Sistema:** Injeção e Combustível
+**Urgência:** média
+
+# 🔧 Diagnóstico Preliminar - Mão na Roda
+
+## 1. Provável Diagnóstico
+O motor **provavelmente tem problema no sistema de injeção/combustível**. O ""engasgo"" ao ligar em dias frios, que desaparece após alguns segundos, sugere dificuldade na partida a frio — típico de velas gastas, injetor entupido ou combustível de baixa qualidade.
+
+## 2. Urgência
+**MÉDIA** — Não é crítico no momento, mas requer atenção. O motor está se recuperando sozinho, o que é bom sinal, mas o problema tende a piorar se ignorado.
+
+## 3. O Que Fazer AGORA
+1. **Observe se a luz de injeção (check engine) acende** — se acender, anote quando e se pisca ou fica fixa
+2. **Revise a qualidade do combustível** — foi abastecido em um posto novo ou desconhecido recentemente?
+3. **Verifique o manual do seu veículo** — identifique quando foram trocadas as velas de ignição (se próximo de 20-40 mil km, essa é a provável causa)
+4. **Dirija normalmente** — não force acelerações bruscas enquanto o problema existir
+5. **Documente o sintoma** — anote em que dias/temperaturas o engasgo ocorre para informar ao mecânico
+
+## 4. O Que NÃO Fazer
+- ❌ Ignorar se a luz de injeção acender
+- ❌ Abastecer em postos desconhecidos se desconfiar de combustível adulterado
+- ❌ Usar ""limpa bicos"" concentrado sem orientação profissional
+
+## 5. Quando Procurar Mecânico
+- **Em 3-7 dias**: para diagnóstico completo (especialmente se as velas nunca foram trocadas)
+- **Imediatamente (24-48h)**: se a luz de injeção começar a piscar intermitentemente
+
+---
+
+**Este diagnóstico é preliminar e não substitui avaliação profissional. Em dúvida, procure um mecânico.**",b786069853
+2250,A,canonica,9,9,1,0.9966412782669067,,9.920835494995117,0,0.0,"**Sistema:** Sistema de Escapamento
+**Urgência:** média
+
+Problemas de escapamento geralmente não impedem o veículo de rodar, mas são importantes por segurança (gases tóxicos) e pela lei (ruído e emissões). Se há cheiro de gases dentro do carro, procure mecânico hoje mesmo e dirija com janelas abertas. Fumaça colorida contínua indica problemas que envolvem outros sistemas (motor, combustível).",3fa0e56cef
+2250,B,canonica,9,9,1,0.9966412782669067,,8.649110794067383,0,0.0,"**Sistema:** Sistema de Escapamento
+**Urgência:** média
+
+Problemas de escapamento geralmente não impedem o veículo de rodar, mas são importantes por segurança (gases tóxicos) e pela lei (ruído e emissões). Se há cheiro de gases dentro do carro, procure mecânico hoje mesmo e dirija com janelas abertas. Fumaça colorida contínua indica problemas que envolvem outros sistemas (motor, combustível).",3fa0e56cef
+2250,C,canonica,9,9,1,0.9966412782669067,,9.88006591796875,0,0.0,"**Sistema:** Sistema de Escapamento
+**Urgência:** média
+
+Problemas de escapamento geralmente não impedem o veículo de rodar, mas são importantes por segurança (gases tóxicos) e pela lei (ruído e emissões). Se há cheiro de gases dentro do carro, procure mecânico hoje mesmo e dirija com janelas abertas. Fumaça colorida contínua indica problemas que envolvem outros sistemas (motor, combustível).",3fa0e56cef
+2250,D,canonica,9,9,1,0.9966412782669067,,9.494304656982422,0,0.0,"**Sistema:** Sistema de Escapamento
+**Urgência:** média
+
+Problemas de escapamento geralmente não impedem o veículo de rodar, mas são importantes por segurança (gases tóxicos) e pela lei (ruído e emissões). Se há cheiro de gases dentro do carro, procure mecânico hoje mesmo e dirija com janelas abertas. Fumaça colorida contínua indica problemas que envolvem outros sistemas (motor, combustível).",3fa0e56cef
+2259,A,canonica,9,9,1,0.9968806505203247,,8.936166763305664,0,0.0,"**Sistema:** Sistema de Escapamento
+**Urgência:** média
+
+Problemas de escapamento geralmente não impedem o veículo de rodar, mas são importantes por segurança (gases tóxicos) e pela lei (ruído e emissões). Se há cheiro de gases dentro do carro, procure mecânico hoje mesmo e dirija com janelas abertas. Fumaça colorida contínua indica problemas que envolvem outros sistemas (motor, combustível).",f80d943872
+2259,B,rag_llm,9,9,1,0.9968806505203247,,7242.778062820435,1620,0.004388,"**Sistema:** Sistema de Escapamento
+**Urgência:** média
+
+# 🔧 Diagnóstico Preliminar - Mão na Roda
+
+## 1. **Provável Diagnóstico**
+O barulho de estouro suave e ritmado ao desacelerar indica **problema no sistema de escapamento**, provavelmente envolvendo o silencioso (abafador) danificado internamente ou um cano com pequena perfuração por corrosão. O padrão ritmado ao desacelerar é característico de vazamento parcial.
+
+---
+
+## 2. **Urgência: MÉDIA**
+**Por quê:** O sintoma é localizado e ritmado (não é barulho explosivo ou constante muito alto). Porém, qualquer escape de gases é potencialmente tóxico. Se você NÃO está sentindo cheiro estranho dentro do carro e não há fumaça visível, a situação não é crítica neste momento, mas merece atenção.
+
+---
+
+## 3. **O Que Fazer AGORA**
+
+✅ **Verificar se há cheiro estranho** no interior do carro (gases de escape, ""ovo podre"") — se sim, abra janelas e procure mecânico hoje  
+✅ **Inspecionar visualmente** embaixo do carro com **motor frio e desligado** — procure por canos soltos, furos visíveis ou abafador pendurado  
+✅ **Evitar lomba alta** ou terreno muito acidentado — um escapamento danificado pode se soltar  
+✅ **Observar se há fumaça** no escapamento (preta, azul ou branca) durante a próxima aceleração  
+✅ **Dirigir com cuidado** até o mecânico (sem pressa, evitando acelerações bruscas)
+
+---
+
+## 4. **O Que NÃO Fazer**
+
+❌ Não ignore se começar a sentir cheiro de gases dentro do carro  
+❌ Não tente ""consertar"" o escapamento sozinho com fita ou remendos caseiros  
+❌ Não dirija com escapamento arrastando — pode se soltar na rua e causar acidente  
+❌ Não suba lombadas agressivamente se suspeitar que o escapamento está baixo/solto
+
+---
+
+## 5. **Quando Procurar Mecânico**
+
+🟡 **Esta semana** — faça inspeção profissional para identificar exatamente onde está o vazamento  
+🔴 **HOJE** — se começar a sentir cheiro de gases, se fumaça ficar visível ou se o barulho aumentar muito
+
+---
+
+**Este diagnóstico é preliminar e não substitui avaliação profissional. Em dúvida, procure um mecânico.**",cf9b87596b
+2259,C,canonica,9,9,1,0.9968806505203247,,10.586261749267578,0,0.0,"**Sistema:** Sistema de Escapamento
+**Urgência:** média
+
+Problemas de escapamento geralmente não impedem o veículo de rodar, mas são importantes por segurança (gases tóxicos) e pela lei (ruído e emissões). Se há cheiro de gases dentro do carro, procure mecânico hoje mesmo e dirija com janelas abertas. Fumaça colorida contínua indica problemas que envolvem outros sistemas (motor, combustível).",f80d943872
+2259,D,rag_llm,9,9,1,0.9968806505203247,,6511.5790367126465,1540,0.003988,"**Sistema:** Sistema de Escapamento
+**Urgência:** média
+
+# 🚗 Diagnóstico Preliminar - Mão na Roda
+
+## 1. Provável diagnóstico
+O barulho ritmado de estouros suaves ao desacelerar **indica um problema no sistema de escapamento**, provavelmente relacionado a:
+- Silencioso (abafador) danificado internamente, ou
+- Componente solto dentro do sistema de escapamento
+
+## 2. Urgência: **MÉDIA**
+**Por quê:** O sintoma em si não é crítico de imediato, mas o escapamento com defeito pode evoluir rapidamente. O barulho ritmado sugere vibração ou impacto interno, não um vazamento perigoso de gases (ainda).
+
+⚠️ **MUDE PARA CRÍTICA se:** aparecer cheiro de gases dentro do carro.
+
+## 3. O que fazer AGORA
+
+1. **Verifique se há cheiro de gases dentro do veículo** — se sim, abra todas as janelas e procure mecânico HOJE (gases são tóxicos)
+2. **Com o motor frio e desligado**, vá embaixo do carro e inspecione visualmente o escapamento:
+   - O cano está muito baixo, solto ou arrastando?
+   - Há furos, amassados ou peças soltas?
+3. **Dirija com cuidado** nas próximas lombadas — evite puxar muito se o escapamento estiver baixo
+4. **Anote outros sintomas**: há fumaça saindo? Perdeu potência? Cheiro de ""ovo podre""?
+5. Agende um mecânico para os próximos **2-3 dias**
+
+## 4. O que NÃO fazer
+- ❌ Não dirija com o escapamento solto ou arrastando — pode soltar na rua
+- ❌ Não ignore se aparecer cheiro de gases no habitáculo
+- ❌ Não tente ""consertar"" ou tampar com fita/massa caseira
+
+## 5. Quando procurar mecânico
+- **Hoje/amanhã** se: cheiro de gases, escapamento muito baixo ou solto, ou fumaça visível
+- **Nos próximos 2-3 dias** se: apenas o barulho, sem outros sintomas
+
+---
+
+**Este diagnóstico é preliminar e não substitui avaliação profissional. Em dúvida, procure um mecânico.**",ed1ab4b9a2
+3013,A,canonica,9,9,1,0.9961813688278198,,9.891510009765625,0,0.0,"**Sistema:** Sistema de Escapamento
+**Urgência:** média
+
+Problemas de escapamento geralmente não impedem o veículo de rodar, mas são importantes por segurança (gases tóxicos) e pela lei (ruído e emissões). Se há cheiro de gases dentro do carro, procure mecânico hoje mesmo e dirija com janelas abertas. Fumaça colorida contínua indica problemas que envolvem outros sistemas (motor, combustível).",2dec37e197
+3013,B,rag_llm,9,9,1,0.9961813688278198,,6696.625471115112,1546,0.004042,"**Sistema:** Sistema de Escapamento
+**Urgência:** média
+
+# 🚗 Diagnóstico Preliminar — Mão na Roda
+
+## 1. Provável Diagnóstico
+A ferrugem visível na saída do escapamento indica **corrosão avançada do cano de escape**. Isso é típico de desgaste natural, especialmente em veículos mais antigos ou expostos a umidade. A ferrugem pode estar apenas na superfície ou já ter criado pequenos furos.
+
+## 2. Urgência: **MÉDIA**
+Não é crítico no momento, mas requer atenção em breve. A corrosão tende a piorar rapidamente e pode evoluir para:
+- Canos furados (entrada de gases tóxicos no habitáculo)
+- Escapamento solto ou arrastando (risco em lombadas e buracos)
+
+**Atenção:** Se você sentir **cheiro forte de gases dentro do carro**, a urgência sobe para **CRÍTICA** — isso indica vazamento perigoso.
+
+## 3. O que Fazer AGORA
+
+1. **Inspecione visualmente** embaixo do carro (motor frio, desligado) — procure por buracos, danos ou partes soltas no escapamento
+2. **Dirija com atenção** em lombadas e buracos — evite arrancar o cano
+3. **Abra as janelas** ao dirigir, como medida preventiva
+4. **Observe se há** barulho anormal, fumaça colorida ou cheiro estranho
+5. **Agende uma inspeção** com mecânico nos próximos dias (não é emergência imediata)
+
+## 4. O que NÃO Fazer
+- ❌ Não dirija se o escapamento estiver solto ou muito baixo
+- ❌ Não ignore cheiro de gases dentro do carro — procure mecânico hoje
+- ❌ Não tente ""consertar"" com fita adesiva ou outros remendos caseiros
+- ❌ Não dirija agressivamente em lombadas/buracos
+
+## 5. Quando Procurar Mecânico
+- **Hoje**, se sentir cheiro de gases no habitáculo
+- **Nos próximos 2-3 dias**, para inspeção completa e orçamento
+- **Imediatamente**, se o escapamento soltar ou começar a arrastar
+
+---
+
+**Este diagnóstico é preliminar e não substitui avaliação profissional. Em dúvida, procure um mecânico.**",b739e33707
+3013,C,canonica,9,9,1,0.9961813688278198,,10.248661041259766,0,0.0,"**Sistema:** Sistema de Escapamento
+**Urgência:** média
+
+Problemas de escapamento geralmente não impedem o veículo de rodar, mas são importantes por segurança (gases tóxicos) e pela lei (ruído e emissões). Se há cheiro de gases dentro do carro, procure mecânico hoje mesmo e dirija com janelas abertas. Fumaça colorida contínua indica problemas que envolvem outros sistemas (motor, combustível).",2dec37e197
+3013,D,rag_llm,9,9,1,0.9961813688278198,,7282.886505126953,1612,0.004372,"**Sistema:** Sistema de Escapamento
+**Urgência:** média
+
+# 🔧 DIAGNÓSTICO PRELIMINAR – SISTEMA DE ESCAPAMENTO
+
+## 1. **Provável diagnóstico**
+A ferrugem visível na saída do escapamento sugere **corrosão do cano de escape**, provavelmente causada pela exposição à umidade e sais das ruas. Isso indica que o sistema está envelhecido e pode estar comprometido em sua integridade.
+
+---
+
+## 2. **Urgência: MÉDIA**
+**Por quê:** A ferrugem por si só não é emergencial, mas sinaliza desgaste do escapamento. O risco aumenta se houver furos por corrosão (podem deixar gases tóxicos entrarem no carro) ou se o cano soltar enquanto você dirige.
+
+---
+
+## 3. **O que fazer AGORA**
+
+✅ **1. Inspecione visualmente** – Com o motor frio e desligado, deite-se e olhe embaixo do carro para verificar se há furos, pontos muito finos ou partes soltas  
+
+✅ **2. Procure por outros sintomas** – Dirija com atenção e observe:
+   - Barulho anormalmente alto ao acelerar?
+   - Ruído metálico de vibração embaixo do carro?
+   - Cheiro de gases dentro do habitáculo?
+
+✅ **3. Se encontrar furos ou o cano está muito baixo** – Dirija com cuidado para não arrancar em lombadas e evite caminhos muito esburacados
+
+✅ **4. Verifique as janelas do carro** – Certifique-se de que abrem normalmente (medida preventiva)
+
+---
+
+## 4. **O que NÃO fazer**
+
+❌ Não dirija normalmente se o escapamento estiver solto ou arrastando — pode soltar na via e causar acidente
+
+❌ Não ignore cheiro forte de gases dentro do carro — é perigoso e requer parada imediata
+
+❌ Não tente ""remendar"" o escapamento com soluções caseiras
+
+---
+
+## 5. **Quando procurar mecânico**
+
+🔴 **HOJE** se:
+- Houver cheiro de gases dentro do carro
+- O escapamento estiver solto ou tocando o chão
+
+🟡 **NOS PRÓXIMOS 3-5 DIAS** se:
+- Você identificou furos pequenos na ferrugem
+- Há barulho anormal ou ruído metálico
+
+🟢 **Na próxima revisão** se:
+- Apenas ferrugem visível, sem outros sintomas
+
+---
+
+**Este diagnóstico é preliminar e não substitui avaliação profissional. Em dúvida, procure um mecânico.**",f332a00e05

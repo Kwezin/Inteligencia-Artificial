@@ -1,0 +1,31 @@
+relato_id,relato,classe_real,classe_real_nome,variacao_linguistica
+2818,O veículo demora para dar partida logo após lavagem completa.,0,Bateria/Sistema Elétrico,formal
+1192,"toda vez que chove o carro dá uns showzinho de luz no painel, acho que é fiação",0,Bateria/Sistema Elétrico,informal
+2029,"mano, sinto um cheiro de queimado vindo do painel, acompanhado de um leve fio de fumaça.",0,Bateria/Sistema Elétrico,giria
+2357,"um vazamento no retentor do rolamento está contaminando as pastilhas de freio traseiras com lubrificante, direto na estrada.",1,Sistema de Freios,informal
+2412,"mano, um vazamento no retentor do rolamento está contaminando as pastilhas de freio traseiras com lubrificante, já cansei disso.",1,Sistema de Freios,giria
+2349,"freio travou sozinho, tive que puxar o freio de mao pra destravar, direto na estrada.",1,Sistema de Freios,informal_erro_ortografico
+2940,"pô, percebi o motor engasgando quando a temperatura está alta, tá osso viu.",2,Superaquecimento do Motor,giria
+1423,o ponteiro da temperatura sobe rapido demais no transito parado.,2,Superaquecimento do Motor,informal_erro_ortografico
+495,"Motor 1.0 do Celta sem reservatório de expansão completo após negligência, perda de fluido lenta e contínua",2,Superaquecimento do Motor,formal
+1756,"a suspensao faz barulho de mola solta na garagem, principalmente de manha.",3,Suspensão/Amortecedores,informal_erro_ortografico
+227,"O carro está desnivelado, lado do motorista está mais baixo que o do passageiro",3,Suspensão/Amortecedores,formal
+631,"direção hidráulica chiando nas manobras, nível do fluido caindo, tem vazamento em algum lugar",3,Suspensão/Amortecedores,informal
+1084,embreagem solta um cheiro forte de queimado subindo ladeira,4,Sistema de Transmissão/Câmbio,formal
+1764,"Demora pra pegar embalo depois que troca de marcha, na subida.",4,Sistema de Transmissão/Câmbio,informal
+2570,"mano, atuador eletro-hidráulico do câmbio automatizado com falha no solenoide de pressão principal, tá osso viu.",4,Sistema de Transmissão/Câmbio,giria
+2795,"luz do óleo acende no painel e o nível sempre baixo, sempre que chove.",5,Vazamento de Óleo,informal
+531,"motor banhado de óleo por cima, a árvore de cames passou óleo pelo retentor dianteiro",5,Vazamento de Óleo,giria
+2758,"tampa do carter com deformacao por aperto excessivo, vedacao linear comprometida em 40% do perimetro, isso comecou depois da ultima revisao.",5,Vazamento de Óleo,informal_erro_ortografico
+2158,"pô, a mangueira inferior do radiador está inchada, parece que vai estourar.",6,Sistema de Arrefecimento,giria
+1550,"o motor esquenta e o nivel da agua some rapido, ja faz uns dias.",6,Sistema de Arrefecimento,informal_erro_ortografico
+1281,A mangueira do radiador apresenta ressecamento visível e pequenas rachaduras próximas à braçadeira.,6,Sistema de Arrefecimento,formal
+2069,"o veiculo esta puxando levemente para a direita durante o trajeto em linha reta, direto na estrada.",7,Pneu/Roda,informal_erro_ortografico
+1148,roda emitindo som de atrito quando giro o volante parado,7,Pneu/Roda,formal
+107,"pneu careca, dá pra ver a lona, precisando trocar urgente",7,Pneu/Roda,informal
+291,A luz de check engine acendeu e o carro perdeu um pouco de potência,8,Sistema de Injeção/Combustível,formal
+2459,"bico injetor entupido, motor engasgando na arrancada, desde a semana passada.",8,Sistema de Injeção/Combustível,informal
+2496,"cara, o trem engasga ao ser ligado em dias frios, estabilizando somente após alguns segundos.",8,Sistema de Injeção/Combustível,giria
+2250,"o catalisador está entupido, causando grande perda de potência e um cheiro ruim, sempre que chove.",9,Sistema de Escapamento,informal
+2259,"pô, tem um barulho de estouro suave ritmado vindo do escapamento ao desacelerar.",9,Sistema de Escapamento,giria
+3013,"percebi ferrugem visivel na saida do escapamento, com o carro ainda frio.",9,Sistema de Escapamento,informal_erro_ortografico
