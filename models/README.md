@@ -22,7 +22,24 @@ Leitura dos resultados:
 - A principal confusão do classificador é entre **Superaquecimento do Motor** e **Sistema de Arrefecimento**.
 - Estes números são do classificador. O pipeline com LLM foi avaliado por nota Likert (ver [`../demo/README.md`](../demo/README.md)).
 
-<!-- TODO: tabela por classe (precisão/recall/F1) do BERTimbau a partir do classification report oficial -->
+### BERTimbau por classe (teste, 304 relatos)
+
+| Classe | Precisão | Recall | F1 | Suporte |
+|---|---|---|---|---|
+| Bateria / Sistema Elétrico | 0,923 | 0,774 | 0,842 | 31 |
+| Sistema de Freios | 0,935 | 0,935 | 0,935 | 31 |
+| Superaquecimento do Motor | 0,679 | 0,633 | 0,655 | 30 |
+| Suspensão / Amortecedores | 0,900 | 0,871 | 0,885 | 31 |
+| Transmissão / Câmbio | 0,906 | 0,935 | 0,921 | 31 |
+| Vazamento de Óleo | 0,903 | 0,933 | 0,918 | 30 |
+| Sistema de Arrefecimento | 0,743 | 0,867 | 0,800 | 30 |
+| Pneu / Roda | 0,933 | 0,933 | 0,933 | 30 |
+| Injeção / Combustível | 0,897 | 0,867 | 0,881 | 30 |
+| Sistema de Escapamento | 0,875 | 0,933 | 0,903 | 30 |
+| **Média macro** | 0,869 | 0,868 | **0,8675** | 304 |
+
+Acurácia: 0,8684. Das confusões, 9 relatos de Superaquecimento foram previstos como Arrefecimento e 3 no sentido inverso. Superaquecimento é a classe mais difícil (F1 0,655).
+
 
 ## Modelo usado na demo
 
@@ -30,7 +47,7 @@ A demo carrega o checkpoint fine-tunado do **BERTimbau** (`BertForSequenceClassi
 
 Treino: `WeightedTrainer` (perda ponderada por classe), early stopping, melhor época 6 de 15.
 
-<!-- TODO: se quiser, listar learning rate, batch size e max_length oficiais, conferindo no notebook de treino da v15 -->
+Hiperparâmetros: learning rate 2e-5, batch size 16, `max_length` 64, até 15 épocas, seed 42 (notebook `mao_na_roda_finetuning_bertimbau.ipynb`, split 80/10/10).
 
 ### Estrutura esperada
 
