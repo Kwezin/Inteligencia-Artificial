@@ -18,5 +18,6 @@
 | `gabarito_itens.csv` | mapa entre item avaliado, relato e configuração (avaliação cega) |
 | `avaliacao_R1.xlsx`, `avaliacao_R2.xlsx` | planilhas preenchidas pelos dois avaliadores |
 | `parametros_geracao.json` | parâmetros da geração (modelo, temperatura, `max_tokens`, top-k, limiar de confiança) |
+| `matriz_confusao_final.png` | matriz de confusão do BERTimbau (split 80/10/10, teste) |
 
 ![Resultados Likert](likert/likert_figura.png)
