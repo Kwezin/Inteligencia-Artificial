@@ -1,208 +1,119 @@
-# 🔧 Diagnóstico Preliminar de Falhas Automotivas Baseado em IA
+# Mão na Roda: Diagnóstico Preliminar de Falhas Automotivas com IA
 
-> Sistema conversacional híbrido que recebe relatos de falhas mecânicas em linguagem natural e devolve diagnósticos fundamentados em manuais técnicos oficiais, com grau de urgência e orientações de segurança.
+![Python](https://img.shields.io/badge/Python-3.12%2B-blue)
+![TCC](https://img.shields.io/badge/TCC-Mackenzie%202026-red)
+![Status](https://img.shields.io/badge/status-protótipo%20acadêmico-orange)
 
-**Projeto:** TCC I — Ciência da Computação  
-**Instituição:** Universidade Presbiteriana Mackenzie — FCI  
-**Grupo:** Diego Spagnuolo Sugai, Kauê Henrique Matias Alves, Leonardo Moreira dos Santos, Victor Maki Tarcha  
+Sistema que recebe, em português, o relato de um motorista leigo sobre uma falha do carro, classifica o sintoma em 1 de 10 sistemas do veículo e gera um diagnóstico **preliminar** com um LLM apoiado em manuais técnicos.
+
+> ⚠️ **Projeto acadêmico.** Os resultados são preliminares e não substituem a avaliação de um mecânico.
+
+**Instituição:** Universidade Presbiteriana Mackenzie, 2026
+**Equipe:** Diego Spagnuolo Sugai, Kauê Henrique Matias Alves, Leonardo Moreira dos Santos, Victor Maki Tarcha
 **Orientador:** Prof. Dr. Ivan Carlos Alcântara de Oliveira
 
----
+<!-- Depois de subir o print da demo em docs/img/demo.png, apague esta linha e a de fechamento e deixe só a imagem:
+![Demo](docs/img/demo.png)
+-->
 
-## 📌 Sobre o Projeto
+## O problema
 
-Motoristas leigos descrevem falhas mecânicas em linguagem informal, coloquial ou regional — muito distante da terminologia de manuais técnicos e sistemas de diagnóstico embarcado (OBD). Expressões como *"o freio tá esponjoso"* ou *"tin tin no canto da roda"* ilustram essa lacuna comunicacional.
+Motoristas descrevem falhas de forma informal, coloquial ou regional (*"o freio tá esponjoso"*, *"tin tin no canto da roda"*), bem longe da linguagem de manuais técnicos e de sistemas de diagnóstico. O projeto combina classificação supervisionada com geração aumentada por recuperação (RAG) para responder a esse tipo de relato.
 
-O sistema **Mão na Roda** resolve esse problema combinando classificação supervisionada com geração aumentada por recuperação (RAG), aceitando qualquer variação linguística e devolvendo respostas contextualizadas por documentação técnica oficial.
+## Pipeline de pesquisa
 
----
-
-## 🏗️ Arquitetura — Pipeline Híbrido em 4 Camadas
-
-```
-Relato do motorista
-        │
-        ▼
-┌─────────────────────────────────────────┐
-│ Camada 1 — Regras Determinísticas       │ ~10ms
-│ Detecta emergências via regex           │
-│ Ex: freio afundando → NÃO DIRIJA        │
-└────────────────────┬────────────────────┘
-                     │
-                     ▼
-┌─────────────────────────────────────────┐
-│ Camada 2 — Classificador BERTimbau      │ ~50ms
-│ Identifica a classe de falha (0–9)      │
-│ neuralmind/bert-base-portuguese-cased   │
-└────────────────────┬────────────────────┘
-                     │
-                     ▼
-┌─────────────────────────────────────────┐
-│ Camada 3 — Resposta Canônica            │ ~50ms
-│ Se confiança ≥ 85% → resposta validada  │
-└────────────────────┬────────────────────┘
-                     │
-                     ▼
-┌─────────────────────────────────────────┐
-│ Camada 4 — RAG + LLM Gerador            │ ~2–5s
-│ BAAI/bge-m3 + ChromaDB + Claude Haiku   │
-│ Resposta contextualizada pelos manuais  │
-└─────────────────────────────────────────┘
+```mermaid
+flowchart TD
+    A[Relato do motorista] --> B[1. Regras determinísticas<br/>emergências via regex]
+    B --> C[2. Classificador BERTimbau<br/>10 classes]
+    C --> D[3. Resposta canônica<br/>se a confiança for alta]
+    D --> E[4. RAG + LLM<br/>BGE-M3 + ChromaDB + Claude Haiku 4.5]
+    E --> F[Diagnóstico preliminar]
 ```
 
----
+A **demo** em [`demo/`](demo/) é um protótipo simplificado: só o classificador e o Claude estão ativos. Regras, base canônica e RAG estão desativados. Detalhes em [`demo/README.md`](demo/README.md).
 
-## 🎯 Classes de Falha
+### Classes
 
-| ID | Classe |
-|----|--------|
-| 0 | Bateria / Sistema Elétrico |
-| 1 | Sistema de Freios |
-| 2 | Superaquecimento do Motor |
-| 3 | Suspensão / Amortecedores |
-| 4 | Transmissão / Câmbio |
-| 5 | Vazamento de Óleo |
-| 6 | Sistema de Arrefecimento |
-| 7 | Pneu / Roda |
-| 8 | Injeção / Combustível |
-| 9 | Sistema de Escapamento |
+| ID | Classe | ID | Classe |
+|---|---|---|---|
+| 0 | Bateria / Sistema Elétrico | 5 | Vazamento de Óleo |
+| 1 | Sistema de Freios | 6 | Sistema de Arrefecimento |
+| 2 | Superaquecimento do Motor | 7 | Pneu / Roda |
+| 3 | Suspensão / Amortecedores | 8 | Injeção / Combustível |
+| 4 | Transmissão / Câmbio | 9 | Sistema de Escapamento |
 
----
+## Resultados oficiais
 
-## 🛠️ Stack Tecnológica
+### Classificador (F1 macro no teste, dataset v15)
 
-| Componente | Tecnologia |
+| Modelo | F1 macro | Acurácia |
+|---|---|---|
+| DeBERTinha | **0,878** | n/d |
+| BERTimbau | 0,8675 | 0,8684 |
+| BERTabaporu | 0,8617 | n/d |
+| JabuticaBERT | 0,839 | n/d |
+
+- Treino do BERTimbau: `WeightedTrainer` (perda ponderada por classe), early stopping, melhor época 6 de 15.
+- A hipótese de que o BERTabaporu, pré-treinado em tweets, seria melhor em texto coloquial **não se confirmou**: o F1 ficou abaixo do BERTimbau, com ganhos apenas seletivos.
+- A principal confusão é entre **Superaquecimento do Motor** e **Sistema de Arrefecimento**.
+- O F1 mede só o classificador. O pipeline completo foi avaliado de forma qualitativa (abaixo).
+
+<!-- TODO: colar o classification report oficial do BERTimbau (por classe) e o F1 do baseline nos splits da v15 -->
+
+Detalhes dos modelos e links: [`models/README.md`](models/README.md).
+
+### Ablação do pipeline (nota média Likert)
+
+| Configuração | Nota |
 |---|---|
-| Classificador | `neuralmind/bert-base-portuguese-cased` (BERTimbau) |
-| Embeddings RAG | `BAAI/bge-m3` (1.024 dimensões) |
-| Banco Vetorial | ChromaDB |
-| LLM Gerador | Claude Haiku 4.5 (Anthropic API) |
-| Treinamento | Google Colab + Google Drive |
-| Linguagem | Python 3.10 |
+| A | 1,67 |
+| **B (sem regras)** | **2,78** |
+| C | 1,67 |
+| D | 2,56 |
 
----
+A configuração B, sem regras heurísticas, foi a melhor avaliada. A ablação foi executada sobre **17 relatos de teste da fase piloto**, com o classificador daquela fase; ela compara o efeito de regras e RAG+LLM, não o desempenho do classificador final.
 
-## 📊 Dataset
+<!-- TODO: descrever em uma linha as configs A, C e D e a escala Likert -->
 
-- **469 relatos** rotulados manualmente em 10 classes
-- Variações linguísticas: formal, informal e regional
-- Split estratificado: 80% treino / 10% validação / 10% teste
-- **Corpus RAG:** 9 manuais técnicos oficiais Chevrolet (2011–2016)
-- **1.946 chunks** de 350 palavras (overlap de 35 palavras) no ChromaDB
+## Dados
 
----
+- **Dataset v15:** 3.041 registros em 10 classes, em [`data/`](data/). Ele contém famílias de paráfrases e a coluna `peso_treino`, então não são 3.041 relatos independentes de motoristas.
+- **Corpus do RAG:** manuais do proprietário da Chevrolet (2011–2016), em [`data/manuais/`](data/manuais/). São material de terceiros, incluídos apenas para fins acadêmicos.
 
-## 📈 Resultados
-
-### Fine-tuning BERTimbau (3 seeds)
-
-| Seed | F1-macro (teste) | Acurácia |
-|------|-----------------|----------|
-| 42 | 0,597 | 70,6% |
-| 123 | 0,470 | 58,8% |
-| **2024** | **0,763** | **82,4%** |
-| **Média** | **0,610 ± 0,147** | **70,6%** |
-
-> Baseline TF-IDF + Regressão Logística: F1 = 0,607 ± 0,105
-
-### Experimento de Ablação
-
-| Config | Regras | RAG+LLM | Acurácia | Nota Likert | Latência |
-|--------|--------|---------|----------|-------------|----------|
-| A | ✗ | ✗ | 58,8% | 1,67 | ~10ms |
-| **B** | **✗** | **✓** | **58,8%** | **2,78** | **~4.800ms** |
-| C | ✓ | ✗ | 58,8% | 1,67 | ~10ms |
-| D | ✓ | ✓ | 58,8% | 2,56 | ~4.900ms |
-
-> Nota Likert: avaliação humana (1 = inadequada, 2 = parcial, 3 = adequada)  
-> Ganho do RAG+LLM: **+1,11 ponto** sem nenhuma degradação de resposta
-
----
-
-## 📁 Estrutura dos Notebooks
+## Estrutura do repositório
 
 ```
-notebooks/
-├── 04_finetuning_bertimbau.ipynb       # Fine-tuning do classificador
-├── 05_ingest_chromadb.ipynb            # Ingestão dos manuais no ChromaDB
-├── 06_experimento_ablacao.ipynb        # Experimento de ablação A/B/C/D
-├── 07_avaliacao_qualitativa.ipynb      # Avaliação humana das respostas
-├── 08_experimento_E_llm_rag_puro.ipynb # LLM+RAG sem classificador
-└── 09_experimento_F_paralelo.ipynb     # Arquitetura paralela por consenso
+├── data/        dataset v15, splits e manuais (corpus do RAG)
+├── notebooks/   notebooks oficiais (EDA, baseline, treino, ingestão, pipeline, ablação, avaliação)
+├── results/     relatórios, ablação e notas Likert
+├── paper/       artigo
+├── prompts/     prompts usados
+├── demo/        protótipo web (Flask)
+├── docs/        guia de instalação
+├── models/      documentação dos modelos (pesos no Hugging Face)
+└── piloto/      material da fase piloto, mantido como registro histórico
 ```
 
----
+## Como rodar a demo
 
-## ⚙️ Como Executar
+Requer Python 3.12+ e uma chave da API da Anthropic. Passo a passo em [`docs/GUIA_RAPIDO_INSTALACAO.md`](docs/GUIA_RAPIDO_INSTALACAO.md).
 
-### Pré-requisitos
+## Limitações
 
-```bash
-pip install "numpy<2" \
-            "transformers>=4.40,<5.0" \
-            "chromadb>=0.5,<0.6" \
-            "sentence-transformers>=2.7,<4.0" \
-            "anthropic>=0.30"
-```
+- Só português e só 10 categorias.
+- O diagnóstico e as faixas de custo vêm de um LLM e podem estar errados.
+- A ablação usa um conjunto de teste pequeno (17 relatos) e o classificador da fase piloto.
+- O corpus cobre apenas modelos Chevrolet.
 
-> ⚠️ Reinicie o kernel após a instalação no Google Colab.
+## Contato
 
-### Variáveis de ambiente
+Abra uma *issue* neste repositório.
 
-```python
-# No Google Colab, adicione nos Secrets:
-ANTHROPIC_API_KEY = "sua_chave_aqui"
-```
-
-### Ordem de execução
-
-1. `04_finetuning_bertimbau.ipynb` — treina e salva o classificador
-2. `05_ingest_chromadb.ipynb` — processa os manuais e popula o ChromaDB
-3. `06_experimento_ablacao.ipynb` — roda o experimento principal
-4. `07_avaliacao_qualitativa.ipynb` — avaliação humana das respostas
-5. `08` e `09` — experimentos complementares (opcionais)
-
----
-
-## 📂 Arquivos de Dados
-
-| Arquivo | Descrição |
-|---|---|
-| `dataset_mao_na_roda_v4.xlsx` | 469 relatos rotulados (dataset principal) |
-| `base_conhecimento_classes.xlsx` | Respostas canônicas e keywords por classe |
-| `padroes_redirect.xlsx` | Regras determinísticas de emergência |
-| `resultados/ablacao_resultados_brutos.csv` | Respostas completas do experimento de ablação |
-| `resultados/avaliacao_qualitativa_notas.csv` | Notas Likert da avaliação humana |
-
----
-
-## 🔬 Metodologia
-
-1. Coleta de 9 manuais técnicos Chevrolet em PDF
-2. Criação manual de 469 relatos rotulados em 10 classes
-3. Divisão estratificada: treino (80%), validação (10%), teste (10%)
-4. Segmentação dos manuais em chunks de 350 palavras (overlap: 35)
-5. Vetorização com BAAI/bge-m3 e armazenagem no ChromaDB
-6. Fine-tuning do BERTimbau com 3 seeds para avaliação de estabilidade
-7. Desenvolvimento do pipeline híbrido em 4 camadas
-8. Experimento de ablação com 4 configurações (A, B, C, D)
-9. Avaliação qualitativa das respostas em escala Likert
-
----
-
-## 🔭 Perspectivas
-
-- Ampliar o dataset e repetir os experimentos de classificação
-- Executar os Experimentos E (LLM+RAG puro) e F (paralelo por consenso)
-- Desenvolver interface conversacional para avaliação com usuários reais
-- Estender o corpus técnico a outras marcas e modelos
-
----
-
-## 📚 Referências
+## Referências
 
 - LEWIS, P. et al. **Retrieval-augmented generation for knowledge-intensive NLP tasks.** NeurIPS, 2020.
-- SOUZA, F. et al. **BERTimbau: pretrained BERT models for Brazilian Portuguese.** BRACIS, 2020.
+- SOUZA, F.; NOGUEIRA, R.; LOTUFO, R. **BERTimbau: pretrained BERT models for Brazilian Portuguese.** BRACIS, 2020.
+- CAMPIOTTI, I. et al. **DeBERTinha: a multistep approach to adapt DebertaV3 XSmall for Brazilian Portuguese NLU.** 2023. arXiv:2309.16844.
+- COSTA, P. B. et al. **BERTabaporu: assessing a genre-specific language model for Portuguese NLP.** RANLP, 2023.
 - RUSSELL, S.; NORVIG, P. **Inteligência Artificial: uma abordagem moderna.** 4. ed. LTC, 2021.
-
-
