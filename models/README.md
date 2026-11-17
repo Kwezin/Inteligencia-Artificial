@@ -11,9 +11,8 @@ F1 macro no conjunto de teste da v15 do dataset:
 | DeBERTinha | [`sagui-nlp/debertinha-ptbr-xsmall`](https://huggingface.co/sagui-nlp/debertinha-ptbr-xsmall) | DeBERTa-V3 XSmall (40M) | **0,878** | n/d |
 | **BERTimbau** (usado na demo) | [`neuralmind/bert-base-portuguese-cased`](https://huggingface.co/neuralmind/bert-base-portuguese-cased) | BERT-Base (110M) | 0,8675 | 0,8684 |
 | BERTabaporu | [`pablocosta/bertabaporu-base-uncased`](https://huggingface.co/pablocosta/bertabaporu-base-uncased) | BERT-Base (110M), pré-treinado em tweets | 0,8617 | n/d |
-| JabuticaBERT | [artigo PROPOR 2026](https://aclanthology.org/2026.propor-1.93/) | encoder PT-BR | 0,839 | n/d |
+| JabuticaBERT | [`amadeusai/JabuticaBERT-XSmall`](https://huggingface.co/amadeusai/JabuticaBERT-XSmall) | DeBERTa (RTD), variante XSmall | 0,839 | n/d |
 
-<!-- TODO: indicar qual variante do JabuticaBERT foi usada (XSmall, Large, modernBase...) e linkar o checkpoint -->
 
 Leitura dos resultados:
 
