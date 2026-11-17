@@ -20,7 +20,7 @@ Leitura dos resultados:
 - O **DeBERTinha obteve o maior F1** (0,878), acima do BERTimbau (0,8675).
 - O **BERTabaporu** foi pré-treinado em tweets, e por isso se esperava vantagem em texto coloquial. A hipótese **não se confirmou**: o F1 ficou abaixo do BERTimbau, com ganhos apenas seletivos.
 - A principal confusão do classificador é entre **Superaquecimento do Motor** e **Sistema de Arrefecimento**.
-- Estes números são do classificador. O pipeline com LLM foi avaliado por nota Likert (ver [`../demo/README.md`](../demo/README.md)).
+- Estes números são do classificador. O pipeline com LLM foi avaliado por nota Likert (ver [`../README.md`](../README.md)).
 
 ### BERTimbau por classe (teste, 304 relatos)
 
