@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema RAG para Diagnóstico Automotivo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-blue: #1e3a8a;
+            --secondary-blue: #3b82f6;
+            --light-blue: #dbeafe;
+            --dark-gray: #1f2937;
+            --medium-gray: #6b7280;
+            --light-gray: #f3f4f6;
+            --white: #ffffff;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --error: #ef4444;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: var(--dark-gray);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        /* HEADER */
+        .header {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .header-top {
+            text-align: center;
+            padding-bottom: 25px;
+            border-bottom: 2px solid var(--light-gray);
+        }
+
+        .header h1 {
+            color: var(--primary-blue);
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            line-height: 1.3;
+        }
+
+        .header .subtitle {
+            color: var(--medium-gray);
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .tech-stack {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .tech-badge {
+            background: var(--light-blue);
+            color: var(--primary-blue);
+            padding: 6px 16px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        /* WORKFLOW */
+        .workflow {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .workflow h2 {
+            color: var(--primary-blue);
+            font-size: 20px;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+
+        .workflow-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .workflow-step {
+            position: relative;
+            text-align: center;
+            padding: 20px;
+            background: var(--light-gray);
+            border-radius: 10px;
+            border: 2px solid transparent;
+            transition: all 0.3s;
+        }
+
+        .workflow-step.active {
+            border-color: var(--secondary-blue);
+            background: var(--light-blue);
+        }
+
+        .workflow-step-number {
+            background: var(--primary-blue);
+            color: var(--white);
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            margin: 0 auto 12px;
+            font-size: 16px;
+        }
+
+        .workflow-step-title {
+            color: var(--dark-gray);
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .workflow-step-desc {
+            color: var(--medium-gray);
+            font-size: 12px;
+            line-height: 1.4;
+        }
+
+        /* MAIN CARD */
+        .main-card {
+            background: var(--white);
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .card-header {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--light-gray);
+        }
+
+        .card-header h3 {
+            color: var(--primary-blue);
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .card-header p {
+            color: var(--medium-gray);
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        /* FORM */
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            color: var(--dark-gray);
+            font-weight: 600;
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+
+        .form-group textarea {
+            width: 100%;
+            min-height: 140px;
+            padding: 14px 16px;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            font-size: 15px;
+            font-family: inherit;
+            resize: vertical;
+            transition: border-color 0.2s;
+        }
+
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--secondary-blue);
+        }
+
+        .char-count {
+            text-align: right;
+            color: var(--medium-gray);
+            font-size: 13px;
+            margin-top: 6px;
+        }
+
+        .help-text {
+            background: var(--light-blue);
+            border-left: 3px solid var(--secondary-blue);
+            padding: 12px 16px;
+            border-radius: 6px;
+            margin-top: 12px;
+        }
+
+        .help-text p {
+            color: var(--primary-blue);
+            font-size: 13px;
+            line-height: 1.5;
+        }
+
+        /* BUTTONS */
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+            color: var(--white);
+            padding: 14px 32px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(30, 58, 138, 0.3);
+        }
+
+        .btn-primary:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .btn-secondary {
+            background: var(--white);
+            color: var(--primary-blue);
+            border: 2px solid var(--primary-blue);
+            padding: 12px 28px;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            margin-right: 10px;
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary-blue);
+            color: var(--white);
+        }
+
+        /* RESULTS */
+        .result-card {
+            background: var(--light-blue);
+            border: 2px solid var(--secondary-blue);
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 20px;
+        }
+
+        .result-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #93c5fd;
+        }
+
+        .result-title {
+            color: var(--primary-blue);
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .result-badge {
+            background: var(--success);
+            color: var(--white);
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .classification-display {
+            background: var(--white);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .classification-label {
+            color: var(--medium-gray);
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .classification-value {
+            color: var(--primary-blue);
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .confidence-bar-container {
+            margin-top: 12px;
+        }
+
+        .confidence-bar-label {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            font-size: 13px;
+            color: var(--medium-gray);
+        }
+
+        .confidence-bar {
+            background: #e5e7eb;
+            height: 24px;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .confidence-fill {
+            background: linear-gradient(90deg, var(--success) 0%, #059669 100%);
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-weight: 600;
+            font-size: 13px;
+            transition: width 0.8s ease-out;
+        }
+
+        /* LOADING */
+        .loading-container {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .loading-spinner {
+            width: 48px;
+            height: 48px;
+            border: 4px solid var(--light-blue);
+            border-top-color: var(--secondary-blue);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .loading-text {
+            color: var(--primary-blue);
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .loading-subtext {
+            color: var(--medium-gray);
+            font-size: 14px;
+            margin-top: 8px;
+        }
+
+        /* UTILITIES */
+        .hidden {
+            display: none !important;
+        }
+
+        .fade-in {
+            animation: fadeIn 0.4s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .header {
+                padding: 25px 20px;
+            }
+
+            .header h1 {
+                font-size: 22px;
+            }
+
+            .workflow-steps {
+                grid-template-columns: 1fr;
+            }
+
+            .main-card {
+                padding: 25px 20px;
+            }
+
+            .result-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <div class="header">
+            <div class="header-top">
+                <h1>Sistema RAG para Diagnóstico Automotivo e Detecção de Fraudes em Orçamentos</h1>
+                <p class="subtitle">Trabalho de Conclusão de Curso - Universidade Presbiteriana Mackenzie</p>
+            </div>
+            <div class="tech-stack">
+                <div class="tech-badge">BERTimbau Fine-tuned</div>
+                <div class="tech-badge">RAG desativado na demo</div>
+                <div class="tech-badge">Claude 4.5 Haiku</div>
+                <div class="tech-badge">Protótipo</div>
+            </div>
+        </div>
+
+        <!-- AVISO -->
+        <div style="background: #fff3cd; border-left: 4px solid #ff9800; padding: 14px 18px; border-radius: 8px; margin-bottom: 20px; color: #5f4300; font-size: 14px; line-height: 1.6;">
+            <strong>Protótipo acadêmico. O resultado é preliminar e não substitui a avaliação de um mecânico.</strong>
+            Em caso de problema nos freios, superaquecimento, vazamento ou fumaça, evite dirigir e procure uma oficina.
+            As faixas de custo são apenas referências genéricas, sem base de preços verificada.
+        </div>
+
+        <!-- WORKFLOW -->
+        <div class="workflow">
+            <h2>Como Funciona o Sistema</h2>
+            <div class="workflow-steps">
+                <div class="workflow-step" id="step-indicator-1">
+                    <div class="workflow-step-number">1</div>
+                    <div class="workflow-step-title">Descrever Problema</div>
+                    <div class="workflow-step-desc">Usuário descreve o defeito do veículo em linguagem natural</div>
+                </div>
+                <div class="workflow-step" id="step-indicator-2">
+                    <div class="workflow-step-number">2</div>
+                    <div class="workflow-step-title">Classificação ML</div>
+                    <div class="workflow-step-desc">BERTimbau classifica em 10 categorias com % de confiança</div>
+                </div>
+                <div class="workflow-step" id="step-indicator-3">
+                    <div class="workflow-step-number">3</div>
+                    <div class="workflow-step-title">Busca RAG (opcional)</div>
+                    <div class="workflow-step-desc">Busca em manuais, quando uma base estiver indexada. Nesta demo está desativada</div>
+                </div>
+                <div class="workflow-step" id="step-indicator-4">
+                    <div class="workflow-step-number">4</div>
+                    <div class="workflow-step-title">Diagnóstico IA</div>
+                    <div class="workflow-step-desc">Claude gera diagnóstico completo com análise de custos</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- STEP 1: INPUT -->
+        <div class="main-card fade-in" id="step1">
+            <div class="card-header">
+                <h3>Etapa 1: Descreva o Problema do Veículo</h3>
+                <p>Descreva em detalhes o que está acontecendo com seu carro. Quanto mais informações você fornecer, mais preciso será o diagnóstico.</p>
+            </div>
+
+            <div class="form-group">
+                <label for="problemDescription">Descrição do Problema</label>
+                <textarea 
+                    id="problemDescription" 
+                    placeholder="Exemplo: Meu carro não está ligando. Quando giro a chave, só escuto um clique. Percebi que as luzes do painel estão fracas e o rádio também não liga. O carro tem 3 anos e a bateria nunca foi trocada..."
+                    maxlength="500"
+                    oninput="updateCharCount()"
+                    onkeydown="if(event.key==='Enter' && !event.shiftKey){event.preventDefault();analisarProblema();}"
+                ></textarea>
+                <div class="char-count" id="charCount">0 / 500 caracteres</div>
+            </div>
+
+            <div class="help-text">
+                <p><strong>Dica:</strong> Inclua informações como ruídos, comportamentos anormais, quando o problema começou, e se houve alguma mudança recente no veículo.</p>
+            </div>
+
+            <div style="margin-top: 25px;">
+                <button class="btn-primary" onclick="analisarProblema()" id="btnAnalisar">
+                    <span>→</span>
+                    <span>Analisar Problema</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- STEP 2: CLASSIFICAÇÃO -->
+        <div class="main-card hidden fade-in" id="step2">
+            <div class="card-header">
+                <h3>Etapa 2: Classificação e Análise</h3>
+                <p>O sistema está processando sua descrição através do pipeline de machine learning.</p>
+            </div>
+
+            <!-- LOADING -->
+            <div class="loading-container" id="loading">
+                <div class="loading-spinner"></div>
+                <div class="loading-text">Processando...</div>
+                <div class="loading-subtext">Classificando o problema e gerando o diagnóstico</div>
+            </div>
+
+            <!-- RESULTADO -->
+            <div class="hidden" id="result">
+                <!-- PROBLEMA ENVIADO -->
+                <div style="background: #f8f9fa; border-left: 4px solid var(--primary-blue); padding: 15px; border-radius: 8px; margin-bottom: 20px;">
+                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                        <span style="font-size: 20px;">💬</span>
+                        <strong style="color: var(--primary-blue);">Problema Enviado:</strong>
+                    </div>
+                    <p id="userProblemText" style="margin: 0; color: #333; line-height: 1.6;"></p>
+                </div>
+
+                <div class="result-card">
+                    <div class="result-header">
+                        <div class="result-title">Classificação Identificada</div>
+                        <div class="result-badge">BERTimbau ML</div>
+                    </div>
+
+                    <div class="classification-display">
+                        <div class="classification-label">Categoria do Problema</div>
+                        <div class="classification-value" id="classificationName">-</div>
+                        
+                        <div class="confidence-bar-container">
+                            <div class="confidence-bar-label">
+                                <span>Confiança do Modelo</span>
+                                <span id="confidencePercentage">0%</span>
+                            </div>
+                            <div class="confidence-bar">
+                                <div class="confidence-fill" id="confidenceFill" style="width: 0%">
+                                    <span id="confidenceText">0%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="top3Container" style="background: #f8f9fa; padding: 15px; border-radius: 8px; margin-top: 15px; border-left: 3px solid var(--accent-color); display: none;">
+                        <div style="color: var(--medium-gray); font-size: 13px; font-weight: 600; margin-bottom: 10px;">
+                            📊 OUTRAS POSSIBILIDADES (TOP 3)
+                        </div>
+                        <div id="top3List" style="color: var(--dark-gray); font-size: 13px; line-height: 1.8;">
+                            <!-- Será preenchido via JavaScript -->
+                        </div>
+                        <div style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #dee2e6; color: #6c757d; font-size: 12px;">
+                            💡 <strong>Dica:</strong> Se a classificação principal não corresponder ao seu problema, verifique as outras possibilidades acima. O diagnóstico final considerará todas elas.
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Diagnóstico será mostrado automaticamente abaixo -->
+                
+                <div style="margin-top: 25px;">
+                    <button class="btn-secondary" onclick="novaAnalise()">← Nova Análise</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mapeamento das 10 classes
+        const CLASS_NAMES = {
+            0: 'Bateria/Sistema Elétrico',
+            1: 'Sistema de Freios',
+            2: 'Superaquecimento do Motor',
+            3: 'Suspensão/Amortecedores',
+            4: 'Sistema de Transmissão/Câmbio',
+            5: 'Vazamento de Óleo',
+            6: 'Sistema de Arrefecimento',
+            7: 'Pneu/Roda',
+            8: 'Sistema de Injeção/Combustível',
+            9: 'Sistema de Escapamento'
+        };
+
+        let currentClassification = null;
+        let userProblemText = '';
+
+        function updateCharCount() {
+            const textarea = document.getElementById('problemDescription');
+            const count = textarea.value.length;
+            document.getElementById('charCount').textContent = `${count} / 500 caracteres`;
+        }
+
+        function updateWorkflowStep(step) {
+            // Resetar todos
+            for (let i = 1; i <= 4; i++) {
+                document.getElementById(`step-indicator-${i}`).classList.remove('active');
+            }
+            // Ativar atual
+            document.getElementById(`step-indicator-${step}`).classList.add('active');
+        }
+
+        async function analisarProblema() {
+            const description = document.getElementById('problemDescription').value.trim();
+            
+            if (description.length < 20) {
+                alert('Por favor, descreva o problema com mais detalhes (mínimo 20 caracteres).');
+                return;
+            }
+
+            // Salvar texto do problema
+            userProblemText = description;
+
+            // Avançar para step 2
+            updateWorkflowStep(2);
+            document.getElementById('step1').classList.add('hidden');
+            document.getElementById('step2').classList.remove('hidden');
+            document.getElementById('loading').classList.remove('hidden');
+            document.getElementById('result').classList.add('hidden');
+
+            try {
+                // CHAMAR API DO BACKEND
+                // URL relativa: a página é servida pelo próprio backend (abra http://127.0.0.1:5000)
+                const response = await fetch('/diagnosticar', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        texto: description
+                    })
+                });
+
+                if (!response.ok) {
+                    throw new Error(`Erro HTTP: ${response.status}`);
+                }
+
+                const data = await response.json();
+                mostrarResultado(data);
+                
+            } catch (error) {
+                console.error('Erro:', error);
+                alert(`Erro ao conectar com o backend: ${error.message}\n\nVerifique se o servidor está rodando e abra a página em http://127.0.0.1:5000 (não abra o arquivo HTML direto no navegador).`);
+                novaAnalise();
+            }
+        }
+
+        function mostrarResultado(data) {
+            currentClassification = data;
+            
+            // Esconder loading
+            document.getElementById('loading').classList.add('hidden');
+            document.getElementById('result').classList.remove('hidden');
+            
+            // Atualizar workflow para etapa 4 (diagnóstico completo)
+            updateWorkflowStep(4);
+            
+            // MOSTRAR PROBLEMA DO USUÁRIO
+            document.getElementById('userProblemText').textContent = userProblemText;
+            
+            // Badge sempre mostra BERTimbau ML
+            const badgeElement = document.querySelector('.result-badge');
+            badgeElement.textContent = 'BERTimbau ML';
+            badgeElement.style.background = '#4caf50';
+            badgeElement.title = 'Classificação via Machine Learning (BERTimbau fine-tunado)';
+            
+            // MOSTRAR PROBABILIDADES TOP-3 DE FORMA DESTACADA
+            const className = data.classe || CLASS_NAMES[data.predicted_class] || 'Classificação não disponível';
+            document.getElementById('classificationName').textContent = className;
+            
+            // Animar barra de confiança
+            const confidence = data.confianca || data.confidence || 0;
+            const confidencePercent = (confidence * 100).toFixed(1);
+            
+            setTimeout(() => {
+                document.getElementById('confidenceFill').style.width = confidencePercent + '%';
+                document.getElementById('confidenceText').textContent = confidencePercent + '%';
+                document.getElementById('confidencePercentage').textContent = confidencePercent + '%';
+            }, 100);
+            
+            // Mostrar Top 3 previsões de forma MAIS DESTACADA
+            if (data.top_3_predicoes && data.top_3_predicoes.length > 0) {
+                const top3Container = document.getElementById('top3Container');
+                const top3List = document.getElementById('top3List');
+                
+                let top3Html = '<div style="background: #f8f9fa; padding: 15px; border-radius: 8px; margin-top: 15px;">';
+                top3Html += '<h3 style="margin: 0 0 12px 0; color: #1976d2; font-size: 16px;">📊 Probabilidades Identificadas:</h3>';
+                
+                data.top_3_predicoes.forEach((pred, index) => {
+                    const confPercent = (pred.confidence * 100).toFixed(2);
+                    const icon = index === 0 ? '🥇' : index === 1 ? '🥈' : '🥉';
+                    const barWidth = confPercent;
+                    const isTop = index === 0;
+                    
+                    top3Html += `
+                        <div style="margin-bottom: 10px;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+                                <span style="font-weight: ${isTop ? 'bold' : 'normal'}; color: ${isTop ? '#1976d2' : '#666'};">
+                                    ${icon} ${pred.class_name}
+                                </span>
+                                <span style="font-weight: bold; color: ${isTop ? '#1976d2' : '#666'};">${confPercent}%</span>
+                            </div>
+                            <div style="background: #e0e0e0; height: ${isTop ? '12px' : '8px'}; border-radius: 6px; overflow: hidden;">
+                                <div style="background: ${isTop ? '#1976d2' : '#64b5f6'}; width: ${barWidth}%; height: 100%; transition: width 0.5s;"></div>
+                            </div>
+                        </div>
+                    `;
+                });
+                
+                top3Html += '</div>';
+                top3List.innerHTML = top3Html;
+                top3Container.style.display = 'block';
+            }
+            
+            // MOSTRAR DIAGNÓSTICO COMPLETO IMEDIATAMENTE (sem precisar clicar em "Continuar")
+            mostrarDiagnosticoCompleto(data);
+        }
+        
+        function mostrarDiagnosticoCompleto(data) {
+            // Criar seção de diagnóstico se não existir
+            if (!document.getElementById('diagnosticSection')) {
+                criarSecaoDiagnostico();
+            }
+            
+            const diagnosticSection = document.getElementById('diagnosticSection');
+            diagnosticSection.classList.remove('hidden');
+            
+            // Inserir diagnóstico do Claude
+            if (data.resposta) {
+                document.getElementById('diagnosticContent').innerHTML = data.resposta;
+            } else {
+                document.getElementById('diagnosticContent').innerHTML = `
+                    <div style="background: #fff3cd; border: 1px solid #ffc107; padding: 15px; border-radius: 8px;">
+                        <strong>⚠️ Diagnóstico não disponível</strong><br>
+                        O backend não retornou o diagnóstico completo. Verifique se o Claude está funcionando.
+                    </div>
+                `;
+            }
+        }
+
+        function novaAnalise() {
+            updateWorkflowStep(1);
+            document.getElementById('step2').classList.add('hidden');
+            const diagnosticSection = document.getElementById('diagnosticSection');
+            if (diagnosticSection) diagnosticSection.classList.add('hidden');
+            document.getElementById('step1').classList.remove('hidden');
+            document.getElementById('problemDescription').value = '';
+            updateCharCount();
+            currentClassification = null;
+            userProblemText = '';
+        }
+        
+        function criarSecaoDiagnostico() {
+            const resultDiv = document.getElementById('result');
+            const diagnosticHtml = `
+                <div id="diagnosticSection" class="hidden" style="margin-top: 30px; padding-top: 30px; border-top: 2px solid #e0e0e0;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
+                        <span style="font-size: 28px;">🔍</span>
+                        <div>
+                            <h3 style="margin: 0; color: #1976d2; font-size: 22px;">Diagnóstico Completo</h3>
+                            <p style="margin: 5px 0 0 0; color: #666; font-size: 14px;">Resultado preliminar gerado por IA. Não substitui a avaliação de um mecânico</p>
+                        </div>
+                    </div>
+                    
+                    <div id="diagnosticContent" style="background: white; padding: 20px; border-radius: 8px; line-height: 1.6; border: 1px solid #e0e0e0;">
+                        <!-- O diagnóstico será inserido aqui -->
+                    </div>
+                </div>
+            `;
+            resultDiv.insertAdjacentHTML('beforeend', diagnosticHtml);
+        }
+    </script>
+</body>
+</html>
