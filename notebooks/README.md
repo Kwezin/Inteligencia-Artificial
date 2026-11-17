@@ -15,7 +15,7 @@ Todos os notebooks foram executados no Google Colab. Eles leem os dados do Googl
 
 ## Pipeline e ablação
 
-Estes notebooks rodam sobre o dataset da **fase piloto** (`dataset_mao_na_roda_v2.xlsx`, em [`../piloto/`](../piloto/)), com 17 relatos de teste. Os resultados da ablação (nota Likert) vêm daqui.
+Estes notebooks rodam sobre o dataset da **fase piloto** (`dataset_mao_na_roda_v2.xlsx`, não incluído neste repositório), com 17 relatos de teste. Os resultados da ablação (nota Likert) vêm daqui.
 
 | Notebook | O que faz |
 |---|---|
