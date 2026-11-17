@@ -13,16 +13,18 @@ Todos os notebooks foram executados no Google Colab. Eles leem os dados do Googl
 | `mao_na_roda_jabuticabert_finetuning.ipynb` | Fine-tuning do JabuticaBERT | 0,839 |
 | `mao_na_roda_albertina_finetuning.ipynb` | Fine-tuning do Albertina PT-BR (`PORTULAN/albertina-100m-portuguese-ptbr-encoder`) | sem resultado registrado; **não** faz parte da comparação oficial |
 
-## Pipeline e ablação
+## Pipeline e ablação (fase piloto)
 
-Estes notebooks rodam sobre o dataset da **fase piloto** (`dataset_mao_na_roda_v2.xlsx`, não incluído neste repositório), com 17 relatos de teste. Os resultados da ablação (nota Likert) vêm daqui.
+Estes notebooks rodam sobre o dataset da **fase piloto** (`dataset_mao_na_roda_v2.xlsx`, não incluído neste repositório), com 17 relatos de teste e o classificador daquela fase. Eles **não** geram os resultados Likert finais, que estão em [`../results/likert/`](../results/likert/) (30 relatos, classificador final).
 
 | Notebook | O que faz |
 |---|---|
 | `03_pipeline_integrado.ipynb` | Pipeline em 4 camadas (regras, classificador, resposta canônica, RAG + LLM) |
 | `05_ingest_chromadb.ipynb` | Ingestão dos manuais no ChromaDB |
-| `06_experimento_ablacao.ipynb` | Ablação com as configurações A, B, C e D |
-| `07_avaliacao_qualitativa.ipynb` | Avaliação Likert das respostas |
+| `06_experimento_ablacao.ipynb` | Ablação piloto com as configurações A, B, C e D |
+| `07_avaliacao_qualitativa.ipynb` | Avaliação Likert piloto |
+
+<!-- TODO: adicionar aqui o notebook que gerou results/likert (amostra de 30 relatos, gabarito, comparações pareadas) -->
 
 ## Fase piloto
 
