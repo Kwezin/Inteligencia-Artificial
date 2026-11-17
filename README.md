@@ -59,7 +59,25 @@ A **demo** em [`demo/`](demo/) é um protótipo simplificado: só o classificado
 - A principal confusão é entre **Superaquecimento do Motor** e **Sistema de Arrefecimento**.
 - O F1 mede só o classificador. O pipeline completo foi avaliado de forma qualitativa (abaixo).
 
-<!-- TODO: colar o classification report oficial do BERTimbau (por classe) e o F1 do baseline nos splits da v15 -->
+#### BERTimbau por classe (teste, 304 relatos)
+
+| Classe | Precisão | Recall | F1 | Suporte |
+|---|---|---|---|---|
+| Bateria / Sistema Elétrico | 0,923 | 0,774 | 0,842 | 31 |
+| Sistema de Freios | 0,935 | 0,935 | 0,935 | 31 |
+| Superaquecimento do Motor | 0,679 | 0,633 | 0,655 | 30 |
+| Suspensão / Amortecedores | 0,900 | 0,871 | 0,885 | 31 |
+| Transmissão / Câmbio | 0,906 | 0,935 | 0,921 | 31 |
+| Vazamento de Óleo | 0,903 | 0,933 | 0,918 | 30 |
+| Sistema de Arrefecimento | 0,743 | 0,867 | 0,800 | 30 |
+| Pneu / Roda | 0,933 | 0,933 | 0,933 | 30 |
+| Injeção / Combustível | 0,897 | 0,867 | 0,881 | 30 |
+| Sistema de Escapamento | 0,875 | 0,933 | 0,903 | 30 |
+| **Média macro** | 0,869 | 0,868 | **0,8675** | 304 |
+
+Acurácia: 0,8684. Das confusões, 9 relatos de Superaquecimento foram previstos como Arrefecimento e 3 no sentido inverso. Superaquecimento é a classe mais difícil (F1 0,655).
+
+<!-- TODO: F1 do baseline nos splits da v15 (o notebook de baseline do repositório roda no dataset piloto) -->
 
 Detalhes dos modelos e links: [`models/README.md`](models/README.md).
 
@@ -78,7 +96,7 @@ A configuração B, sem regras heurísticas, foi a melhor avaliada. A ablação 
 
 ## Dados
 
-- **Dataset v15:** 3.041 registros em 10 classes, em [`data/`](data/). Ele contém famílias de paráfrases e a coluna `peso_treino`, então não são 3.041 relatos independentes de motoristas.
+- **Dataset v15:** 3.041 registros em 10 classes (2.432 treino, 305 validação e 304 teste), em [`data/`](data/). Os splits são por grupo de paráfrase, sem sobreposição entre treino, validação e teste. O dataset contém famílias de paráfrases e a coluna `peso_treino`, então não são 3.041 relatos independentes de motoristas.
 - **Corpus do RAG:** manuais do proprietário da Chevrolet (2011–2016), em [`data/manuais/`](data/manuais/). São material de terceiros, incluídos apenas para fins acadêmicos.
 
 ## Estrutura do repositório
@@ -91,8 +109,7 @@ A configuração B, sem regras heurísticas, foi a melhor avaliada. A ablação 
 ├── prompts/     prompts usados
 ├── demo/        protótipo web (Flask)
 ├── docs/        guia de instalação
-├── models/      documentação dos modelos (pesos no Hugging Face)
-└── piloto/      material da fase piloto, mantido como registro histórico
+└── models/      documentação dos modelos (pesos no Hugging Face)
 ```
 
 ## Como rodar a demo
