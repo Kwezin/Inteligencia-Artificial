@@ -117,8 +117,6 @@ A concordância entre os dois avaliadores foi baixa: 45,8% de notas idênticas e
 ├── data/        dataset v15, splits e manuais (corpus do RAG)
 ├── notebooks/   notebooks oficiais (EDA, baseline, treino, ingestão, pipeline, ablação, avaliação)
 ├── results/     avaliação Likert (notas, comparações, gabarito)
-├── paper/       artigo
-├── prompts/     prompts usados
 ├── demo/        protótipo web (Flask)
 ├── docs/        guia de instalação
 └── models/      documentação dos modelos (pesos no Hugging Face)
