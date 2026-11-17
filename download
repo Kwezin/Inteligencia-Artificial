@@ -1,0 +1,67 @@
+# ===================================
+# .gitignore (raiz do repositório)
+# ===================================
+# Regra geral: ignorar apenas segredos, ambiente, pesos de modelo e lixo local.
+# Dataset (data/), resultados (results/), figuras, PDF do artigo (paper/) e
+# prompts (prompts/) DEVEM ser versionados e não são ignorados aqui.
+
+# --- Segredos (NUNCA commitar) ---
+.env
+.env.*
+!.env.example
+Chave_api/
+chave_api_anthropics.txt
+# (o arquivo chave_api_anthropics.txt.example, só com placeholder, pode subir)
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+build/
+dist/
+*.egg-info/
+
+# --- Pesos de modelos (grandes demais; ficam no Hugging Face) ---
+# Mantém models/README.md, ignora as pastas de checkpoints.
+models/*/
+modelos/
+*.pth
+*.pt
+*.bin
+*.safetensors
+*.ckpt
+
+# --- ChromaDB local ---
+chromadb/
+chromadb_data/
+*.sqlite3
+*.db
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- Arquivos temporários do Word/Office ---
+~$*
+
+# --- Temporários e logs ---
+*.log
+*.tmp
+terminals/
+
+# --- IDEs ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# --- Sistema operacional ---
+.DS_Store
+Thumbs.db
+desktop.ini
